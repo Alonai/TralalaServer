@@ -10,10 +10,14 @@ public class SongDAO {
 	String title;
 	int duration;
 	double ppp;
-	Set<ArtistDAO> artists;
+	ArtistDAO artist;
 	
-	public SongDAO(data.Song song){
-		
+	public SongDAO(data.Song song, ArtistDAO artist){
+		this.title=song.title;
+		this.id=song.id;
+		this.duration=song.duration;
+		this.ppp=song.ppp;
+		this.artist=artist;
 	}
 	
 }

@@ -17,15 +17,11 @@ public class ArtistDAO {
 	public ArtistDAO(Artist artist){
 		this.id=artist.id;
 		this.name=artist.name;
-		this.albums=new Set<AlbumDAO>;
+		this.albums=new Set<AlbumDAO>();
+		this.songs=new Set<SongDAO>();
 		for (Album album : artist.albums){
 			AlbumDAO albumD=new AlbumDAO(album);
 			this.albums.add(albumD);
-		}
-		this.songs=new Set<SongDAO>;
-		for(Song song:artist.songs){
-			SongDAO songD=new SongDAO(song);
-			this.songs.add(songD);
 		}
 	}
 	

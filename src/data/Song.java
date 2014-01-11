@@ -6,5 +6,5 @@ public class Song {
 	String title;
 	int duration;
 	double ppp;
-	Set<Artist> artists;
+	Artist artist;
 }

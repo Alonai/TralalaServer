@@ -1,5 +1,7 @@
 package data.dao;
 
+import data.Song;
+
 @PersistenceCapable
 public class AlbumDAO {
 
@@ -9,11 +11,17 @@ public class AlbumDAO {
 	
 	String title;
 	Object releaseDate;
-	Set<ArtistDAO> artists;
+	ArtistDAO artist;
 	Set<SongDAO> songs;
 	
-	public AlbumDAO(data.Album album){
-		
+	public AlbumDAO(data.Album album, ArtistDAO artistC){
+		this.title= album.title;
+		this.releaseDate=album.releaseDate;
+		this.artist=artistC;
+		this.songs=new Set<SongDAO>();
+		for(Song song:album.songs){
+			this.songs.add(new SongDAO(song, artistC));
+		}
 	}
 	
 }

@@ -4,8 +4,8 @@ package data;
 public class Album {
 	
 	int id;
-	String title;
+	public String title;
 	Object releaseDate;
-	Set<Artist> artists;
+	Artist artist;
 	Set<Song> songs;
 }
