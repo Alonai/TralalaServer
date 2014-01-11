@@ -12,7 +12,7 @@ public class AlbumDAO {
 	Set<ArtistDAO> artists;
 	Set<SongDAO> songs;
 	
-	public AlbumDAO(){
+	public AlbumDAO(data.Album album){
 		
 	}
 	

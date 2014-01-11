@@ -11,7 +11,7 @@ public class MemberDAO {
 	String nick;
 	Set<PlayDAO> plays;
 	
-	public MemberDAO(){
+	public MemberDAO(data.Member member){
 		
 	}
 	

@@ -12,7 +12,7 @@ public class SongDAO {
 	double ppp;
 	Set<ArtistDAO> artists;
 	
-	public SongDAO(){
+	public SongDAO(data.Song song){
 		
 	}
 	

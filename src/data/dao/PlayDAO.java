@@ -10,7 +10,7 @@ public class PlayDAO {
 	SongDAO song;
 	MemberDAO member;
 	
-	public PlayDAO(){
+	public PlayDAO(data.Play play){
 		
 	}
 	
