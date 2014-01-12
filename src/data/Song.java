@@ -4,11 +4,11 @@ import data.dao.ArtistDAO;
 
 public class Song {
 	
-	int id;
-	String title;
-	int duration;
-	double ppp;
-	Artist artist;
+	public int id;
+	public String title;
+	public int duration;
+	public double ppp;
+	public Artist artist;
 	
 	public Song(SongDAO song, Artist artist){
 		this.title=song.title;
