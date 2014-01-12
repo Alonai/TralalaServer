@@ -7,11 +7,15 @@ public class PlayDAO {
 	Object date;
 	Object time;
 	
-	SongDAO song;
+	//SongDAO song;
+	int songId
 	MemberDAO member;
 	
-	public PlayDAO(data.Play play){
-		
+	public PlayDAO(data.Play play, MemberDAO parent){
+		this.date=play.date;
+		this.time=play.time;
+		member=parent;
+		this.songId=play.songId;
 	}
 	
 }

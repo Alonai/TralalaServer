@@ -9,7 +9,7 @@ public class Controller {
 		pmf = JDOHelper.getPersistenceManagerFactory("TralalaDAO");
 		pm = pmf.getPersistenceManager();
 	}
-	public void persist(Set<data.Artist> artists){
+	public void persist(Set<data.Artist> artists, Set<data.Member> members){
 		Transaction tx=pm.currentTransaction();
 		try
 		{
@@ -17,6 +17,10 @@ public class Controller {
 		    for(data.Artist artist: artists){
 		    	ArtistDAO artistDAO=new ArtistDAO(artist);
 		    	pm.makePersistent(artistDAO);
+		    }
+		    for(data.Member member: members){
+		    	MemberDAO memberDAO=new MemberDAO(member);
+		    	pm.makePersistent(memberDAO);
 		    }
 		    tx.commit();
 		}
