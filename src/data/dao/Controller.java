@@ -1,5 +1,9 @@
 package data.dao;
 
+import org.datanucleus.store.query.Query;
+
+import data.Song;
+
 public class Controller {
 	
 	PersistenceManagerFactory pmf;
@@ -32,5 +36,34 @@ public class Controller {
 		    }
 		    pm.close();
 		}
+	}
+	public Set<Song> getAllSongs(){
+		Transaction tx = pm.currentTransaction();
+		Set<Song> doSongs=new Set<Song>();
+		try
+		{
+		    tx.begin();
+
+		    Query q = pm.newQuery("SELECT FROM " + SongDAO.class.getName());
+		    Set<SongDAO> songs = (Set<SongDAO>)q.execute();
+		    Iterator<SongDAO> iter = songs.iterator();
+		    while (iter.hasNext())
+		    {
+		        SongDAO s = iter.next();
+		        doSongs.add(new Song(s));
+		    }
+		    
+		    tx.commit();
+		}
+		finally
+		{
+		    if (tx.isActive())
+		    {
+		        tx.rollback();
+		    }
+
+		    pm.close();
+		}
+		return doSongs;
 	}
 }
