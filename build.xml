@@ -6,9 +6,19 @@
 	<property name="dist.dir" location="dist"/>
 	<property name="classpath" location="bin"/>
 	<property name="version" value="0.9"/>
+	<!-- TralalaServer -->
 	<property name="server.port" value="1099"/> 
 	<property name="server.IP" value="127.0.0.1"/>
 	<property name="server.Name" value="TralalaServer"/>
+	<!-- PaypalServer -->
+	<property name="paypal.port" value="1234"/> 
+	<property name="paypal.IP" value="127.0.0.1"/>
+	<property name="paypal.Name" value="PayPalServer"/>
+	<!-- BankingServer -->
+	<property name="banking.port" value="4321"/> 
+	<property name="banking.IP" value="127.0.0.1"/>
+	<property name="banking.Name" value="BankingServer"/>
+	
 	<property name="export.file" value="TralalaServer-${version}.jar"/>
 	<property name="policy.file" location="security/java.policy"/>	
 

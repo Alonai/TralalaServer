@@ -4,10 +4,10 @@ import server.PPServer;
 
 public class PayPalGW extends PaymentGateway{
 
+	private final String name= "//127.0.0.1:1234/PayPalServer";
 	private String[] options;
-	/** [0]: server name
-	 *  [1]: credit card number
-	 *  [2]: amount to pay
+	/** [0]: credit card number
+	 *  [1]: amount to pay
 	 * @param options
 	 */
 	public PayPalGW(String[] options){
@@ -18,7 +18,7 @@ public class PayPalGW extends PaymentGateway{
 	/**Pay to PayPal
 	 */
 	public boolean pay() {
-		return payToPayPal(options[0], new Long(options[1]).longValue(), new Double(options[2]).doubleValue());
+		return payToPayPal(new Long(options[0]).longValue(), new Double(options[1]).doubleValue());
 	}
 	/** Method that charges the amount 'amount' to the credit card 'ccard' in the server specified by 'name'
 	 * @param name
@@ -26,7 +26,7 @@ public class PayPalGW extends PaymentGateway{
 	 * @param amount
 	 * @return true if everything goes OK, false if not
 	 */
-	private boolean payToPayPal(String name, long ccard, double amount){
+	private boolean payToPayPal(long ccard, double amount){
 		boolean ret= false;
 		try {
 			PPServer server= (PPServer) lookup(name);

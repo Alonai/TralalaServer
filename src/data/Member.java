@@ -8,7 +8,6 @@ public class Member {
 	public String name;
 	public String nick;
 	public Set<Play> plays;
-	
 	public Member(MemberDAO member){
 		this.id=member.id;
 		this.name=member.name;
