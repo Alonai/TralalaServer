@@ -10,5 +10,6 @@
 	<classpathentry kind="lib" path="lib/jdo-api-3.0.1.jar"/>
 	<classpathentry kind="lib" path="lib/log4j-1.2.14.jar"/>
 	<classpathentry kind="lib" path="lib/mysql-connector-java-5.1.26-bin.jar"/>
+	<classpathentry kind="lib" path="lib/AuthorizationServer.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
