@@ -6,7 +6,7 @@ import data.Member;
 import data.Play;
 import data.Song;
 
-public class EPaymentMethod implements IPaymentService{
+public abstract class EPaymentMethod implements IPaymentService{
 
 	/** Returns the amount of money that the member has to play.
 	 * @param m : Member
