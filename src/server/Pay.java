@@ -13,9 +13,9 @@ public class Pay extends EPaymentMethod{
 		//Depending on the member
 		PaymentGateway pgw;
 		pgw = PaymentGWFactory.createGateway(PaymentService.Bank, 
-				new String[] {PaymentService.Bank.toString(), String.valueOf(m.getBankAccount()), String.valueOf(amount)});
+				new String[] {String.valueOf(m.getBankAccount()), String.valueOf(amount)});
 		pgw = PaymentGWFactory.createGateway(PaymentService.PayPal, 
-				new String[] {PaymentService.PayPal.toString(), String.valueOf(m.getBankAccount()), String.valueOf(amount)});
+				new String[] {String.valueOf(m.getBankAccount()), String.valueOf(amount)});
 		pgw.pay();
 	}
 }
