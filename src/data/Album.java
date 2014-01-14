@@ -12,7 +12,7 @@ public class Album extends DBItem {
 	private Object releaseDate;
 	private ArrayList<Song> songs;
 	
-	public Album(int id){
+	public Album(String id){
 		super(id);
 	}
 	public String getTitle() {

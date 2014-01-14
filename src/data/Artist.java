@@ -11,7 +11,7 @@ public class Artist extends DBItem {
 	private String name;
 	private ArrayList<Song> songs;
 	
-	public Artist(int id, String name){
+	public Artist(String id, String name){
 		super(id);
 		this.name=name;
 		songs=new ArrayList<Song>();
@@ -22,7 +22,7 @@ public class Artist extends DBItem {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public void addSong(Song song, int id, String title, int duration, double ppp,Album album){
+	public void addSong(Song song, String id, String title, int duration, double ppp,Album album){
 		song.setId(id);
 		song.setTitle(title);
 		song.setDuration(duration);

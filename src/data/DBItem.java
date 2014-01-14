@@ -6,17 +6,17 @@ import javax.jdo.annotations.PersistenceCapable;
 @PersistenceCapable(detachable = "true")
 public class DBItem {
 	
-	protected int id;
+	protected String id;
 	
-	public DBItem(int id){
+	public DBItem(String id){
 		this.id=id;
 	}
 
-	public int getId() {
+	public String getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 	
