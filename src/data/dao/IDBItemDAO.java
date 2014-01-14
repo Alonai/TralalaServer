@@ -4,6 +4,7 @@ import java.util.List;
 
 import data.Artist;
 import data.DBItem;
+import data.Song;
 
 public interface IDBItemDAO {
 	public void storeItem(DBItem item);
