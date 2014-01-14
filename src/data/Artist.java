@@ -5,7 +5,7 @@ import data.dao.SongDAO;
 
 public class Artist {
 	
-	int id;
+	public int id;
 	String name;
 	public Set<Album> albums;
 	Set<Song> songs;

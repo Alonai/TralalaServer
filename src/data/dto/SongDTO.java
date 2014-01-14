@@ -10,6 +10,7 @@ public class SongDTO implements Serializable{
 	int duration;
 	double ppp;
 	String artistName;
+	int artistID;
 	
 	public SongDTO(Song song){
 		this.id=song.id;
@@ -17,6 +18,7 @@ public class SongDTO implements Serializable{
 		this.duration=song.duration;
 		this.ppp=song.ppp;
 		artistName=song.artist.name;
+		artistID=song.artist.id;
 	}
 	
 }
