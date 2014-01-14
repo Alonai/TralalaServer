@@ -10,6 +10,7 @@ public interface IDBItemDAO {
 	public void storeArtist(Artist artist);
 	public List<DBItem> getItems();
 	public List<Artist> getArtists();
+	public List<Song> getSongs();
 	public List<DBItem> getItems(String condition);
 	public DBItem getItem(String id);
 	public void updateItem(DBItem product);

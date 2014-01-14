@@ -12,6 +12,7 @@ import javax.jdo.Transaction;
 
 import data.Artist;
 import data.DBItem;
+import data.Song;
 
 public class DBItemDAO implements IDBItemDAO {
 
@@ -105,6 +106,35 @@ public class DBItemDAO implements IDBItemDAO {
 	    }
 	    
 		return artists;
+	}
+	
+	public List<Song> getSongs() {
+		PersistenceManager pm = pmf.getPersistenceManager();
+		Transaction tx = pm.currentTransaction();
+		List<Song> songs = new ArrayList<Song>();
+		
+		try {
+			System.out.println("   * Retrieving an Extent for songs.");
+			
+			tx.begin();			
+			Extent<Song> extent = pm.getExtent(Song.class, true);
+			
+			for (Song song : extent) {
+				songs.add(song);
+			}
+			
+			tx.commit();
+		} catch (Exception ex) {
+	    	System.out.println("   $ Error retreiving an extent: " + ex.getMessage());
+	    } finally {
+	    	if (tx != null && tx.isActive()) {
+	    		tx.rollback();
+	    	}
+				
+    		pm.close();
+	    }
+	    
+		return songs;
 	}
 
 	public List<DBItem> getItems(String condition) {
