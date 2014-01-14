@@ -1,5 +1,7 @@
 package data;
 
+import data.dao.DBItemDAO;
+
 public class Play {
 
 	private String date;
@@ -45,6 +47,9 @@ public class Play {
 	public void setMemberId(String memberId) {
 		this.memberId = memberId;
 	}
-	
+	public Song getSong(){
+		DBItemDAO dbAccess=new DBItemDAO();
+	 	return (Song)dbAccess.getItem(songId);
+	}
 	
 }
