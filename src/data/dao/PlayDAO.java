@@ -8,7 +8,7 @@ public class PlayDAO {
 	Object time;
 	
 	//SongDAO song;
-	int songId
+	int songId;
 	MemberDAO member;
 	
 	public PlayDAO(data.Play play, MemberDAO parent){
