@@ -1,22 +1,44 @@
 package data.dto;
 
+import java.io.Serializable;
+
 import data.Artist;
 import data.Song;
 
 public class SongDTO implements Serializable{
 
-	int id;
-	String title;
-	int duration;
-	double ppp;
-	String artistName;
+	private String id;
+	private String title;
+	private int duration;
+	private double ppp;
+	private String artistName;
 	
-	public SongDTO(Song song){
-		this.id=song.id;
-		this.title=song.title;
-		this.duration=song.duration;
-		this.ppp=song.ppp;
-		artistName=song.artist.name;
+	protected SongDTO(Song song){
+		id=song.getId();
+		title=song.getTitle();
+		duration=song.getDuration();
+		ppp=song.getPpp();
+		artistName=song.getArtist().getName();
+	}
+
+	public String getId() {
+		return id;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public int getDuration() {
+		return duration;
+	}
+
+	public double getPpp() {
+		return ppp;
+	}
+
+	public String getArtistName() {
+		return artistName;
 	}
 	
 }
