@@ -50,8 +50,8 @@ public class Member extends DBItem {
 		return plays;
 	}
 
-	public void addPlay(String date, String time, String songId) {
-		plays.add(new Play(date, time, songId, id));
+	public void addPlay(String date, String time, String songId, String playId) {
+		plays.add(new Play(date, time, songId, id, playId));
 	}
 
 	public long getBankAccount() {
