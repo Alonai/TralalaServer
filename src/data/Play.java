@@ -2,6 +2,10 @@ package data;
 
 import data.dao.DBItemDAO;
 
+import javax.jdo.annotations.PersistenceCapable;
+
+
+@PersistenceCapable(detachable = "true")
 public class Play {
 
 	private String date;

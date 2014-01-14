@@ -4,6 +4,9 @@ import java.util.ArrayList;
 
 import gateways.payment.enums.PaymentService;
 
+import javax.jdo.annotations.PersistenceCapable;
+
+@PersistenceCapable(detachable = "true")
 public class Member {
 
 	private String id;
@@ -11,7 +14,8 @@ public class Member {
 	private String nick;
 	private ArrayList<Play> plays;
 	private long bankAccount;
-	private PaymentService paymentService;
+	private String paymentService;
+	
 	
 	public Member(String id, String name, String nick, long bankAccount){
 		this.id=id;
@@ -57,10 +61,10 @@ public class Member {
 	public void setBankAccount(long bankAccount) {
 		this.bankAccount = bankAccount;
 	}
-	public PaymentService getPaymentService() {
+	public String getPaymentService() {
 		return paymentService;
 	}
-	public void setPaymentService(PaymentService paymentService){
+	public void setPaymentService(String paymentService){
 		this.paymentService=paymentService;
 	}
 	
