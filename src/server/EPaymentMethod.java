@@ -17,7 +17,7 @@ public abstract class EPaymentMethod implements IPaymentService{
 		double amount = 0;
 		
 		//Gets user's playList
-		ArrayList<Play> playList = m.getPlayList();
+		ArrayList<Play> playList = m.getPlays();
 		//Processes all the plays of the member.
 		for(int i = 0; i < playList.size(); i++) {
 			//Gets the song of the current play.
