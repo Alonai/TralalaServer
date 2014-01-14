@@ -1,12 +1,14 @@
 package remote;
 
-import gateways.payment.enums.PaymentService;
-
 public class PaymentSessionFacade {
-	private PaymentService payServ;
+	private EPaymentMethod payServ;
 	
-	public PaymentSessionFacade(PaymentService pay) {
+	public PaymentSessionFacade(EPaymentMethod pay) {
 		payServ = pay;
+	}
+	
+	public double currentAmount() {
+		return payServ.currentAmount();
 	}
 
 }
