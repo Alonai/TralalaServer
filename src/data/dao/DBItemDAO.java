@@ -143,10 +143,9 @@ public class DBItemDAO implements IDBItemDAO {
 		DBItem item = null;
 	    
 		try {
-			System.out.println ("   * Querying an Item: " + name);
-			
+			System.out.println ("   * Querying an Item: " + id);
 	    	tx.begin();
-	    	Query query = pm.newQuery("SELECT FROM " + DBItem.class.getName() + " WHERE id == '" + name + "'");
+	    	Query query = pm.newQuery("SELECT FROM " + DBItem.class.getName() + " WHERE id == '" + id + "'");
 	    	query.setUnique(true);
 	    	item = (DBItem)query.execute();	    	
 	    	tx.commit();
