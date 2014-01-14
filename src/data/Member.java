@@ -1,5 +1,6 @@
 package data;
 
+import gateways.payment.enums.PaymentService;
 import data.dao.PlayDAO;
 
 public class Member {
@@ -9,6 +10,7 @@ public class Member {
 	public String nick;
 	public Set<Play> plays;
 	private long bankAccount;
+	private PaymentService paymentService;
 	
 	public Member(MemberDAO member){
 		this.id=member.id;
@@ -24,4 +26,7 @@ public class Member {
 		return bankAccount;
 	}
 	
+	public PaymentService getPaymentService() {
+		return paymentService;
+	}
 }
