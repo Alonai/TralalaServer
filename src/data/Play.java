@@ -10,7 +10,7 @@ public class Play {
 	public Play(String date, String time,String songID, String memberID){
 		this.date=date;
 		this.time=time;
-		memberID=memberID;
+		memberId=memberID;
 		songId=songID;
 	}
 
