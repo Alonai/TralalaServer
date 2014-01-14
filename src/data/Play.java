@@ -6,14 +6,15 @@ import javax.jdo.annotations.PersistenceCapable;
 
 
 @PersistenceCapable(detachable = "true")
-public class Play {
+public class Play extends DBItem{
 
 	private String date;
 	private String time;
 	private String songId;
 	private String memberId;
 	
-	public Play(String date, String time,String songID, String memberID){
+	public Play(String date, String time,String songID, String memberID, String id){
+		super(id);
 		this.date=date;
 		this.time=time;
 		memberId=memberID;

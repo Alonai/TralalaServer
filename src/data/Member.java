@@ -7,7 +7,7 @@ import gateways.payment.enums.PaymentService;
 import javax.jdo.annotations.PersistenceCapable;
 
 @PersistenceCapable(detachable = "true")
-public class Member {
+public class Member extends DBItem {
 
 	private String id;
 	private String name;
@@ -18,7 +18,7 @@ public class Member {
 	
 	
 	public Member(String id, String name, String nick, long bankAccount){
-		this.id=id;
+		super(id);
 		this.name=name;
 		this.nick=nick;
 		this.bankAccount=bankAccount;
