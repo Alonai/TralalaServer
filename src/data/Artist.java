@@ -1,24 +1,37 @@
 package data;
 
-import data.dao.AlbumDAO;
-import data.dao.SongDAO;
+import java.util.ArrayList;
+import java.util.List;
 
-public class Artist {
+import javax.jdo.annotations.PersistenceCapable;
+
+@PersistenceCapable(detachable = "true")
+public class Artist extends DBItem {
 	
-	int id;
-	String name;
-	public Set<Album> albums;
-	Set<Song> songs;
+	private String name;
+	private ArrayList<Song> songs;
 	
-	public Artist(ArtistDAO artist){
-		this.id=artist.id;
-		this.name=artist.name;
-		this.albums=new Set<Album>();
-		this.songs=new Set<Song>();
-		for (Album album : artist.albums){
-			Album albumS=new Album(album);
-			this.albums.add(albumS);
-		}
+	public Artist(int id, String name){
+		super(id);
+		this.name=name;
+		songs=new ArrayList<Song>();
 	}
-	
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public void addSong(Song song, int id, String title, int duration, double ppp,Album album){
+		song.setId(id);
+		song.setTitle(title);
+		song.setDuration(duration);
+		song.setPpp(ppp);
+		song.setArtist(this);
+		song.setAlbum(album);
+		songs.add(song);
+	}
+	public ArrayList<Song> getSongs(){
+		return songs;
+	}
 }

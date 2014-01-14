@@ -1,19 +1,17 @@
 package data;
 
-import data.dao.MemberDAO;
-
 public class Play {
 
 	public Object date;
 	public Object time;
 	public int songId;
-	Member member;
+	int memberId;
 	
-	public Play(PlayDAO play, Member parent){
-		this.date=play.date;
-		this.time=play.time;
-		member=parent;
-		this.songId=play.songId;
+	public Play(Object date, Object time,int songID, int memberID){
+		this.date=date;
+		this.time=time;
+		memberID=memberID;
+		songId=songID;
 	}
 	
 }

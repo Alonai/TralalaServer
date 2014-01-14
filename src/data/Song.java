@@ -1,21 +1,47 @@
 package data;
 
-import data.dao.ArtistDAO;
+import javax.jdo.annotations.PersistenceCapable;
+import javax.jdo.annotations.Persistent;
 
-public class Song {
+@PersistenceCapable(detachable = "true")
+public class Song extends DBItem {
+
+	private String title;
+	private int duration;
+	private double ppp;
+	private Artist artist;
+	private Album album;
 	
-	public int id;
-	public String title;
-	public int duration;
-	public double ppp;
-	public Artist artist;
-	
-	public Song(SongDAO song, Artist artist){
-		this.title=song.title;
-		this.id=song.id;
-		this.duration=song.duration;
-		this.ppp=song.ppp;
-		this.artist=artist;
+	public String getTitle() {
+		return title;
+	}
+	public void setTitle(String title) {
+		this.title = title;
+	}
+	public int getDuration() {
+		return duration;
+	}
+	public void setDuration(int duration) {
+		this.duration = duration;
+	}
+	public double getPpp() {
+		return ppp;
+	}
+	public void setPpp(double ppp) {
+		this.ppp = ppp;
+	}
+	public Artist getArtist() {
+		return artist;
+	}
+	public void setArtist(Artist artist) {
+		this.artist = artist;
+	}
+	public Album getAlbum(){
+		return album;
+	}
+	public void setAlbum(Album album){
+		this.album = album;
+		album.addSong(this);
 	}
 	
 }
