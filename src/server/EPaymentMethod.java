@@ -23,7 +23,7 @@ public abstract class EPaymentMethod implements IPaymentService{
 			//Gets the song of the current play.
 			Song song = playList.get(i).getSong();
 			//Adds the price per play to the current amount.
-			amount += song.getPPP();
+			amount += song.getPpp();
 		}
 		//returns the amount of all the songs.
 		return amount;

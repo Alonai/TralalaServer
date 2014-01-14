@@ -8,6 +8,8 @@ public class Member {
 	public String name;
 	public String nick;
 	public Set<Play> plays;
+	private long bankAccount;
+	
 	public Member(MemberDAO member){
 		this.id=member.id;
 		this.name=member.name;
@@ -16,6 +18,10 @@ public class Member {
 		for(PlayDAO play: member.plays){
 			this.plays.add(new Play(play, this));
 		}
+	}
+	
+	public long getBankAccount() {
+		return bankAccount;
 	}
 	
 }
