@@ -6,8 +6,11 @@ import gateways.payment.enums.PaymentService;
 
 import javax.jdo.annotations.PersistenceCapable;
 
+import server.IVisitable;
+import server.Visitor;
+
 @PersistenceCapable(detachable = "true")
-public class Member extends DBItem {
+public class Member extends DBItem implements IVisitable{
 
 	private String id;
 	private String name;
@@ -66,6 +69,12 @@ public class Member extends DBItem {
 	}
 	public void setPaymentService(String paymentService){
 		this.paymentService=paymentService;
+	}
+
+	@Override
+	public void accept(Visitor v) {
+		v.visit(this);
+		
 	}
 	
 	
