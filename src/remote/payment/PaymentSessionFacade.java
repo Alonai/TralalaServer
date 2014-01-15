@@ -1,5 +1,8 @@
 package remote.payment;
 
+import data.Member;
+import server.EPaymentMethod;
+
 public class PaymentSessionFacade {
 	private EPaymentMethod payServ;
 	
@@ -7,8 +10,8 @@ public class PaymentSessionFacade {
 		payServ = pay;
 	}
 	
-	public double currentAmount() {
-		return payServ.currentAmount();
+	public double currentAmount(Member m) {
+		return payServ.currentAmount(m);
 	}
 	
 }

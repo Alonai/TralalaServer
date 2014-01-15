@@ -2,6 +2,6 @@ package remote.payment;
 
 public interface IPaymentSessionFacade {
 	
-	public double currentAmount();
+	public double currentAmount(Member m);
 
 }
