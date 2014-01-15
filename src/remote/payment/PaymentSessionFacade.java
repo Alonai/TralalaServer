@@ -1,12 +1,15 @@
 package remote.payment;
 
+import java.rmi.RemoteException;
+import java.rmi.server.UnicastRemoteObject;
+
 import data.Member;
 import server.EPaymentMethod;
 
-public class PaymentSessionFacade {
+public class PaymentSessionFacade extends UnicastRemoteObject{
 	private EPaymentMethod payServ;
 	
-	public PaymentSessionFacade(EPaymentMethod pay) {
+	public PaymentSessionFacade(EPaymentMethod pay) throws RemoteException{
 		payServ = pay;
 	}
 	

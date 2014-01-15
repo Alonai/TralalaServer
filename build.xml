@@ -16,7 +16,7 @@
 	<target name="help">
 		<echo>Usage: ant [build | export | server]</echo>
 	</target>
-	<path id="librerias">
+	<path id="bibliotecas">
 		<fileset dir="${lib.dir}">
 			<include name="*.jar" />
 		</fileset>
@@ -25,14 +25,15 @@
 		<delete dir="${build.dir}"/>
 		<mkdir dir="${build.dir}"/>
 		<javac srcdir="${source.dir}" destdir="${build.dir}" classpath="${classpath}" deprecation="true" fork="true" includeAntRuntime="no">
-			<classpath refid="librerias"/>
+			<classpath refid="bibliotecas"/>
 		</javac>
     </target>
 	
 	<target name="export" depends="build" description="Export the project into a .jar file">
 		<delete dir="${dist.dir}"/>
 		<mkdir dir="${dist.dir}"/>
-		<jar destfile="${dist.dir}/${export.file}" basedir="${build.dir}" excludes="**/*.class">
+		<jar destfile="${dist.dir}/${export.file}" basedir="${build.dir}">
+			
 			<zipgroupfileset dir="${lib.dir}" includes="*.jar" />
 		</jar>
     </target>	
