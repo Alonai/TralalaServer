@@ -2,8 +2,6 @@ package data;
 
 import java.util.ArrayList;
 
-import gateways.payment.enums.PaymentService;
-
 import javax.jdo.annotations.PersistenceCapable;
 
 import server.IVisitable;

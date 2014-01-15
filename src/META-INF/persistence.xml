@@ -4,7 +4,7 @@
     xsi:schemaLocation="http://java.sun.com/xml/ns/persistence
         http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd" version="2.0">
 
-    <!-- example JDO "unit" -->
+    <!-- data "unit" -->
     <persistence-unit name="TralalaJDO">
         <class>data.DBItem</class>
 		<class>data.Album</class>
@@ -15,13 +15,14 @@
         <exclude-unlisted-classes/>
         <properties>
             <property name="javax.jdo.option.ConnectionDriverName" value="com.mysql.jdbc.Driver"/>
-            <property name="javax.jdo.option.ConnectionURL" value="jdbc:mysql://localhost/tralaladb"/>            
+            <property name="javax.jdo.option.ConnectionURL" value="jdbc:mysql://localhost/productsdb"/>            
             <property name="javax.jdo.option.Mapping" value="mysql"/>
-            <property name="javax.jdo.option.ConnectionUserName" value="sd"/>
-            <property name="javax.jdo.option.ConnectionPassword" value="sd"/>
+            <property name="javax.jdo.option.ConnectionUserName" value="root"/>
+            <property name="javax.jdo.option.ConnectionPassword" value=""/>
             <property name="datanucleus.autoCreateSchema" value="true"/>
             <property name="datanucleus.validateTables" value="false"/>
-            <property name="datanucleus.validateConstraints" value="false"/>
+            <!-- Important to detach and retain values after commit -->
+            <property name="datanucleus.DetachAllOnCommit" value="true"/>            
         </properties>
     </persistence-unit>
 </persistence>

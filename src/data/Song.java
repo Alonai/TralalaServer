@@ -1,12 +1,11 @@
 package data;
 
 import javax.jdo.annotations.PersistenceCapable;
-import javax.jdo.annotations.Persistent;
 
 @PersistenceCapable(detachable = "true")
 public class Song extends DBItem {
 
-	private String title;
+	private String songTitle;
 	private int duration;
 	private double ppp;
 	private Artist artist;
@@ -17,10 +16,10 @@ public class Song extends DBItem {
 	}
 	
 	public String getTitle() {
-		return title;
+		return songTitle;
 	}
 	public void setTitle(String title) {
-		this.title = title;
+		this.songTitle = title;
 	}
 	public int getDuration() {
 		return duration;
