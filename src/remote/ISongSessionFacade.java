@@ -1,10 +1,11 @@
 package remote;
 
+import java.rmi.Remote;
 import java.util.ArrayList;
 
 import data.dto.SongDTO;
 
-public interface ISongSessionFacade {
+public interface ISongSessionFacade extends Remote{
 	
 	public ArrayList<String> getListSongs();
 	
