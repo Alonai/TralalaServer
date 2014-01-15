@@ -10,6 +10,7 @@ public class PaymentSessionFacade extends UnicastRemoteObject{
 	private EPaymentMethod payServ;
 	
 	public PaymentSessionFacade(EPaymentMethod pay) throws RemoteException{
+		super();
 		payServ = pay;
 	}
 	

@@ -13,6 +13,7 @@ public class SongSessionFacade extends UnicastRemoteObject implements ISongSessi
 	private SongProvider provider;
 	
 	public SongSessionFacade(SongProvider sp) throws RemoteException{
+		super();
 		this.provider = sp;
 	}
 

@@ -9,6 +9,7 @@ public class ManagementSessionFacade extends UnicastRemoteObject implements IMan
 	private MemberManagement manager;
 	
 	public ManagementSessionFacade(MemberManagement memberM) throws RemoteException{
+		super();
 		manager = memberM;
 	}
 	
