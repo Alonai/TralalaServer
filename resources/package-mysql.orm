@@ -42,9 +42,9 @@
             <field name="ppp">
                 <column length="128" jdbc-type="DOUBLE"/>
             </field>
-            <field name="Artist">               
+            <field name="artist">               
             </field>
-            <field name="Album" default-fetch-group="true">               
+            <field name="album" default-fetch-group="true">               
             </field>
 		</class>
 		
