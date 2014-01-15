@@ -1,4 +1,4 @@
-package remote;
+package remote.payment;
 
 public interface IPaymentSessionFacade {
 	

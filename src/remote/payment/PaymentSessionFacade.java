@@ -1,4 +1,4 @@
-package remote;
+package remote.payment;
 
 public class PaymentSessionFacade {
 	private EPaymentMethod payServ;
@@ -10,5 +10,5 @@ public class PaymentSessionFacade {
 	public double currentAmount() {
 		return payServ.currentAmount();
 	}
-
+	
 }
