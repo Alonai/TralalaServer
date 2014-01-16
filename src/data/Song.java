@@ -15,6 +15,7 @@ public class Song extends DBItem {
 		super(id);
 		songTitle=title;
 		this.duration=duration;
+		ppp=0;
 	}
 	
 	public String getTitle() {

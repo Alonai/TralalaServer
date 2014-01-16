@@ -29,6 +29,9 @@ public class Artist extends DBItem {
 		song.setAlbum(album);
 		songs.add(song);
 	}
+	public void addSong(Song song){
+		songs.add(song);
+	}
 	public ArrayList<Song> getSongs(){
 		return songs;
 	}

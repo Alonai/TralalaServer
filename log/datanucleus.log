@@ -9613,3 +9613,1153 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in 
 12:43:57,331 (main) DEBUG [DataNucleus.Connection] - Connection "org.datanucleus.store.rdbms.datasource.dbcp.PoolingDataSource$PoolGuardConnectionWrapper@746a56f0" non enlisted to a transaction is being committed.
 12:43:57,333 (main) DEBUG [DataNucleus.Connection] - Connection "org.datanucleus.store.rdbms.datasource.dbcp.PoolingDataSource$PoolGuardConnectionWrapper@746a56f0" closed
 12:43:57,333 (main) INFO  [DataNucleus.SchemaTool] - SchemaTool completed successfully
+13:26:36,851 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creation of the schema
+13:26:36,880 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+13:26:36,881 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tazze/git/TralalaServer/lib/AuthorizationServer.jar
+13:26:36,881 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tazze/git/TralalaServer/lib/BankingServer.jar
+13:26:36,881 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tazze/git/TralalaServer/lib/PayPalServer.jar
+13:26:36,881 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tazze/git/TralalaServer/lib/datanucleus-api-jdo-3.2.4.jar
+13:26:36,881 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tazze/git/TralalaServer/lib/datanucleus-core-3.2.7.jar
+13:26:36,881 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tazze/git/TralalaServer/lib/datanucleus-rdbms-3.2.6.jar
+13:26:36,881 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tazze/git/TralalaServer/lib/jdo-api-3.0.1.jar
+13:26:36,881 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tazze/git/TralalaServer/lib/log4j-1.2.14.jar
+13:26:36,882 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tazze/git/TralalaServer/lib/mysql-connector-java-5.1.26-bin.jar
+13:26:36,882 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tazze/git/TralalaServer/bin
+13:26:36,882 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tazze/git/TralalaServer/resources
+13:26:37,658 (main) DEBUG [DataNucleus.General] - Using PluginRegistry org.datanucleus.plugin.NonManagedPluginRegistry
+13:26:37,806 (main) DEBUG [DataNucleus.General] - Registering bundle org.datanucleus version 3.2.7 at URL file:/Users/Tazze/git/TralalaServer/lib/datanucleus-core-3.2.7.jar.
+13:26:37,915 (main) DEBUG [DataNucleus.General] - Loading extension points from plug-in file jar:file:/Users/Tazze/git/TralalaServer/lib/datanucleus-core-3.2.7.jar!/plugin.xml.
+13:26:37,993 (main) DEBUG [DataNucleus.General] - Loading extensions from plug-in file jar:file:/Users/Tazze/git/TralalaServer/lib/datanucleus-core-3.2.7.jar!/plugin.xml.
+13:26:38,005 (main) DEBUG [DataNucleus.General] - Registering bundle org.datanucleus.api.jdo version 3.2.4 at URL file:/Users/Tazze/git/TralalaServer/lib/datanucleus-api-jdo-3.2.4.jar.
+13:26:38,035 (main) DEBUG [DataNucleus.General] - Loading extension points from plug-in file jar:file:/Users/Tazze/git/TralalaServer/lib/datanucleus-api-jdo-3.2.4.jar!/plugin.xml.
+13:26:38,039 (main) DEBUG [DataNucleus.General] - Loading extensions from plug-in file jar:file:/Users/Tazze/git/TralalaServer/lib/datanucleus-api-jdo-3.2.4.jar!/plugin.xml.
+13:26:38,044 (main) DEBUG [DataNucleus.General] - Registering bundle org.datanucleus.store.rdbms version 3.2.6 at URL file:/Users/Tazze/git/TralalaServer/lib/datanucleus-rdbms-3.2.6.jar.
+13:26:38,144 (main) DEBUG [DataNucleus.General] - Loading extension points from plug-in file jar:file:/Users/Tazze/git/TralalaServer/lib/datanucleus-rdbms-3.2.6.jar!/plugin.xml.
+13:26:38,173 (main) DEBUG [DataNucleus.General] - Loading extensions from plug-in file jar:file:/Users/Tazze/git/TralalaServer/lib/datanucleus-rdbms-3.2.6.jar!/plugin.xml.
+13:26:38,827 (main) DEBUG [DataNucleus.Persistence] - Java types support initialising ...
+13:26:39,182 (main) DEBUG [DataNucleus.Persistence] - Java types support loaded : supported java types=java.util.TimeZone, [Ljava.lang.Byte;, [Ljava.lang.Integer;, java.util.SortedMap, char, java.lang.Boolean, [Ljava.lang.Boolean;, java.lang.Long, java.sql.Timestamp, [Ljava.lang.Double;, java.lang.Float, long, float, java.util.BitSet, java.util.Stack, java.math.BigInteger, java.lang.Double, java.util.Vector, byte, java.util.Locale, java.lang.Class, [Ljava.lang.Long;, java.sql.Time, boolean, [Ljava.lang.Short;, java.util.LinkedList, java.util.PriorityQueue, [Ljava.lang.Enum;, int, java.util.List, java.util.TreeMap, java.lang.Integer, java.lang.Short, double, java.lang.Number, java.util.LinkedHashMap, java.sql.Date, [Ljava.util.Locale;, java.util.Arrays$ArrayList, java.lang.Byte, java.util.UUID, [Ljava.lang.String;, [Ljava.util.Date;, java.util.Currency, java.util.Properties, java.util.Calendar, java.util.Map, java.awt.Color, java.util.HashMap, [Ljava.lang.Character;, short, java.util.GregorianCalendar, java.util.TreeSet, java.lang.Character, java.util.SortedSet, java.util.Set, java.util.Collection, java.util.ArrayList, java.lang.StringBuffer, [Ljava.math.BigDecimal;, [B, java.util.Hashtable, [F, java.lang.String, java.net.URI, [C, java.awt.image.BufferedImage, [D, java.util.Date, [I, [J, [Ljava.lang.Number;, [Ljava.lang.Float;, [Ljava.math.BigInteger;, java.net.URL, java.util.HashSet, java.math.BigDecimal, [S, [Z, java.util.Queue, java.lang.Enum, java.util.LinkedHashSet
+13:26:39,182 (main) DEBUG [DataNucleus.Persistence] - Type converter support initialising ...
+13:26:39,231 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.math.BigDecimal<->java.lang.String using org.datanucleus.store.types.converters.BigDecimalStringConverter
+13:26:39,247 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.math.BigInteger<->java.lang.String using org.datanucleus.store.types.converters.BigIntegerStringConverter
+13:26:39,249 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.util.BitSet<->java.lang.String using org.datanucleus.store.types.converters.BitSetStringConverter
+13:26:39,251 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.util.Calendar<->java.lang.String using org.datanucleus.store.types.converters.CalendarStringConverter
+13:26:39,253 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.lang.Class<->java.lang.String using org.datanucleus.store.types.converters.ClassStringConverter
+13:26:39,255 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.awt.Color<->java.lang.String using org.datanucleus.store.types.converters.ColorStringConverter
+13:26:39,255 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.lang.Integer<->java.lang.String using org.datanucleus.store.types.converters.IntegerStringConverter
+13:26:39,256 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.lang.Long<->java.lang.String using org.datanucleus.store.types.converters.LongStringConverter
+13:26:39,257 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.util.Currency<->java.lang.String using org.datanucleus.store.types.converters.CurrencyStringConverter
+13:26:39,258 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.util.Date<->java.lang.Long using org.datanucleus.store.types.converters.DateLongConverter
+13:26:39,259 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.util.Date<->java.lang.String using org.datanucleus.store.types.converters.DateStringConverter
+13:26:39,260 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.util.Locale<->java.lang.String using org.datanucleus.store.types.converters.LocaleStringConverter
+13:26:39,261 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.sql.Date<->java.lang.Long using org.datanucleus.store.types.converters.SqlDateLongConverter
+13:26:39,262 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.sql.Date<->java.lang.String using org.datanucleus.store.types.converters.SqlDateStringConverter
+13:26:39,262 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.sql.Time<->java.lang.Long using org.datanucleus.store.types.converters.SqlTimeLongConverter
+13:26:39,263 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.sql.Time<->java.lang.String using org.datanucleus.store.types.converters.SqlTimeStringConverter
+13:26:39,269 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.sql.Timestamp<->java.lang.Long using org.datanucleus.store.types.converters.SqlTimestampLongConverter
+13:26:39,269 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.lang.StringBuffer<->java.lang.String using org.datanucleus.store.types.converters.StringBufferStringConverter
+13:26:39,279 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.util.TimeZone<->java.lang.String using org.datanucleus.store.types.converters.TimeZoneStringConverter
+13:26:39,280 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.net.URI<->java.lang.String using org.datanucleus.store.types.converters.URIStringConverter
+13:26:39,281 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.net.URL<->java.lang.String using org.datanucleus.store.types.converters.URLStringConverter
+13:26:39,282 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.util.UUID<->java.lang.String using org.datanucleus.store.types.converters.UUIDStringConverter
+13:26:39,283 (main) DEBUG [DataNucleus.Persistence] - TypeConverter for javax.time.calendar.LocalDate<->java.lang.String ignored since java type not present in CLASSPATH
+13:26:39,284 (main) DEBUG [DataNucleus.Persistence] - TypeConverter for javax.time.calendar.LocalTime<->java.lang.String ignored since java type not present in CLASSPATH
+13:26:39,285 (main) DEBUG [DataNucleus.Persistence] - TypeConverter for javax.time.calendar.LocalTime<->java.lang.Long ignored since java type not present in CLASSPATH
+13:26:39,286 (main) DEBUG [DataNucleus.Persistence] - TypeConverter for javax.time.calendar.LocalDateTime<->java.lang.String ignored since java type not present in CLASSPATH
+13:26:39,287 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.io.Serializable<->java.lang.String using org.datanucleus.store.types.converters.SerializableStringConverter
+13:26:39,288 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.io.Serializable<->[B using org.datanucleus.store.types.converters.SerializableByteArrayConverter
+13:26:39,288 (main) DEBUG [DataNucleus.Persistence] - Type converter support loaded
+13:26:39,289 (main) DEBUG [DataNucleus.MetaData] - MetaDataManager : Input=(XML,Annotations), XML-Validation=false, XML-Suffices=(persistence=*.jdo, orm=orm, query=*.jdoquery), JDO-listener=true
+13:26:39,289 (main) DEBUG [DataNucleus.MetaData] - Registering listener for metadata initialisation
+13:26:39,887 (main) DEBUG [DataNucleus.MetaData] - Parsing MetaData file "file:/Users/Tazze/git/TralalaServer/bin/META-INF/persistence.xml" using handler "persistence" (validation="false")
+13:26:40,048 (main) DEBUG [DataNucleus.MetaData] - Parsing MetaData file "file:/Users/Tazze/git/TralalaServer/resources/META-INF/persistence.xml" using handler "persistence" (validation="false")
+13:26:40,099 (main) INFO  [DataNucleus.Persistence] - Property </persistence> unknown - will be ignored
+13:26:40,100 (main) INFO  [DataNucleus.Persistence] - Property <?xml unknown - will be ignored
+13:26:40,100 (main) INFO  [DataNucleus.Persistence] - Property <!-- unknown - will be ignored
+13:26:40,100 (main) INFO  [DataNucleus.Persistence] - Property <class>data.dbitem</class> unknown - will be ignored
+13:26:40,100 (main) INFO  [DataNucleus.Persistence] - Property <class>data.play</class> unknown - will be ignored
+13:26:40,100 (main) INFO  [DataNucleus.Persistence] - Property <class>data.artist</class> unknown - will be ignored
+13:26:40,100 (main) INFO  [DataNucleus.Persistence] - Property <property unknown - will be ignored
+13:26:40,100 (main) INFO  [DataNucleus.Persistence] - Property xmlns unknown - will be ignored
+13:26:40,100 (main) INFO  [DataNucleus.Persistence] - Property <exclude-unlisted-classes/> unknown - will be ignored
+13:26:40,100 (main) INFO  [DataNucleus.Persistence] - Property <properties> unknown - will be ignored
+13:26:40,100 (main) INFO  [DataNucleus.Persistence] - Property <persistence unknown - will be ignored
+13:26:40,101 (main) INFO  [DataNucleus.Persistence] - Property http unknown - will be ignored
+13:26:40,101 (main) INFO  [DataNucleus.Persistence] - Property </properties> unknown - will be ignored
+13:26:40,101 (main) INFO  [DataNucleus.Persistence] - Property </persistence-unit> unknown - will be ignored
+13:26:40,101 (main) INFO  [DataNucleus.Persistence] - Property <class>data.song</class> unknown - will be ignored
+13:26:40,101 (main) INFO  [DataNucleus.Persistence] - Property <class>data.album</class> unknown - will be ignored
+13:26:40,101 (main) INFO  [DataNucleus.Persistence] - Property <persistence-unit unknown - will be ignored
+13:26:40,101 (main) INFO  [DataNucleus.Persistence] - Property <class>data.member</class> unknown - will be ignored
+13:26:40,101 (main) INFO  [DataNucleus.Persistence] - Property xsi unknown - will be ignored
+13:26:40,101 (main) DEBUG [DataNucleus.MetaData] - MetaData Management : Loading Metadata for persistence-unit "TralalaJDO" ...
+13:26:40,797 (main) DEBUG [DataNucleus.MetaData] - Class "data.Album" has been specified with JDO annotations so using those.
+13:26:40,827 (main) DEBUG [DataNucleus.MetaData] - Class "data.Play" has been specified with JDO annotations so using those.
+13:26:40,828 (main) DEBUG [DataNucleus.MetaData] - Class "data.Song" has been specified with JDO annotations so using those.
+13:26:40,831 (main) DEBUG [DataNucleus.MetaData] - Class "data.Artist" has been specified with JDO annotations so using those.
+13:26:40,832 (main) DEBUG [DataNucleus.MetaData] - Class "data.DBItem" has been specified with JDO annotations so using those.
+13:26:40,853 (main) DEBUG [DataNucleus.MetaData] - Class "data.Member" has been specified with JDO annotations so using those.
+13:26:40,855 (main) DEBUG [DataNucleus.MetaData] - Populating all MetaData ...
+13:26:40,870 (main) DEBUG [DataNucleus.MetaData] - Class "data.Album" : Populating Meta-Data
+13:26:40,871 (main) DEBUG [DataNucleus.MetaData] - MetaData of type "orm" for class "data.Album" NOT found at /META-INF/package-mysql.orm
+13:26:40,871 (main) DEBUG [DataNucleus.MetaData] - MetaData of type "orm" for class "data.Album" NOT found at /WEB-INF/package-mysql.orm
+13:26:40,872 (main) DEBUG [DataNucleus.MetaData] - Parsing MetaData file "file:/Users/Tazze/git/TralalaServer/resources/package-mysql.orm" using handler "jdo" (validation="false")
+13:26:40,960 (main) DEBUG [DataNucleus.MetaData] - XML Entity Public="" System="file:/javax/jdo/orm.dtd" : using local source "/org/datanucleus/api/jdo/jdo_orm_3_1.dtd"
+13:26:40,996 (main) DEBUG [DataNucleus.MetaData] - MetaData of type "orm" for class "data.Album" will use file:/Users/Tazze/git/TralalaServer/resources/package-mysql.orm
+13:26:40,999 (main) DEBUG [DataNucleus.MetaData] - File "" is having internal MetaData definition updated with ORM information
+13:26:40,999 (main) DEBUG [DataNucleus.MetaData] - Class "data.Album" is having internal MetaData definition updated with ORM information
+13:26:41,000 (main) DEBUG [DataNucleus.MetaData] - Class "data.Album" has had its persistence-capable-superclass set to "data.DBItem" - it wasnt specified in the MetaData.
+13:26:41,000 (main) DEBUG [DataNucleus.MetaData] - Class "data.DBItem" : Populating Meta-Data
+13:26:41,000 (main) DEBUG [DataNucleus.MetaData] - Class "data.DBItem" is having internal MetaData definition updated with ORM information
+13:26:41,003 (main) DEBUG [DataNucleus.MetaData] - Class "data.Play" : Populating Meta-Data
+13:26:41,003 (main) DEBUG [DataNucleus.MetaData] - Class "data.Play" is having internal MetaData definition updated with ORM information
+13:26:41,003 (main) DEBUG [DataNucleus.MetaData] - Class "data.Play" has had its persistence-capable-superclass set to "data.DBItem" - it wasnt specified in the MetaData.
+13:26:41,003 (main) DEBUG [DataNucleus.MetaData] - Class "data.Song" : Populating Meta-Data
+13:26:41,003 (main) DEBUG [DataNucleus.MetaData] - Class "data.Song" is having internal MetaData definition updated with ORM information
+13:26:41,003 (main) DEBUG [DataNucleus.MetaData] - Class "data.Song" has had its persistence-capable-superclass set to "data.DBItem" - it wasnt specified in the MetaData.
+13:26:41,004 (main) DEBUG [DataNucleus.MetaData] - Class "data.Artist" : Populating Meta-Data
+13:26:41,004 (main) DEBUG [DataNucleus.MetaData] - Class "data.Artist" is having internal MetaData definition updated with ORM information
+13:26:41,004 (main) DEBUG [DataNucleus.MetaData] - Class "data.Artist" has had its persistence-capable-superclass set to "data.DBItem" - it wasnt specified in the MetaData.
+13:26:41,005 (main) DEBUG [DataNucleus.MetaData] - Class "data.Member" : Populating Meta-Data
+13:26:41,005 (main) DEBUG [DataNucleus.MetaData] - Class "data.Member" is having internal MetaData definition updated with ORM information
+13:26:41,005 (main) DEBUG [DataNucleus.MetaData] - Class "data.Member" has had its persistence-capable-superclass set to "data.DBItem" - it wasnt specified in the MetaData.
+13:26:41,005 (main) DEBUG [DataNucleus.MetaData] - Class "data.Member" field "id" : Adding Meta-Data for field since it didnt appear in the Meta-Data definition.
+13:26:41,006 (main) DEBUG [DataNucleus.MetaData] - Initialising all MetaData ...
+13:26:41,007 (main) DEBUG [DataNucleus.MetaData] - Class "data.DBItem" : Initialising Meta-Data
+13:26:41,008 (main) DEBUG [DataNucleus.MetaData] - Class "data.Album" : Initialising Meta-Data
+13:26:41,008 (main) DEBUG [DataNucleus.MetaData] - Class "data.Play" : Initialising Meta-Data
+13:26:41,008 (main) DEBUG [DataNucleus.MetaData] - Class "data.Song" : Initialising Meta-Data
+13:26:41,009 (main) DEBUG [DataNucleus.MetaData] - Class "data.Artist" : Initialising Meta-Data
+13:26:41,009 (main) DEBUG [DataNucleus.MetaData] - Class "data.Member" : Initialising Meta-Data
+13:26:41,009 (main) DEBUG [DataNucleus.MetaData] - MetaData Management : Load of Metadata complete
+13:26:41,009 (main) DEBUG [DataNucleus.Datastore] - Creating StoreManager for datastore
+13:26:41,216 (main) DEBUG [DataNucleus.Connection] - Created tx data source using pooling type of dbcp-builtin
+13:26:41,217 (main) DEBUG [DataNucleus.Connection] - Registered transactional connection factory under name "rdbms/tx"
+13:26:41,217 (main) DEBUG [DataNucleus.Connection] - Registered nontransactional connection factory under name "rdbms/nontx"
+13:26:41,943 (main) DEBUG [DataNucleus.Connection] - Created nontx data source using pooling type of dbcp-builtin
+13:26:45,535 (main) DEBUG [DataNucleus.Connection] - Connection "org.datanucleus.store.rdbms.datasource.dbcp.PoolingDataSource$PoolGuardConnectionWrapper@34451d62" opened
+13:26:45,974 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Boolean (jdbc-type=BIT, sql-type=BIT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BitRDBMSMapping, default=true)
+13:26:46,028 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Boolean (jdbc-type=CHAR, sql-type=CHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.CharRDBMSMapping, default=false)
+13:26:46,029 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Boolean (jdbc-type=BOOLEAN, sql-type=BOOLEAN, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BooleanRDBMSMapping, default=false)
+13:26:46,057 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Boolean (jdbc-type=TINYINT, sql-type=TINYINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TinyIntRDBMSMapping, default=false)
+13:26:46,095 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Boolean (jdbc-type=SMALLINT, sql-type=SMALLINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.SmallIntRDBMSMapping, default=false)
+13:26:46,110 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Byte (jdbc-type=TINYINT, sql-type=TINYINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TinyIntRDBMSMapping, default=true)
+13:26:46,110 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Byte (jdbc-type=SMALLINT, sql-type=SMALLINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.SmallIntRDBMSMapping, default=false)
+13:26:46,110 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Character (jdbc-type=CHAR, sql-type=CHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.CharRDBMSMapping, default=true)
+13:26:46,138 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Character (jdbc-type=INTEGER, sql-type=INTEGER, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.IntegerRDBMSMapping, default=false)
+13:26:46,139 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Double (jdbc-type=DOUBLE, sql-type=DOUBLE, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.DoubleRDBMSMapping, default=true)
+13:26:46,156 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Double (jdbc-type=DECIMAL, sql-type=DECIMAL, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.DecimalRDBMSMapping, default=false)
+13:26:46,158 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Float (jdbc-type=FLOAT, sql-type=FLOAT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.FloatRDBMSMapping, default=true)
+13:26:46,158 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Float (jdbc-type=DOUBLE, sql-type=DOUBLE, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.DoubleRDBMSMapping, default=false)
+13:26:46,160 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Float (jdbc-type=REAL, sql-type=REAL, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.RealRDBMSMapping, default=false)
+13:26:46,160 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Float (jdbc-type=DECIMAL, sql-type=DECIMAL, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.DecimalRDBMSMapping, default=false)
+13:26:46,161 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Integer (jdbc-type=INTEGER, sql-type=INTEGER, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.IntegerRDBMSMapping, default=true)
+13:26:46,162 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Integer (jdbc-type=BIGINT, sql-type=BIGINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping, default=false)
+13:26:46,162 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Integer (jdbc-type=NUMERIC, sql-type=NUMERIC, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.NumericRDBMSMapping, default=false)
+13:26:46,163 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Integer (jdbc-type=TINYINT, sql-type=TINYINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TinyIntRDBMSMapping, default=false)
+13:26:46,163 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Integer (jdbc-type=SMALLINT, sql-type=SMALLINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.SmallIntRDBMSMapping, default=false)
+13:26:46,163 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Long (jdbc-type=BIGINT, sql-type=BIGINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping, default=true)
+13:26:46,163 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Long (jdbc-type=INTEGER, sql-type=INT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.IntegerRDBMSMapping, default=false)
+13:26:46,163 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Long (jdbc-type=NUMERIC, sql-type=NUMERIC, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.NumericRDBMSMapping, default=false)
+13:26:46,163 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Long (jdbc-type=TINYINT, sql-type=TINYINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TinyIntRDBMSMapping, default=false)
+13:26:46,164 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Long (jdbc-type=SMALLINT, sql-type=SMALLINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.SmallIntRDBMSMapping, default=false)
+13:26:46,164 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Short (jdbc-type=SMALLINT, sql-type=SMALLINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.SmallIntRDBMSMapping, default=true)
+13:26:46,164 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Short (jdbc-type=INTEGER, sql-type=INTEGER, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.IntegerRDBMSMapping, default=false)
+13:26:46,164 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Short (jdbc-type=TINYINT, sql-type=TINYINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TinyIntRDBMSMapping, default=false)
+13:26:46,165 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.String (jdbc-type=VARCHAR, sql-type=VARCHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping, default=true)
+13:26:46,165 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.String (jdbc-type=CHAR, sql-type=CHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.CharRDBMSMapping, default=false)
+13:26:46,165 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.String (jdbc-type=BIGINT, sql-type=BIGINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping, default=false)
+13:26:46,166 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.String (jdbc-type=LONGVARCHAR, sql-type=LONGVARCHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.LongVarcharRDBMSMapping, default=false)
+13:26:46,167 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.String (jdbc-type=CLOB, sql-type=CLOB, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.ClobRDBMSMapping, default=false)
+13:26:46,191 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.String (jdbc-type=BLOB, sql-type=BLOB, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BlobRDBMSMapping, default=false)
+13:26:46,200 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.String (jdbc-type=LONGVARCHAR, sql-type=LONGTEXT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.LongVarcharRDBMSMapping, default=false)
+13:26:46,201 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.String (jdbc-type=LONGVARCHAR, sql-type=MEDIUMTEXT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.LongVarcharRDBMSMapping, default=false)
+13:26:46,201 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.String (jdbc-type=LONGVARCHAR, sql-type=TEXT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.LongVarcharRDBMSMapping, default=false)
+13:26:46,201 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.String (jdbc-type=BLOB, sql-type=LONGBLOB, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BlobRDBMSMapping, default=false)
+13:26:46,202 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.String (jdbc-type=BLOB, sql-type=MEDIUMBLOB, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BlobRDBMSMapping, default=false)
+13:26:46,208 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.String (jdbc-type=NVARCHAR, sql-type=NVARCHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.NVarcharRDBMSMapping, default=false)
+13:26:46,208 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.String (jdbc-type=NCHAR, sql-type=NCHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.NCharRDBMSMapping, default=false)
+13:26:46,208 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.math.BigDecimal (jdbc-type=DECIMAL, sql-type=DECIMAL, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.DecimalRDBMSMapping, default=true)
+13:26:46,208 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.math.BigDecimal (jdbc-type=NUMERIC, sql-type=NUMERIC, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.NumericRDBMSMapping, default=false)
+13:26:46,208 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.math.BigInteger (jdbc-type=NUMERIC, sql-type=NUMERIC, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.NumericRDBMSMapping, default=true)
+13:26:46,209 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.sql.Date (jdbc-type=DATE, sql-type=DATE, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.DateRDBMSMapping, default=true)
+13:26:46,210 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.sql.Date (jdbc-type=TIMESTAMP, sql-type=TIMESTAMP, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TimestampRDBMSMapping, default=false)
+13:26:46,210 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.sql.Date (jdbc-type=CHAR, sql-type=CHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.CharRDBMSMapping, default=false)
+13:26:46,210 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.sql.Date (jdbc-type=VARCHAR, sql-type=VARCHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping, default=false)
+13:26:46,210 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.sql.Date (jdbc-type=BIGINT, sql-type=BIGINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping, default=false)
+13:26:46,211 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.sql.Time (jdbc-type=TIME, sql-type=TIME, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TimeRDBMSMapping, default=true)
+13:26:46,211 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.sql.Time (jdbc-type=TIMESTAMP, sql-type=TIMESTAMP, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TimestampRDBMSMapping, default=false)
+13:26:46,211 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.sql.Time (jdbc-type=CHAR, sql-type=CHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.CharRDBMSMapping, default=false)
+13:26:46,211 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.sql.Time (jdbc-type=VARCHAR, sql-type=VARCHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping, default=false)
+13:26:46,211 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.sql.Time (jdbc-type=BIGINT, sql-type=BIGINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping, default=false)
+13:26:46,211 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.sql.Timestamp (jdbc-type=TIMESTAMP, sql-type=TIMESTAMP, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TimestampRDBMSMapping, default=true)
+13:26:46,212 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.sql.Timestamp (jdbc-type=CHAR, sql-type=CHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.CharRDBMSMapping, default=false)
+13:26:46,212 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.sql.Timestamp (jdbc-type=VARCHAR, sql-type=VARCHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping, default=false)
+13:26:46,212 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.util.Date (jdbc-type=TIMESTAMP, sql-type=TIMESTAMP, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TimestampRDBMSMapping, default=true)
+13:26:46,212 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.util.Date (jdbc-type=DATE, sql-type=DATE, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.DateRDBMSMapping, default=false)
+13:26:46,212 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.util.Date (jdbc-type=CHAR, sql-type=CHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.CharRDBMSMapping, default=false)
+13:26:46,212 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.util.Date (jdbc-type=VARCHAR, sql-type=VARCHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping, default=false)
+13:26:46,212 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.util.Date (jdbc-type=BIGINT, sql-type=BIGINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping, default=false)
+13:26:46,212 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.util.Date (jdbc-type=TIME, sql-type=TIME, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TimeRDBMSMapping, default=false)
+13:26:46,213 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.io.Serializable (jdbc-type=LONGVARBINARY, sql-type=LONGVARBINARY, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.LongVarBinaryRDBMSMapping, default=true)
+13:26:46,213 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.io.Serializable (jdbc-type=BLOB, sql-type=BLOB, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BlobRDBMSMapping, default=false)
+13:26:46,214 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.io.Serializable (jdbc-type=VARBINARY, sql-type=VARBINARY, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.VarBinaryRDBMSMapping, default=false)
+13:26:46,214 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type org.datanucleus.identity.OID (jdbc-type=BIGINT, sql-type=BIGINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping, default=true)
+13:26:46,214 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type org.datanucleus.identity.OID (jdbc-type=INTEGER, sql-type=INTEGER, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.IntegerRDBMSMapping, default=false)
+13:26:46,215 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type org.datanucleus.identity.OID (jdbc-type=NUMERIC, sql-type=NUMERIC, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.NumericRDBMSMapping, default=false)
+13:26:46,215 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type org.datanucleus.identity.OID (jdbc-type=CHAR, sql-type=CHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.CharRDBMSMapping, default=false)
+13:26:46,215 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type org.datanucleus.identity.OID (jdbc-type=VARCHAR, sql-type=VARCHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping, default=false)
+13:26:46,366 (main) DEBUG [DataNucleus.Datastore] - Removing RDBMS support for Java type java.lang.Float (jdbc-type=REAL, sql-type=REAL)
+13:26:46,366 (main) DEBUG [DataNucleus.Datastore] - Removing RDBMS support for Java type java.lang.String (jdbc-type=NCHAR, sql-type=NCHAR)
+13:26:46,366 (main) DEBUG [DataNucleus.Datastore] - Removing RDBMS support for Java type java.lang.Boolean (jdbc-type=BOOLEAN, sql-type=BOOLEAN)
+13:26:46,367 (main) DEBUG [DataNucleus.Datastore] - Removing RDBMS support for Java type java.lang.String (jdbc-type=NVARCHAR, sql-type=NVARCHAR)
+13:26:46,676 (main) DEBUG [DataNucleus.Datastore.Schema] - Column "`DELETEME1389875206634`.`UNUSED`" added to internal representation of table.
+13:26:46,678 (main) DEBUG [DataNucleus.Datastore.Schema] - Creating table `DELETEME1389875206634`
+13:26:46,715 (main) DEBUG [DataNucleus.Datastore.Schema] - CREATE TABLE `DELETEME1389875206634`
+(
+    `UNUSED` INTEGER NOT NULL
+) ENGINE=INNODB
+13:26:49,417 (main) DEBUG [DataNucleus.Datastore.Schema] - Execution Time = 2702 ms
+13:26:49,630 (main) DEBUG [DataNucleus.Datastore.Schema] - Schema Name could not be determined for this datastore
+13:26:49,630 (main) DEBUG [DataNucleus.Datastore.Schema] - Dropping table `DELETEME1389875206634`
+13:26:49,630 (main) DEBUG [DataNucleus.Datastore.Schema] - DROP TABLE `DELETEME1389875206634`
+13:26:50,479 (main) DEBUG [DataNucleus.Datastore.Schema] - Execution Time = 849 ms
+13:26:50,481 (main) DEBUG [DataNucleus.Datastore] - ======================= Datastore =========================
+13:26:50,481 (main) DEBUG [DataNucleus.Datastore] - StoreManager : "rdbms" (org.datanucleus.store.rdbms.RDBMSStoreManager)
+13:26:50,481 (main) DEBUG [DataNucleus.Datastore] - Datastore : read-write
+13:26:50,481 (main) DEBUG [DataNucleus.Datastore] - Schema Control : AutoCreate(Tables,Columns,Constraints), Validate(None)
+13:26:50,481 (main) DEBUG [DataNucleus.Datastore] - Query Languages : [JDOQL, JPQL, SQL, STOREDPROC]
+13:26:50,481 (main) DEBUG [DataNucleus.Datastore] - Queries : Timeout=0
+13:26:50,482 (main) DEBUG [DataNucleus.Datastore] - ===========================================================
+13:26:50,482 (main) DEBUG [DataNucleus.Datastore] - Datastore Adapter : org.datanucleus.store.rdbms.adapter.MySQLAdapter
+13:26:50,482 (main) DEBUG [DataNucleus.Datastore] - Datastore : name="MySQL" version="5.6.15"
+13:26:50,482 (main) DEBUG [DataNucleus.Datastore] - Datastore Driver : name="MySQL Connector Java" version="mysql-connector-java-5.1.26 ( Revision: ${bzr.revision-id} )"
+13:26:50,482 (main) DEBUG [DataNucleus.Datastore] - Primary Connection Factory : URL[jdbc:mysql://localhost/tralaladb]
+13:26:50,482 (main) DEBUG [DataNucleus.Datastore] - Secondary Connection Factory : URL[jdbc:mysql://localhost/tralaladb]
+13:26:50,482 (main) DEBUG [DataNucleus.Datastore] - Datastore Identifiers : factory="datanucleus2" case="UPPERCASE" catalog=tralaladb
+13:26:50,482 (main) DEBUG [DataNucleus.Datastore] - Supported Identifier Cases : MixedCase "MixedCase" "UPPERCASE" 
+13:26:50,483 (main) DEBUG [DataNucleus.Datastore] - Supported Identifier Lengths (max) : Table=64 Column=64 Constraint=64 Index=64 Delimiter=`
+13:26:50,483 (main) DEBUG [DataNucleus.Datastore] - Support for Identifiers in DDL : catalog=true schema=false
+13:26:50,483 (main) DEBUG [DataNucleus.Datastore] - Datastore : checkTableViewExistence, rdbmsConstraintCreateMode=DataNucleus, initialiseColumnInfo=ALL
+13:26:50,483 (main) DEBUG [DataNucleus.Datastore] - Support Statement Batching : yes (max-batch-size=50)
+13:26:50,483 (main) DEBUG [DataNucleus.Datastore] - Queries : Results direction=forward, type=forward-only, concurrency=read-only
+13:26:50,483 (main) DEBUG [DataNucleus.Datastore] - Java-Types : string-default-length=255
+13:26:50,484 (main) DEBUG [DataNucleus.Datastore] - JDBC-Types : BLOB, CLOB, TIMESTAMP, TIME, DATE, VARCHAR, DECIMAL, NUMERIC, CHAR, BINARY, FLOAT, LONGVARCHAR, LONGVARBINARY, SMALLINT, VARBINARY, INTEGER, TINYINT, BIGINT, DOUBLE, BIT
+13:26:50,484 (main) DEBUG [DataNucleus.Datastore] - ===========================================================
+13:26:50,520 (main) DEBUG [DataNucleus.Connection] - Connection "org.datanucleus.store.rdbms.datasource.dbcp.PoolingDataSource$PoolGuardConnectionWrapper@34451d62" non enlisted to a transaction is being committed.
+13:26:50,523 (main) DEBUG [DataNucleus.Connection] - Connection "org.datanucleus.store.rdbms.datasource.dbcp.PoolingDataSource$PoolGuardConnectionWrapper@34451d62" closed
+13:26:50,523 (main) DEBUG [DataNucleus.Datastore] - StoreManager now created
+13:26:50,524 (main) DEBUG [DataNucleus.Persistence] - ================= NucleusContext ===============
+13:26:50,524 (main) DEBUG [DataNucleus.Persistence] - DataNucleus Context : Version "3.2.7" with JRE "1.7.0_45" on "Mac OS X"
+13:26:50,524 (main) DEBUG [DataNucleus.Persistence] - Persistence API : JDO
+13:26:50,524 (main) DEBUG [DataNucleus.Persistence] - Persistence-Unit : TralalaJDO
+13:26:50,524 (main) DEBUG [DataNucleus.Persistence] - Plugin Registry : org.datanucleus.plugin.NonManagedPluginRegistry
+13:26:50,524 (main) DEBUG [DataNucleus.Persistence] - ClassLoading : datanucleus
+13:26:50,525 (main) DEBUG [DataNucleus.Persistence] - Persistence : pm-singlethreaded, nontransactional-read, nontransactional-write, reachability-at-commit, detach-all-on-commit, copy-on-attach, managed-relations(checked), deletion-policy=JDO2, serverTimeZone=Europe/Madrid
+13:26:50,525 (main) DEBUG [DataNucleus.Persistence] - AutoStart : mechanism=None, mode=Quiet
+13:26:50,525 (main) DEBUG [DataNucleus.Persistence] - Transactions : type=RESOURCE_LOCAL, mode=datastore, isolation=read-committed
+13:26:50,525 (main) DEBUG [DataNucleus.Persistence] - ValueGeneration : txn-isolation=read-committed connection=New
+13:26:50,525 (main) DEBUG [DataNucleus.Persistence] - Cache : Level1 (soft), Level2 (soft, mode=UNSPECIFIED), QueryResults (soft), Collections/Maps 
+13:26:50,525 (main) DEBUG [DataNucleus.Persistence] - ================================================
+13:26:50,525 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Handling schema for persistence-unit "TralalaJDO"
+13:26:50,836 (main) DEBUG [DataNucleus.Persistence] - Managing Persistence of Class : data.DBItem [Table : `DBITEM`, InheritanceStrategy : new-table]
+13:26:50,838 (main) DEBUG [DataNucleus.Datastore.Schema] - Column "`DBITEM`.`DBITEM_ID`" added to internal representation of table.
+13:26:50,842 (main) DEBUG [DataNucleus.Persistence] - Managing Persistence of Class : data.Artist [Table : `ARTIST`, InheritanceStrategy : new-table]
+13:26:50,842 (main) DEBUG [DataNucleus.Datastore.Schema] - Column "`ARTIST`.`ARTIST_ID`" added to internal representation of table.
+13:26:50,843 (main) DEBUG [DataNucleus.Persistence] - Managing Persistence of Class : data.Song [Table : `DBITEM`, InheritanceStrategy : superclass-table]
+13:26:50,843 (main) DEBUG [DataNucleus.Persistence] - Managing Persistence of Class : data.Album [Table : `DBITEM`, InheritanceStrategy : superclass-table]
+13:26:50,843 (main) DEBUG [DataNucleus.Persistence] - Managing Persistence of Class : data.Play [Table : `DBITEM`, InheritanceStrategy : superclass-table]
+13:26:50,843 (main) DEBUG [DataNucleus.Persistence] - Managing Persistence of Class : data.Member [Table : `DBITEM`, InheritanceStrategy : superclass-table]
+13:26:50,844 (main) DEBUG [DataNucleus.Datastore.Schema] - Table `DBITEM` will manage the persistence of the fields for class data.DBItem (inheritance strategy="new-table") 
+13:26:50,844 (main) DEBUG [DataNucleus.Datastore.Schema] - Column "`DBITEM`.`ID`" added to internal representation of table.
+13:26:50,846 (main) DEBUG [DataNucleus.Datastore.Schema] - Field [data.DBItem.id] -> Column(s) [`DBITEM`.`ID`] using mapping of type "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
+13:26:50,846 (main) DEBUG [DataNucleus.Datastore.Schema] - Table/View `DBITEM` has been initialised
+13:26:50,846 (main) DEBUG [DataNucleus.Datastore.Schema] - Table `DBITEM` will manage the persistence of the fields for class data.Member (inheritance strategy="superclass-table") 
+13:26:50,846 (main) DEBUG [DataNucleus.Datastore.Schema] - Column "`DBITEM`.`BANKACCOUNT`" added to internal representation of table.
+13:26:50,846 (main) DEBUG [DataNucleus.Datastore.Schema] - Member data.Member.bankAccount uses superclass-table yet the field is not marked as nullable  nor does it have a default value, so setting the column as nullable
+13:26:50,846 (main) DEBUG [DataNucleus.Datastore.Schema] - Field [data.Member.bankAccount] -> Column(s) [`DBITEM`.`BANKACCOUNT`] using mapping of type "org.datanucleus.store.rdbms.mapping.java.LongMapping" (org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping)
+13:26:50,847 (main) DEBUG [DataNucleus.Datastore.Schema] - Column "`DBITEM`.`ID_0`" added to internal representation of table.
+13:26:50,847 (main) DEBUG [DataNucleus.Datastore.Schema] - Field [data.Member.id] -> Column(s) [`DBITEM`.`ID_0`] using mapping of type "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
+13:26:50,847 (main) DEBUG [DataNucleus.Datastore.Schema] - Column "`DBITEM`.`NAME`" added to internal representation of table.
+13:26:50,847 (main) DEBUG [DataNucleus.Datastore.Schema] - Field [data.Member.name] -> Column(s) [`DBITEM`.`NAME`] using mapping of type "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
+13:26:50,847 (main) DEBUG [DataNucleus.Datastore.Schema] - Column "`DBITEM`.`NICK`" added to internal representation of table.
+13:26:50,847 (main) DEBUG [DataNucleus.Datastore.Schema] - Field [data.Member.nick] -> Column(s) [`DBITEM`.`NICK`] using mapping of type "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
+13:26:50,847 (main) DEBUG [DataNucleus.Datastore.Schema] - Column "`DBITEM`.`PAYMENTSERVICE`" added to internal representation of table.
+13:26:50,848 (main) DEBUG [DataNucleus.Datastore.Schema] - Field [data.Member.paymentService] -> Column(s) [`DBITEM`.`PAYMENTSERVICE`] using mapping of type "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
+13:26:50,983 (main) DEBUG [DataNucleus.Persistence] - Managing Persistence of Field : data.Member.plays [Table : `MEMBER_PLAYS`]
+13:26:50,983 (main) DEBUG [DataNucleus.Datastore.Schema] - Field [data.Member.plays] -> Column(s) [[none]] using mapping of type "org.datanucleus.store.rdbms.mapping.java.CollectionMapping" ()
+13:26:50,983 (main) DEBUG [DataNucleus.Datastore.Schema] - Table `ARTIST` will manage the persistence of the fields for class data.Artist (inheritance strategy="new-table") 
+13:26:50,983 (main) DEBUG [DataNucleus.Datastore.Schema] - Column "`ARTIST`.`NAME`" added to internal representation of table.
+13:26:50,983 (main) DEBUG [DataNucleus.Datastore.Schema] - Field [data.Artist.name] -> Column(s) [`ARTIST`.`NAME`] using mapping of type "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
+13:26:50,984 (main) DEBUG [DataNucleus.Persistence] - Managing Persistence of Field : data.Artist.songs [Table : `ARTIST_SONGS`]
+13:26:50,984 (main) DEBUG [DataNucleus.Datastore.Schema] - Field [data.Artist.songs] -> Column(s) [[none]] using mapping of type "org.datanucleus.store.rdbms.mapping.java.CollectionMapping" ()
+13:26:50,984 (main) DEBUG [DataNucleus.Datastore.Schema] - Table/View `ARTIST` has been initialised
+13:26:50,984 (main) DEBUG [DataNucleus.Datastore.Schema] - Table `DBITEM` will manage the persistence of the fields for class data.Song (inheritance strategy="superclass-table") 
+13:26:50,985 (main) DEBUG [DataNucleus.Datastore.Schema] - Column "`DBITEM`.`ALBUM_DBITEM_ID_OID`" added to internal representation of table.
+13:26:50,986 (main) DEBUG [DataNucleus.Datastore.Schema] - Field [data.Song.album] -> Column(s) [`DBITEM`.`ALBUM_DBITEM_ID_OID`] using mapping of type "org.datanucleus.store.rdbms.mapping.java.PersistableMapping" (org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping)
+13:26:50,986 (main) DEBUG [DataNucleus.Datastore.Schema] - Column "`DBITEM`.`ARTIST_ARTIST_ID_OID`" added to internal representation of table.
+13:26:50,986 (main) DEBUG [DataNucleus.Datastore.Schema] - Field [data.Song.artist] -> Column(s) [`DBITEM`.`ARTIST_ARTIST_ID_OID`] using mapping of type "org.datanucleus.store.rdbms.mapping.java.PersistableMapping" (org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping)
+13:26:50,986 (main) DEBUG [DataNucleus.Datastore.Schema] - Column "`DBITEM`.`DURATION`" added to internal representation of table.
+13:26:50,987 (main) DEBUG [DataNucleus.Datastore.Schema] - Member data.Song.duration uses superclass-table yet the field is not marked as nullable  nor does it have a default value, so setting the column as nullable
+13:26:50,987 (main) DEBUG [DataNucleus.Datastore.Schema] - Field [data.Song.duration] -> Column(s) [`DBITEM`.`DURATION`] using mapping of type "org.datanucleus.store.rdbms.mapping.java.IntegerMapping" (org.datanucleus.store.rdbms.mapping.datastore.IntegerRDBMSMapping)
+13:26:50,987 (main) DEBUG [DataNucleus.Datastore.Schema] - Column "`DBITEM`.`PPP`" added to internal representation of table.
+13:26:50,987 (main) DEBUG [DataNucleus.Datastore.Schema] - Member data.Song.ppp uses superclass-table yet the field is not marked as nullable  nor does it have a default value, so setting the column as nullable
+13:26:50,988 (main) DEBUG [DataNucleus.Datastore.Schema] - Field [data.Song.ppp] -> Column(s) [`DBITEM`.`PPP`] using mapping of type "org.datanucleus.store.rdbms.mapping.java.DoubleMapping" (org.datanucleus.store.rdbms.mapping.datastore.DoubleRDBMSMapping)
+13:26:50,988 (main) DEBUG [DataNucleus.Datastore.Schema] - Column "`DBITEM`.`SONGTITLE`" added to internal representation of table.
+13:26:50,988 (main) DEBUG [DataNucleus.Datastore.Schema] - Field [data.Song.songTitle] -> Column(s) [`DBITEM`.`SONGTITLE`] using mapping of type "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
+13:26:50,988 (main) DEBUG [DataNucleus.Datastore.Schema] - Table `DBITEM` will manage the persistence of the fields for class data.Album (inheritance strategy="superclass-table") 
+13:26:50,988 (main) DEBUG [DataNucleus.Datastore.Schema] - Column "`DBITEM`.`RELEASEDATE`" added to internal representation of table.
+13:26:50,988 (main) DEBUG [DataNucleus.Datastore.Schema] - Field [data.Album.releaseDate] -> Column(s) [`DBITEM`.`RELEASEDATE`] using mapping of type "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
+13:26:50,989 (main) DEBUG [DataNucleus.Persistence] - Managing Persistence of Field : data.Album.songs [Table : `ALBUM_SONGS`]
+13:26:50,989 (main) DEBUG [DataNucleus.Datastore.Schema] - Field [data.Album.songs] -> Column(s) [[none]] using mapping of type "org.datanucleus.store.rdbms.mapping.java.CollectionMapping" ()
+13:26:50,989 (main) DEBUG [DataNucleus.Datastore.Schema] - Column "`DBITEM`.`TITLE`" added to internal representation of table.
+13:26:50,989 (main) DEBUG [DataNucleus.Datastore.Schema] - Field [data.Album.title] -> Column(s) [`DBITEM`.`TITLE`] using mapping of type "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
+13:26:50,989 (main) DEBUG [DataNucleus.Datastore.Schema] - Table `DBITEM` will manage the persistence of the fields for class data.Play (inheritance strategy="superclass-table") 
+13:26:50,989 (main) DEBUG [DataNucleus.Datastore.Schema] - Column "`DBITEM`.`DATE`" added to internal representation of table.
+13:26:50,989 (main) DEBUG [DataNucleus.Datastore.Schema] - Field [data.Play.date] -> Column(s) [`DBITEM`.`DATE`] using mapping of type "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
+13:26:50,989 (main) DEBUG [DataNucleus.Datastore.Schema] - Column "`DBITEM`.`MEMBERID`" added to internal representation of table.
+13:26:50,990 (main) DEBUG [DataNucleus.Datastore.Schema] - Field [data.Play.memberId] -> Column(s) [`DBITEM`.`MEMBERID`] using mapping of type "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
+13:26:50,990 (main) DEBUG [DataNucleus.Datastore.Schema] - Column "`DBITEM`.`SONGID`" added to internal representation of table.
+13:26:50,990 (main) DEBUG [DataNucleus.Datastore.Schema] - Field [data.Play.songId] -> Column(s) [`DBITEM`.`SONGID`] using mapping of type "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
+13:26:50,990 (main) DEBUG [DataNucleus.Datastore.Schema] - Column "`DBITEM`.`TIME`" added to internal representation of table.
+13:26:50,990 (main) DEBUG [DataNucleus.Datastore.Schema] - Field [data.Play.time] -> Column(s) [`DBITEM`.`TIME`] using mapping of type "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
+13:26:51,160 (main) DEBUG [DataNucleus.Datastore.Schema] - Column "`MEMBER_PLAYS`.`DBITEM_ID_OID`" added to internal representation of table.
+13:26:51,226 (main) DEBUG [DataNucleus.Datastore] - Field [data.Member.plays] -> Column(s) [`MEMBER_PLAYS`.`DBITEM_ID_OID`] using mapping of type "org.datanucleus.store.rdbms.mapping.java.PersistableMapping" (org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping)
+13:26:51,227 (main) DEBUG [DataNucleus.Datastore.Schema] - Column "`MEMBER_PLAYS`.`DBITEM_ID_EID`" added to internal representation of table.
+13:26:51,227 (main) DEBUG [DataNucleus.Datastore] - Field [data.Member.plays] -> Column(s) [`MEMBER_PLAYS`.`DBITEM_ID_EID`] using mapping of type "org.datanucleus.store.rdbms.mapping.java.PersistableMapping" (org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping)
+13:26:51,227 (main) DEBUG [DataNucleus.Datastore.Schema] - Column "`MEMBER_PLAYS`.`IDX`" added to internal representation of table.
+13:26:51,228 (main) DEBUG [DataNucleus.Datastore] - Field [data.Member.plays] -> Column(s) [`MEMBER_PLAYS`.`IDX`] using mapping of type "org.datanucleus.store.rdbms.mapping.java.IntegerMapping" (org.datanucleus.store.rdbms.mapping.datastore.IntegerRDBMSMapping)
+13:26:51,228 (main) DEBUG [DataNucleus.Datastore.Schema] - Table/View `MEMBER_PLAYS` has been initialised
+13:26:51,228 (main) DEBUG [DataNucleus.Datastore.Schema] - Column "`ARTIST_SONGS`.`ARTIST_ID_OID`" added to internal representation of table.
+13:26:51,228 (main) DEBUG [DataNucleus.Datastore] - Field [data.Artist.songs] -> Column(s) [`ARTIST_SONGS`.`ARTIST_ID_OID`] using mapping of type "org.datanucleus.store.rdbms.mapping.java.PersistableMapping" (org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping)
+13:26:51,229 (main) DEBUG [DataNucleus.Datastore.Schema] - Column "`ARTIST_SONGS`.`DBITEM_ID_EID`" added to internal representation of table.
+13:26:51,229 (main) DEBUG [DataNucleus.Datastore] - Field [data.Artist.songs] -> Column(s) [`ARTIST_SONGS`.`DBITEM_ID_EID`] using mapping of type "org.datanucleus.store.rdbms.mapping.java.PersistableMapping" (org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping)
+13:26:51,229 (main) DEBUG [DataNucleus.Datastore.Schema] - Column "`ARTIST_SONGS`.`IDX`" added to internal representation of table.
+13:26:51,229 (main) DEBUG [DataNucleus.Datastore] - Field [data.Artist.songs] -> Column(s) [`ARTIST_SONGS`.`IDX`] using mapping of type "org.datanucleus.store.rdbms.mapping.java.IntegerMapping" (org.datanucleus.store.rdbms.mapping.datastore.IntegerRDBMSMapping)
+13:26:51,229 (main) DEBUG [DataNucleus.Datastore.Schema] - Table/View `ARTIST_SONGS` has been initialised
+13:26:51,230 (main) DEBUG [DataNucleus.Datastore.Schema] - Column "`ALBUM_SONGS`.`DBITEM_ID_OID`" added to internal representation of table.
+13:26:51,230 (main) DEBUG [DataNucleus.Datastore] - Field [data.Album.songs] -> Column(s) [`ALBUM_SONGS`.`DBITEM_ID_OID`] using mapping of type "org.datanucleus.store.rdbms.mapping.java.PersistableMapping" (org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping)
+13:26:51,230 (main) DEBUG [DataNucleus.Datastore.Schema] - Column "`ALBUM_SONGS`.`DBITEM_ID_EID`" added to internal representation of table.
+13:26:51,230 (main) DEBUG [DataNucleus.Datastore] - Field [data.Album.songs] -> Column(s) [`ALBUM_SONGS`.`DBITEM_ID_EID`] using mapping of type "org.datanucleus.store.rdbms.mapping.java.PersistableMapping" (org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping)
+13:26:51,230 (main) DEBUG [DataNucleus.Datastore.Schema] - Column "`ALBUM_SONGS`.`IDX`" added to internal representation of table.
+13:26:51,231 (main) DEBUG [DataNucleus.Datastore] - Field [data.Album.songs] -> Column(s) [`ALBUM_SONGS`.`IDX`] using mapping of type "org.datanucleus.store.rdbms.mapping.java.IntegerMapping" (org.datanucleus.store.rdbms.mapping.datastore.IntegerRDBMSMapping)
+13:26:51,231 (main) DEBUG [DataNucleus.Datastore.Schema] - Table/View `ALBUM_SONGS` has been initialised
+13:26:51,234 (main) DEBUG [DataNucleus.Connection] - Connection "org.datanucleus.store.rdbms.datasource.dbcp.PoolingDataSource$PoolGuardConnectionWrapper@429a9a6e" opened with isolation level "serializable" and auto-commit=false
+13:26:51,235 (main) DEBUG [DataNucleus.Datastore.Schema] - Schema Transaction started with connection "org.datanucleus.store.rdbms.datasource.dbcp.PoolingDataSource$PoolGuardConnectionWrapper@429a9a6e" with isolation "serializable"
+13:26:51,587 (main) DEBUG [DataNucleus.Datastore.Schema] - Check of existence of `DBITEM` returned table type of TABLE
+13:26:51,588 (main) DEBUG [DataNucleus.Datastore.Schema] - Loading column info for table(s) "dbitem, artist_songs, album_songs, artist, member_plays" in Catalog "", Schema ""
+13:26:53,640 (main) DEBUG [DataNucleus.Datastore.Schema] - Column info loaded for Catalog "", Schema "", 5 tables, time = 2052 ms
+13:26:53,640 (main) DEBUG [DataNucleus.Datastore.Schema] - Column info retrieved for table "DBITEM" : 17 columns found
+13:26:53,641 (main) DEBUG [DataNucleus.Datastore.Schema] - Creating column `RELEASEDATE` for table `DBITEM`
+13:26:53,641 (main) DEBUG [DataNucleus.Datastore.Schema] - ALTER TABLE `DBITEM` ADD COLUMN `RELEASEDATE` VARCHAR(40) BINARY NULL
+13:26:56,539 (main) DEBUG [DataNucleus.Datastore.Schema] - Execution Time = 2898 ms
+13:26:56,542 (main) DEBUG [DataNucleus.Datastore.Schema] - Check of existence of `ARTIST` returned table type of TABLE
+13:26:56,545 (main) DEBUG [DataNucleus.Datastore.Schema] - Check of existence of `MEMBER_PLAYS` returned table type of TABLE
+13:26:56,547 (main) DEBUG [DataNucleus.Datastore.Schema] - Check of existence of `ARTIST_SONGS` returned table type of TABLE
+13:26:56,549 (main) DEBUG [DataNucleus.Datastore.Schema] - Check of existence of `ALBUM_SONGS` returned table type of TABLE
+13:26:56,582 (main) DEBUG [DataNucleus.Datastore.Schema] - Validating 3 index(es) for table `DBITEM`
+13:26:56,652 (main) DEBUG [DataNucleus.Datastore.Schema] - Validating 2 foreign key(s) for table `DBITEM`
+13:26:56,693 (main) DEBUG [DataNucleus.Datastore.Schema] - Validating 1 unique key(s) for table `DBITEM`
+13:26:56,719 (main) DEBUG [DataNucleus.Datastore.Schema] - Validating 1 index(es) for table `ARTIST`
+13:26:56,754 (main) DEBUG [DataNucleus.Datastore.Schema] - Validating 1 foreign key(s) for table `ARTIST`
+13:26:56,842 (main) DEBUG [DataNucleus.Datastore.Schema] - Validating 1 unique key(s) for table `ARTIST`
+13:26:56,846 (main) DEBUG [DataNucleus.Datastore.Schema] - Validating 3 index(es) for table `MEMBER_PLAYS`
+13:26:56,850 (main) DEBUG [DataNucleus.Datastore.Schema] - Validating 2 foreign key(s) for table `MEMBER_PLAYS`
+13:26:56,853 (main) DEBUG [DataNucleus.Datastore.Schema] - Validating 1 unique key(s) for table `MEMBER_PLAYS`
+13:26:56,856 (main) DEBUG [DataNucleus.Datastore.Schema] - Validating 3 index(es) for table `ARTIST_SONGS`
+13:26:56,859 (main) DEBUG [DataNucleus.Datastore.Schema] - Validating 2 foreign key(s) for table `ARTIST_SONGS`
+13:26:56,862 (main) DEBUG [DataNucleus.Datastore.Schema] - Validating 1 unique key(s) for table `ARTIST_SONGS`
+13:26:56,866 (main) DEBUG [DataNucleus.Datastore.Schema] - Validating 3 index(es) for table `ALBUM_SONGS`
+13:26:56,868 (main) DEBUG [DataNucleus.Datastore.Schema] - Validating 2 foreign key(s) for table `ALBUM_SONGS`
+13:26:56,872 (main) DEBUG [DataNucleus.Datastore.Schema] - Validating 1 unique key(s) for table `ALBUM_SONGS`
+13:26:56,872 (main) DEBUG [DataNucleus.Datastore.Schema] - Schema Transaction committing with connection "org.datanucleus.store.rdbms.datasource.dbcp.PoolingDataSource$PoolGuardConnectionWrapper@429a9a6e"
+13:26:56,872 (main) DEBUG [DataNucleus.Datastore.Schema] - Schema Transaction closing with connection "org.datanucleus.store.rdbms.datasource.dbcp.PoolingDataSource$PoolGuardConnectionWrapper@429a9a6e"
+13:26:56,873 (main) DEBUG [DataNucleus.Connection] - Connection "org.datanucleus.store.rdbms.datasource.dbcp.PoolingDataSource$PoolGuardConnectionWrapper@429a9a6e" non enlisted to a transaction is being committed.
+13:26:56,875 (main) DEBUG [DataNucleus.Connection] - Connection "org.datanucleus.store.rdbms.datasource.dbcp.PoolingDataSource$PoolGuardConnectionWrapper@429a9a6e" closed
+13:26:56,875 (main) INFO  [DataNucleus.SchemaTool] - SchemaTool completed successfully
+13:27:00,323 (main) DEBUG [DataNucleus.General] - Using PluginRegistry org.datanucleus.plugin.NonManagedPluginRegistry
+13:27:00,369 (main) DEBUG [DataNucleus.General] - Registering bundle org.datanucleus version 3.2.7 at URL file:/Users/Tazze/git/TralalaServer/lib/datanucleus-core-3.2.7.jar.
+13:27:00,446 (main) DEBUG [DataNucleus.General] - Loading extension points from plug-in file jar:file:/Users/Tazze/git/TralalaServer/lib/datanucleus-core-3.2.7.jar!/plugin.xml.
+13:27:00,490 (main) DEBUG [DataNucleus.General] - Loading extensions from plug-in file jar:file:/Users/Tazze/git/TralalaServer/lib/datanucleus-core-3.2.7.jar!/plugin.xml.
+13:27:00,501 (main) DEBUG [DataNucleus.General] - Registering bundle org.datanucleus.api.jdo version 3.2.4 at URL file:/Users/Tazze/git/TralalaServer/lib/datanucleus-api-jdo-3.2.4.jar.
+13:27:00,509 (main) DEBUG [DataNucleus.General] - Loading extension points from plug-in file jar:file:/Users/Tazze/git/TralalaServer/lib/datanucleus-api-jdo-3.2.4.jar!/plugin.xml.
+13:27:00,513 (main) DEBUG [DataNucleus.General] - Loading extensions from plug-in file jar:file:/Users/Tazze/git/TralalaServer/lib/datanucleus-api-jdo-3.2.4.jar!/plugin.xml.
+13:27:00,517 (main) DEBUG [DataNucleus.General] - Registering bundle org.datanucleus.store.rdbms version 3.2.6 at URL file:/Users/Tazze/git/TralalaServer/lib/datanucleus-rdbms-3.2.6.jar.
+13:27:00,565 (main) DEBUG [DataNucleus.General] - Loading extension points from plug-in file jar:file:/Users/Tazze/git/TralalaServer/lib/datanucleus-rdbms-3.2.6.jar!/plugin.xml.
+13:27:00,596 (main) DEBUG [DataNucleus.General] - Loading extensions from plug-in file jar:file:/Users/Tazze/git/TralalaServer/lib/datanucleus-rdbms-3.2.6.jar!/plugin.xml.
+13:27:00,690 (main) DEBUG [DataNucleus.Persistence] - Java types support initialising ...
+13:27:00,736 (main) DEBUG [DataNucleus.Persistence] - Java types support loaded : supported java types=java.util.TimeZone, [Ljava.lang.Byte;, [Ljava.lang.Integer;, java.util.SortedMap, char, java.lang.Boolean, [Ljava.lang.Boolean;, java.lang.Long, java.sql.Timestamp, [Ljava.lang.Double;, java.lang.Float, long, float, java.util.BitSet, java.util.Stack, java.math.BigInteger, java.lang.Double, java.util.Vector, byte, java.util.Locale, java.lang.Class, [Ljava.lang.Long;, java.sql.Time, boolean, [Ljava.lang.Short;, java.util.LinkedList, java.util.PriorityQueue, [Ljava.lang.Enum;, int, java.util.List, java.util.TreeMap, java.lang.Integer, java.lang.Short, double, java.lang.Number, java.util.LinkedHashMap, java.sql.Date, [Ljava.util.Locale;, java.util.Arrays$ArrayList, java.lang.Byte, java.util.UUID, [Ljava.lang.String;, [Ljava.util.Date;, java.util.Currency, java.util.Properties, java.util.Calendar, java.util.Map, java.awt.Color, java.util.HashMap, [Ljava.lang.Character;, short, java.util.GregorianCalendar, java.util.TreeSet, java.lang.Character, java.util.SortedSet, java.util.Set, java.util.Collection, java.util.ArrayList, java.lang.StringBuffer, [Ljava.math.BigDecimal;, [B, java.util.Hashtable, [F, java.lang.String, java.net.URI, [C, java.awt.image.BufferedImage, [D, java.util.Date, [I, [J, [Ljava.lang.Number;, [Ljava.lang.Float;, [Ljava.math.BigInteger;, java.net.URL, java.util.HashSet, java.math.BigDecimal, [S, [Z, java.util.Queue, java.lang.Enum, java.util.LinkedHashSet
+13:27:00,736 (main) DEBUG [DataNucleus.Persistence] - Type converter support initialising ...
+13:27:00,737 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.math.BigDecimal<->java.lang.String using org.datanucleus.store.types.converters.BigDecimalStringConverter
+13:27:00,738 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.math.BigInteger<->java.lang.String using org.datanucleus.store.types.converters.BigIntegerStringConverter
+13:27:00,739 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.util.BitSet<->java.lang.String using org.datanucleus.store.types.converters.BitSetStringConverter
+13:27:00,741 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.util.Calendar<->java.lang.String using org.datanucleus.store.types.converters.CalendarStringConverter
+13:27:00,742 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.lang.Class<->java.lang.String using org.datanucleus.store.types.converters.ClassStringConverter
+13:27:00,743 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.awt.Color<->java.lang.String using org.datanucleus.store.types.converters.ColorStringConverter
+13:27:00,744 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.lang.Integer<->java.lang.String using org.datanucleus.store.types.converters.IntegerStringConverter
+13:27:00,744 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.lang.Long<->java.lang.String using org.datanucleus.store.types.converters.LongStringConverter
+13:27:00,745 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.util.Currency<->java.lang.String using org.datanucleus.store.types.converters.CurrencyStringConverter
+13:27:00,746 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.util.Date<->java.lang.Long using org.datanucleus.store.types.converters.DateLongConverter
+13:27:00,747 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.util.Date<->java.lang.String using org.datanucleus.store.types.converters.DateStringConverter
+13:27:00,748 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.util.Locale<->java.lang.String using org.datanucleus.store.types.converters.LocaleStringConverter
+13:27:00,749 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.sql.Date<->java.lang.Long using org.datanucleus.store.types.converters.SqlDateLongConverter
+13:27:00,750 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.sql.Date<->java.lang.String using org.datanucleus.store.types.converters.SqlDateStringConverter
+13:27:00,751 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.sql.Time<->java.lang.Long using org.datanucleus.store.types.converters.SqlTimeLongConverter
+13:27:00,751 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.sql.Time<->java.lang.String using org.datanucleus.store.types.converters.SqlTimeStringConverter
+13:27:00,752 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.sql.Timestamp<->java.lang.Long using org.datanucleus.store.types.converters.SqlTimestampLongConverter
+13:27:00,753 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.lang.StringBuffer<->java.lang.String using org.datanucleus.store.types.converters.StringBufferStringConverter
+13:27:00,755 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.util.TimeZone<->java.lang.String using org.datanucleus.store.types.converters.TimeZoneStringConverter
+13:27:00,756 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.net.URI<->java.lang.String using org.datanucleus.store.types.converters.URIStringConverter
+13:27:00,756 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.net.URL<->java.lang.String using org.datanucleus.store.types.converters.URLStringConverter
+13:27:00,757 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.util.UUID<->java.lang.String using org.datanucleus.store.types.converters.UUIDStringConverter
+13:27:00,758 (main) DEBUG [DataNucleus.Persistence] - TypeConverter for javax.time.calendar.LocalDate<->java.lang.String ignored since java type not present in CLASSPATH
+13:27:00,760 (main) DEBUG [DataNucleus.Persistence] - TypeConverter for javax.time.calendar.LocalTime<->java.lang.String ignored since java type not present in CLASSPATH
+13:27:00,761 (main) DEBUG [DataNucleus.Persistence] - TypeConverter for javax.time.calendar.LocalTime<->java.lang.Long ignored since java type not present in CLASSPATH
+13:27:00,762 (main) DEBUG [DataNucleus.Persistence] - TypeConverter for javax.time.calendar.LocalDateTime<->java.lang.String ignored since java type not present in CLASSPATH
+13:27:00,764 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.io.Serializable<->java.lang.String using org.datanucleus.store.types.converters.SerializableStringConverter
+13:27:00,770 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.io.Serializable<->[B using org.datanucleus.store.types.converters.SerializableByteArrayConverter
+13:27:00,770 (main) DEBUG [DataNucleus.Persistence] - Type converter support loaded
+13:27:00,771 (main) DEBUG [DataNucleus.MetaData] - MetaDataManager : Input=(XML,Annotations), XML-Validation=false, XML-Suffices=(persistence=*.jdo, orm=orm, query=*.jdoquery), JDO-listener=false
+13:27:00,778 (main) DEBUG [DataNucleus.MetaData] - Parsing MetaData file "file:/Users/Tazze/git/TralalaServer/bin/META-INF/persistence.xml" using handler "persistence" (validation="false")
+13:27:00,807 (main) DEBUG [DataNucleus.MetaData] - Parsing MetaData file "file:/Users/Tazze/git/TralalaServer/resources/META-INF/persistence.xml" using handler "persistence" (validation="false")
+13:27:50,405 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creation of the schema
+13:27:50,426 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+13:27:50,426 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tazze/git/TralalaServer/lib/AuthorizationServer.jar
+13:27:50,427 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tazze/git/TralalaServer/lib/BankingServer.jar
+13:27:50,427 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tazze/git/TralalaServer/lib/PayPalServer.jar
+13:27:50,427 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tazze/git/TralalaServer/lib/datanucleus-api-jdo-3.2.4.jar
+13:27:50,427 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tazze/git/TralalaServer/lib/datanucleus-core-3.2.7.jar
+13:27:50,427 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tazze/git/TralalaServer/lib/datanucleus-rdbms-3.2.6.jar
+13:27:50,427 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tazze/git/TralalaServer/lib/jdo-api-3.0.1.jar
+13:27:50,427 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tazze/git/TralalaServer/lib/log4j-1.2.14.jar
+13:27:50,427 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tazze/git/TralalaServer/lib/mysql-connector-java-5.1.26-bin.jar
+13:27:50,427 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tazze/git/TralalaServer/bin
+13:27:50,427 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tazze/git/TralalaServer/resources
+13:27:50,490 (main) DEBUG [DataNucleus.General] - Using PluginRegistry org.datanucleus.plugin.NonManagedPluginRegistry
+13:27:50,539 (main) DEBUG [DataNucleus.General] - Registering bundle org.datanucleus version 3.2.7 at URL file:/Users/Tazze/git/TralalaServer/lib/datanucleus-core-3.2.7.jar.
+13:27:50,603 (main) DEBUG [DataNucleus.General] - Loading extension points from plug-in file jar:file:/Users/Tazze/git/TralalaServer/lib/datanucleus-core-3.2.7.jar!/plugin.xml.
+13:27:50,660 (main) DEBUG [DataNucleus.General] - Loading extensions from plug-in file jar:file:/Users/Tazze/git/TralalaServer/lib/datanucleus-core-3.2.7.jar!/plugin.xml.
+13:27:50,676 (main) DEBUG [DataNucleus.General] - Registering bundle org.datanucleus.api.jdo version 3.2.4 at URL file:/Users/Tazze/git/TralalaServer/lib/datanucleus-api-jdo-3.2.4.jar.
+13:27:50,690 (main) DEBUG [DataNucleus.General] - Loading extension points from plug-in file jar:file:/Users/Tazze/git/TralalaServer/lib/datanucleus-api-jdo-3.2.4.jar!/plugin.xml.
+13:27:50,694 (main) DEBUG [DataNucleus.General] - Loading extensions from plug-in file jar:file:/Users/Tazze/git/TralalaServer/lib/datanucleus-api-jdo-3.2.4.jar!/plugin.xml.
+13:27:50,698 (main) DEBUG [DataNucleus.General] - Registering bundle org.datanucleus.store.rdbms version 3.2.6 at URL file:/Users/Tazze/git/TralalaServer/lib/datanucleus-rdbms-3.2.6.jar.
+13:27:50,742 (main) DEBUG [DataNucleus.General] - Loading extension points from plug-in file jar:file:/Users/Tazze/git/TralalaServer/lib/datanucleus-rdbms-3.2.6.jar!/plugin.xml.
+13:27:50,774 (main) DEBUG [DataNucleus.General] - Loading extensions from plug-in file jar:file:/Users/Tazze/git/TralalaServer/lib/datanucleus-rdbms-3.2.6.jar!/plugin.xml.
+13:27:50,847 (main) DEBUG [DataNucleus.Persistence] - Java types support initialising ...
+13:27:50,902 (main) DEBUG [DataNucleus.Persistence] - Java types support loaded : supported java types=java.util.TimeZone, [Ljava.lang.Byte;, [Ljava.lang.Integer;, java.util.SortedMap, char, java.lang.Boolean, [Ljava.lang.Boolean;, java.lang.Long, java.sql.Timestamp, [Ljava.lang.Double;, java.lang.Float, long, float, java.util.BitSet, java.util.Stack, java.math.BigInteger, java.lang.Double, java.util.Vector, byte, java.util.Locale, java.lang.Class, [Ljava.lang.Long;, java.sql.Time, boolean, [Ljava.lang.Short;, java.util.LinkedList, java.util.PriorityQueue, [Ljava.lang.Enum;, int, java.util.List, java.util.TreeMap, java.lang.Integer, java.lang.Short, double, java.lang.Number, java.util.LinkedHashMap, java.sql.Date, [Ljava.util.Locale;, java.util.Arrays$ArrayList, java.lang.Byte, java.util.UUID, [Ljava.lang.String;, [Ljava.util.Date;, java.util.Currency, java.util.Properties, java.util.Calendar, java.util.Map, java.awt.Color, java.util.HashMap, [Ljava.lang.Character;, short, java.util.GregorianCalendar, java.util.TreeSet, java.lang.Character, java.util.SortedSet, java.util.Set, java.util.Collection, java.util.ArrayList, java.lang.StringBuffer, [Ljava.math.BigDecimal;, [B, java.util.Hashtable, [F, java.lang.String, java.net.URI, [C, java.awt.image.BufferedImage, [D, java.util.Date, [I, [J, [Ljava.lang.Number;, [Ljava.lang.Float;, [Ljava.math.BigInteger;, java.net.URL, java.util.HashSet, java.math.BigDecimal, [S, [Z, java.util.Queue, java.lang.Enum, java.util.LinkedHashSet
+13:27:50,902 (main) DEBUG [DataNucleus.Persistence] - Type converter support initialising ...
+13:27:50,903 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.math.BigDecimal<->java.lang.String using org.datanucleus.store.types.converters.BigDecimalStringConverter
+13:27:50,904 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.math.BigInteger<->java.lang.String using org.datanucleus.store.types.converters.BigIntegerStringConverter
+13:27:50,905 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.util.BitSet<->java.lang.String using org.datanucleus.store.types.converters.BitSetStringConverter
+13:27:50,906 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.util.Calendar<->java.lang.String using org.datanucleus.store.types.converters.CalendarStringConverter
+13:27:50,907 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.lang.Class<->java.lang.String using org.datanucleus.store.types.converters.ClassStringConverter
+13:27:50,907 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.awt.Color<->java.lang.String using org.datanucleus.store.types.converters.ColorStringConverter
+13:27:50,908 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.lang.Integer<->java.lang.String using org.datanucleus.store.types.converters.IntegerStringConverter
+13:27:50,909 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.lang.Long<->java.lang.String using org.datanucleus.store.types.converters.LongStringConverter
+13:27:50,909 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.util.Currency<->java.lang.String using org.datanucleus.store.types.converters.CurrencyStringConverter
+13:27:50,910 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.util.Date<->java.lang.Long using org.datanucleus.store.types.converters.DateLongConverter
+13:27:50,911 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.util.Date<->java.lang.String using org.datanucleus.store.types.converters.DateStringConverter
+13:27:50,912 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.util.Locale<->java.lang.String using org.datanucleus.store.types.converters.LocaleStringConverter
+13:27:50,913 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.sql.Date<->java.lang.Long using org.datanucleus.store.types.converters.SqlDateLongConverter
+13:27:50,913 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.sql.Date<->java.lang.String using org.datanucleus.store.types.converters.SqlDateStringConverter
+13:27:50,914 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.sql.Time<->java.lang.Long using org.datanucleus.store.types.converters.SqlTimeLongConverter
+13:27:50,915 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.sql.Time<->java.lang.String using org.datanucleus.store.types.converters.SqlTimeStringConverter
+13:27:50,915 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.sql.Timestamp<->java.lang.Long using org.datanucleus.store.types.converters.SqlTimestampLongConverter
+13:27:50,916 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.lang.StringBuffer<->java.lang.String using org.datanucleus.store.types.converters.StringBufferStringConverter
+13:27:50,917 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.util.TimeZone<->java.lang.String using org.datanucleus.store.types.converters.TimeZoneStringConverter
+13:27:50,918 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.net.URI<->java.lang.String using org.datanucleus.store.types.converters.URIStringConverter
+13:27:50,919 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.net.URL<->java.lang.String using org.datanucleus.store.types.converters.URLStringConverter
+13:27:50,919 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.util.UUID<->java.lang.String using org.datanucleus.store.types.converters.UUIDStringConverter
+13:27:50,921 (main) DEBUG [DataNucleus.Persistence] - TypeConverter for javax.time.calendar.LocalDate<->java.lang.String ignored since java type not present in CLASSPATH
+13:27:50,922 (main) DEBUG [DataNucleus.Persistence] - TypeConverter for javax.time.calendar.LocalTime<->java.lang.String ignored since java type not present in CLASSPATH
+13:27:50,923 (main) DEBUG [DataNucleus.Persistence] - TypeConverter for javax.time.calendar.LocalTime<->java.lang.Long ignored since java type not present in CLASSPATH
+13:27:50,924 (main) DEBUG [DataNucleus.Persistence] - TypeConverter for javax.time.calendar.LocalDateTime<->java.lang.String ignored since java type not present in CLASSPATH
+13:27:50,925 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.io.Serializable<->java.lang.String using org.datanucleus.store.types.converters.SerializableStringConverter
+13:27:50,925 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.io.Serializable<->[B using org.datanucleus.store.types.converters.SerializableByteArrayConverter
+13:27:50,925 (main) DEBUG [DataNucleus.Persistence] - Type converter support loaded
+13:27:50,926 (main) DEBUG [DataNucleus.MetaData] - MetaDataManager : Input=(XML,Annotations), XML-Validation=false, XML-Suffices=(persistence=*.jdo, orm=orm, query=*.jdoquery), JDO-listener=true
+13:27:50,926 (main) DEBUG [DataNucleus.MetaData] - Registering listener for metadata initialisation
+13:27:50,961 (main) DEBUG [DataNucleus.MetaData] - Parsing MetaData file "file:/Users/Tazze/git/TralalaServer/bin/META-INF/persistence.xml" using handler "persistence" (validation="false")
+13:27:50,975 (main) DEBUG [DataNucleus.MetaData] - Parsing MetaData file "file:/Users/Tazze/git/TralalaServer/resources/META-INF/persistence.xml" using handler "persistence" (validation="false")
+13:27:51,000 (main) INFO  [DataNucleus.Persistence] - Property </persistence> unknown - will be ignored
+13:27:51,000 (main) INFO  [DataNucleus.Persistence] - Property <?xml unknown - will be ignored
+13:27:51,000 (main) INFO  [DataNucleus.Persistence] - Property <!-- unknown - will be ignored
+13:27:51,000 (main) INFO  [DataNucleus.Persistence] - Property <class>data.dbitem</class> unknown - will be ignored
+13:27:51,000 (main) INFO  [DataNucleus.Persistence] - Property <class>data.play</class> unknown - will be ignored
+13:27:51,000 (main) INFO  [DataNucleus.Persistence] - Property <class>data.artist</class> unknown - will be ignored
+13:27:51,000 (main) INFO  [DataNucleus.Persistence] - Property <property unknown - will be ignored
+13:27:51,000 (main) INFO  [DataNucleus.Persistence] - Property xmlns unknown - will be ignored
+13:27:51,000 (main) INFO  [DataNucleus.Persistence] - Property <exclude-unlisted-classes/> unknown - will be ignored
+13:27:51,001 (main) INFO  [DataNucleus.Persistence] - Property <properties> unknown - will be ignored
+13:27:51,001 (main) INFO  [DataNucleus.Persistence] - Property <persistence unknown - will be ignored
+13:27:51,001 (main) INFO  [DataNucleus.Persistence] - Property http unknown - will be ignored
+13:27:51,001 (main) INFO  [DataNucleus.Persistence] - Property </properties> unknown - will be ignored
+13:27:51,001 (main) INFO  [DataNucleus.Persistence] - Property </persistence-unit> unknown - will be ignored
+13:27:51,001 (main) INFO  [DataNucleus.Persistence] - Property <class>data.song</class> unknown - will be ignored
+13:27:51,001 (main) INFO  [DataNucleus.Persistence] - Property <class>data.album</class> unknown - will be ignored
+13:27:51,001 (main) INFO  [DataNucleus.Persistence] - Property <persistence-unit unknown - will be ignored
+13:27:51,001 (main) INFO  [DataNucleus.Persistence] - Property <class>data.member</class> unknown - will be ignored
+13:27:51,001 (main) INFO  [DataNucleus.Persistence] - Property xsi unknown - will be ignored
+13:27:51,002 (main) DEBUG [DataNucleus.MetaData] - MetaData Management : Loading Metadata for persistence-unit "TralalaJDO" ...
+13:27:51,117 (main) DEBUG [DataNucleus.MetaData] - Class "data.Album" has been specified with JDO annotations so using those.
+13:27:51,150 (main) DEBUG [DataNucleus.MetaData] - Class "data.Play" has been specified with JDO annotations so using those.
+13:27:51,151 (main) DEBUG [DataNucleus.MetaData] - Class "data.Song" has been specified with JDO annotations so using those.
+13:27:51,153 (main) DEBUG [DataNucleus.MetaData] - Class "data.Artist" has been specified with JDO annotations so using those.
+13:27:51,154 (main) DEBUG [DataNucleus.MetaData] - Class "data.DBItem" has been specified with JDO annotations so using those.
+13:27:51,176 (main) DEBUG [DataNucleus.MetaData] - Class "data.Member" has been specified with JDO annotations so using those.
+13:27:51,178 (main) DEBUG [DataNucleus.MetaData] - Populating all MetaData ...
+13:27:51,178 (main) DEBUG [DataNucleus.MetaData] - Class "data.Album" : Populating Meta-Data
+13:27:51,179 (main) DEBUG [DataNucleus.MetaData] - MetaData of type "orm" for class "data.Album" NOT found at /META-INF/package-mysql.orm
+13:27:51,180 (main) DEBUG [DataNucleus.MetaData] - MetaData of type "orm" for class "data.Album" NOT found at /WEB-INF/package-mysql.orm
+13:27:51,180 (main) DEBUG [DataNucleus.MetaData] - Parsing MetaData file "file:/Users/Tazze/git/TralalaServer/resources/package-mysql.orm" using handler "jdo" (validation="false")
+13:27:51,205 (main) DEBUG [DataNucleus.MetaData] - XML Entity Public="" System="file:/javax/jdo/orm.dtd" : using local source "/org/datanucleus/api/jdo/jdo_orm_3_1.dtd"
+13:27:51,229 (main) DEBUG [DataNucleus.MetaData] - MetaData of type "orm" for class "data.Album" will use file:/Users/Tazze/git/TralalaServer/resources/package-mysql.orm
+13:27:51,232 (main) DEBUG [DataNucleus.MetaData] - File "" is having internal MetaData definition updated with ORM information
+13:27:51,232 (main) DEBUG [DataNucleus.MetaData] - Class "data.Album" is having internal MetaData definition updated with ORM information
+13:27:51,232 (main) DEBUG [DataNucleus.MetaData] - Class "data.Album" has had its persistence-capable-superclass set to "data.DBItem" - it wasnt specified in the MetaData.
+13:27:51,232 (main) DEBUG [DataNucleus.MetaData] - Class "data.DBItem" : Populating Meta-Data
+13:27:51,232 (main) DEBUG [DataNucleus.MetaData] - Class "data.DBItem" is having internal MetaData definition updated with ORM information
+13:27:51,235 (main) DEBUG [DataNucleus.MetaData] - Class "data.Play" : Populating Meta-Data
+13:27:51,235 (main) DEBUG [DataNucleus.MetaData] - Class "data.Play" is having internal MetaData definition updated with ORM information
+13:27:51,235 (main) DEBUG [DataNucleus.MetaData] - Class "data.Play" has had its persistence-capable-superclass set to "data.DBItem" - it wasnt specified in the MetaData.
+13:27:51,235 (main) DEBUG [DataNucleus.MetaData] - Class "data.Song" : Populating Meta-Data
+13:27:51,235 (main) DEBUG [DataNucleus.MetaData] - Class "data.Song" is having internal MetaData definition updated with ORM information
+13:27:51,236 (main) DEBUG [DataNucleus.MetaData] - Class "data.Song" has had its persistence-capable-superclass set to "data.DBItem" - it wasnt specified in the MetaData.
+13:27:51,236 (main) DEBUG [DataNucleus.MetaData] - Class "data.Artist" : Populating Meta-Data
+13:27:51,237 (main) DEBUG [DataNucleus.MetaData] - Class "data.Artist" is having internal MetaData definition updated with ORM information
+13:27:51,237 (main) DEBUG [DataNucleus.MetaData] - Class "data.Artist" has had its persistence-capable-superclass set to "data.DBItem" - it wasnt specified in the MetaData.
+13:27:51,237 (main) DEBUG [DataNucleus.MetaData] - Class "data.Member" : Populating Meta-Data
+13:27:51,237 (main) DEBUG [DataNucleus.MetaData] - Class "data.Member" is having internal MetaData definition updated with ORM information
+13:27:51,238 (main) DEBUG [DataNucleus.MetaData] - Class "data.Member" has had its persistence-capable-superclass set to "data.DBItem" - it wasnt specified in the MetaData.
+13:27:51,238 (main) DEBUG [DataNucleus.MetaData] - Class "data.Member" field "id" : Adding Meta-Data for field since it didnt appear in the Meta-Data definition.
+13:27:51,238 (main) DEBUG [DataNucleus.MetaData] - Initialising all MetaData ...
+13:27:51,239 (main) DEBUG [DataNucleus.MetaData] - Class "data.DBItem" : Initialising Meta-Data
+13:27:51,240 (main) DEBUG [DataNucleus.MetaData] - Class "data.Album" : Initialising Meta-Data
+13:27:51,241 (main) DEBUG [DataNucleus.MetaData] - Class "data.Play" : Initialising Meta-Data
+13:27:51,241 (main) DEBUG [DataNucleus.MetaData] - Class "data.Song" : Initialising Meta-Data
+13:27:51,241 (main) DEBUG [DataNucleus.MetaData] - Class "data.Artist" : Initialising Meta-Data
+13:27:51,241 (main) DEBUG [DataNucleus.MetaData] - Class "data.Member" : Initialising Meta-Data
+13:27:51,241 (main) DEBUG [DataNucleus.MetaData] - MetaData Management : Load of Metadata complete
+13:27:51,241 (main) DEBUG [DataNucleus.Datastore] - Creating StoreManager for datastore
+13:27:51,328 (main) DEBUG [DataNucleus.Connection] - Created tx data source using pooling type of dbcp-builtin
+13:27:51,329 (main) DEBUG [DataNucleus.Connection] - Registered transactional connection factory under name "rdbms/tx"
+13:27:51,329 (main) DEBUG [DataNucleus.Connection] - Registered nontransactional connection factory under name "rdbms/nontx"
+13:27:51,367 (main) DEBUG [DataNucleus.Connection] - Created nontx data source using pooling type of dbcp-builtin
+13:27:51,825 (main) DEBUG [DataNucleus.Connection] - Connection "org.datanucleus.store.rdbms.datasource.dbcp.PoolingDataSource$PoolGuardConnectionWrapper@3af7dab3" opened
+13:27:51,858 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Boolean (jdbc-type=BIT, sql-type=BIT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BitRDBMSMapping, default=true)
+13:27:51,860 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Boolean (jdbc-type=CHAR, sql-type=CHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.CharRDBMSMapping, default=false)
+13:27:51,860 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Boolean (jdbc-type=BOOLEAN, sql-type=BOOLEAN, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BooleanRDBMSMapping, default=false)
+13:27:51,861 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Boolean (jdbc-type=TINYINT, sql-type=TINYINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TinyIntRDBMSMapping, default=false)
+13:27:51,862 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Boolean (jdbc-type=SMALLINT, sql-type=SMALLINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.SmallIntRDBMSMapping, default=false)
+13:27:51,864 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Byte (jdbc-type=TINYINT, sql-type=TINYINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TinyIntRDBMSMapping, default=true)
+13:27:51,865 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Byte (jdbc-type=SMALLINT, sql-type=SMALLINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.SmallIntRDBMSMapping, default=false)
+13:27:51,865 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Character (jdbc-type=CHAR, sql-type=CHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.CharRDBMSMapping, default=true)
+13:27:51,866 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Character (jdbc-type=INTEGER, sql-type=INTEGER, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.IntegerRDBMSMapping, default=false)
+13:27:51,867 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Double (jdbc-type=DOUBLE, sql-type=DOUBLE, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.DoubleRDBMSMapping, default=true)
+13:27:51,868 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Double (jdbc-type=DECIMAL, sql-type=DECIMAL, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.DecimalRDBMSMapping, default=false)
+13:27:51,869 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Float (jdbc-type=FLOAT, sql-type=FLOAT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.FloatRDBMSMapping, default=true)
+13:27:51,869 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Float (jdbc-type=DOUBLE, sql-type=DOUBLE, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.DoubleRDBMSMapping, default=false)
+13:27:51,870 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Float (jdbc-type=REAL, sql-type=REAL, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.RealRDBMSMapping, default=false)
+13:27:51,870 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Float (jdbc-type=DECIMAL, sql-type=DECIMAL, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.DecimalRDBMSMapping, default=false)
+13:27:51,870 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Integer (jdbc-type=INTEGER, sql-type=INTEGER, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.IntegerRDBMSMapping, default=true)
+13:27:51,871 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Integer (jdbc-type=BIGINT, sql-type=BIGINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping, default=false)
+13:27:51,872 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Integer (jdbc-type=NUMERIC, sql-type=NUMERIC, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.NumericRDBMSMapping, default=false)
+13:27:51,872 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Integer (jdbc-type=TINYINT, sql-type=TINYINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TinyIntRDBMSMapping, default=false)
+13:27:51,872 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Integer (jdbc-type=SMALLINT, sql-type=SMALLINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.SmallIntRDBMSMapping, default=false)
+13:27:51,872 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Long (jdbc-type=BIGINT, sql-type=BIGINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping, default=true)
+13:27:51,873 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Long (jdbc-type=INTEGER, sql-type=INT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.IntegerRDBMSMapping, default=false)
+13:27:51,873 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Long (jdbc-type=NUMERIC, sql-type=NUMERIC, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.NumericRDBMSMapping, default=false)
+13:27:51,873 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Long (jdbc-type=TINYINT, sql-type=TINYINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TinyIntRDBMSMapping, default=false)
+13:27:51,873 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Long (jdbc-type=SMALLINT, sql-type=SMALLINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.SmallIntRDBMSMapping, default=false)
+13:27:51,873 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Short (jdbc-type=SMALLINT, sql-type=SMALLINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.SmallIntRDBMSMapping, default=true)
+13:27:51,874 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Short (jdbc-type=INTEGER, sql-type=INTEGER, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.IntegerRDBMSMapping, default=false)
+13:27:51,874 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Short (jdbc-type=TINYINT, sql-type=TINYINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TinyIntRDBMSMapping, default=false)
+13:27:51,875 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.String (jdbc-type=VARCHAR, sql-type=VARCHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping, default=true)
+13:27:51,875 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.String (jdbc-type=CHAR, sql-type=CHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.CharRDBMSMapping, default=false)
+13:27:51,875 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.String (jdbc-type=BIGINT, sql-type=BIGINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping, default=false)
+13:27:51,876 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.String (jdbc-type=LONGVARCHAR, sql-type=LONGVARCHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.LongVarcharRDBMSMapping, default=false)
+13:27:51,877 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.String (jdbc-type=CLOB, sql-type=CLOB, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.ClobRDBMSMapping, default=false)
+13:27:51,879 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.String (jdbc-type=BLOB, sql-type=BLOB, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BlobRDBMSMapping, default=false)
+13:27:51,883 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.String (jdbc-type=LONGVARCHAR, sql-type=LONGTEXT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.LongVarcharRDBMSMapping, default=false)
+13:27:51,884 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.String (jdbc-type=LONGVARCHAR, sql-type=MEDIUMTEXT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.LongVarcharRDBMSMapping, default=false)
+13:27:51,884 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.String (jdbc-type=LONGVARCHAR, sql-type=TEXT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.LongVarcharRDBMSMapping, default=false)
+13:27:51,884 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.String (jdbc-type=BLOB, sql-type=LONGBLOB, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BlobRDBMSMapping, default=false)
+13:27:51,884 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.String (jdbc-type=BLOB, sql-type=MEDIUMBLOB, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BlobRDBMSMapping, default=false)
+13:27:51,886 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.String (jdbc-type=NVARCHAR, sql-type=NVARCHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.NVarcharRDBMSMapping, default=false)
+13:27:51,887 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.String (jdbc-type=NCHAR, sql-type=NCHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.NCharRDBMSMapping, default=false)
+13:27:51,887 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.math.BigDecimal (jdbc-type=DECIMAL, sql-type=DECIMAL, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.DecimalRDBMSMapping, default=true)
+13:27:51,887 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.math.BigDecimal (jdbc-type=NUMERIC, sql-type=NUMERIC, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.NumericRDBMSMapping, default=false)
+13:27:51,887 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.math.BigInteger (jdbc-type=NUMERIC, sql-type=NUMERIC, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.NumericRDBMSMapping, default=true)
+13:27:51,888 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.sql.Date (jdbc-type=DATE, sql-type=DATE, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.DateRDBMSMapping, default=true)
+13:27:51,889 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.sql.Date (jdbc-type=TIMESTAMP, sql-type=TIMESTAMP, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TimestampRDBMSMapping, default=false)
+13:27:51,889 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.sql.Date (jdbc-type=CHAR, sql-type=CHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.CharRDBMSMapping, default=false)
+13:27:51,889 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.sql.Date (jdbc-type=VARCHAR, sql-type=VARCHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping, default=false)
+13:27:51,889 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.sql.Date (jdbc-type=BIGINT, sql-type=BIGINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping, default=false)
+13:27:51,890 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.sql.Time (jdbc-type=TIME, sql-type=TIME, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TimeRDBMSMapping, default=true)
+13:27:51,890 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.sql.Time (jdbc-type=TIMESTAMP, sql-type=TIMESTAMP, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TimestampRDBMSMapping, default=false)
+13:27:51,891 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.sql.Time (jdbc-type=CHAR, sql-type=CHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.CharRDBMSMapping, default=false)
+13:27:51,891 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.sql.Time (jdbc-type=VARCHAR, sql-type=VARCHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping, default=false)
+13:27:51,891 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.sql.Time (jdbc-type=BIGINT, sql-type=BIGINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping, default=false)
+13:27:51,891 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.sql.Timestamp (jdbc-type=TIMESTAMP, sql-type=TIMESTAMP, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TimestampRDBMSMapping, default=true)
+13:27:51,891 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.sql.Timestamp (jdbc-type=CHAR, sql-type=CHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.CharRDBMSMapping, default=false)
+13:27:51,891 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.sql.Timestamp (jdbc-type=VARCHAR, sql-type=VARCHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping, default=false)
+13:27:51,892 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.util.Date (jdbc-type=TIMESTAMP, sql-type=TIMESTAMP, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TimestampRDBMSMapping, default=true)
+13:27:51,892 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.util.Date (jdbc-type=DATE, sql-type=DATE, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.DateRDBMSMapping, default=false)
+13:27:51,892 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.util.Date (jdbc-type=CHAR, sql-type=CHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.CharRDBMSMapping, default=false)
+13:27:51,892 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.util.Date (jdbc-type=VARCHAR, sql-type=VARCHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping, default=false)
+13:27:51,892 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.util.Date (jdbc-type=BIGINT, sql-type=BIGINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping, default=false)
+13:27:51,892 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.util.Date (jdbc-type=TIME, sql-type=TIME, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TimeRDBMSMapping, default=false)
+13:27:51,893 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.io.Serializable (jdbc-type=LONGVARBINARY, sql-type=LONGVARBINARY, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.LongVarBinaryRDBMSMapping, default=true)
+13:27:51,893 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.io.Serializable (jdbc-type=BLOB, sql-type=BLOB, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BlobRDBMSMapping, default=false)
+13:27:51,894 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.io.Serializable (jdbc-type=VARBINARY, sql-type=VARBINARY, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.VarBinaryRDBMSMapping, default=false)
+13:27:51,895 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type org.datanucleus.identity.OID (jdbc-type=BIGINT, sql-type=BIGINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping, default=true)
+13:27:51,896 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type org.datanucleus.identity.OID (jdbc-type=INTEGER, sql-type=INTEGER, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.IntegerRDBMSMapping, default=false)
+13:27:51,896 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type org.datanucleus.identity.OID (jdbc-type=NUMERIC, sql-type=NUMERIC, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.NumericRDBMSMapping, default=false)
+13:27:51,896 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type org.datanucleus.identity.OID (jdbc-type=CHAR, sql-type=CHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.CharRDBMSMapping, default=false)
+13:27:51,896 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type org.datanucleus.identity.OID (jdbc-type=VARCHAR, sql-type=VARCHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping, default=false)
+13:27:51,928 (main) DEBUG [DataNucleus.Datastore] - Removing RDBMS support for Java type java.lang.Float (jdbc-type=REAL, sql-type=REAL)
+13:27:51,929 (main) DEBUG [DataNucleus.Datastore] - Removing RDBMS support for Java type java.lang.String (jdbc-type=NCHAR, sql-type=NCHAR)
+13:27:51,929 (main) DEBUG [DataNucleus.Datastore] - Removing RDBMS support for Java type java.lang.Boolean (jdbc-type=BOOLEAN, sql-type=BOOLEAN)
+13:27:51,929 (main) DEBUG [DataNucleus.Datastore] - Removing RDBMS support for Java type java.lang.String (jdbc-type=NVARCHAR, sql-type=NVARCHAR)
+13:27:51,960 (main) DEBUG [DataNucleus.Datastore.Schema] - Column "`DELETEME1389875271954`.`UNUSED`" added to internal representation of table.
+13:27:51,963 (main) DEBUG [DataNucleus.Datastore.Schema] - Creating table `DELETEME1389875271954`
+13:27:51,967 (main) DEBUG [DataNucleus.Datastore.Schema] - CREATE TABLE `DELETEME1389875271954`
+(
+    `UNUSED` INTEGER NOT NULL
+) ENGINE=INNODB
+13:27:52,444 (main) DEBUG [DataNucleus.Datastore.Schema] - Execution Time = 477 ms
+13:27:52,455 (main) DEBUG [DataNucleus.Datastore.Schema] - Schema Name could not be determined for this datastore
+13:27:52,455 (main) DEBUG [DataNucleus.Datastore.Schema] - Dropping table `DELETEME1389875271954`
+13:27:52,455 (main) DEBUG [DataNucleus.Datastore.Schema] - DROP TABLE `DELETEME1389875271954`
+13:27:52,471 (main) DEBUG [DataNucleus.Datastore.Schema] - Execution Time = 16 ms
+13:27:52,471 (main) DEBUG [DataNucleus.Datastore] - ======================= Datastore =========================
+13:27:52,471 (main) DEBUG [DataNucleus.Datastore] - StoreManager : "rdbms" (org.datanucleus.store.rdbms.RDBMSStoreManager)
+13:27:52,472 (main) DEBUG [DataNucleus.Datastore] - Datastore : read-write
+13:27:52,472 (main) DEBUG [DataNucleus.Datastore] - Schema Control : AutoCreate(Tables,Columns,Constraints), Validate(None)
+13:27:52,472 (main) DEBUG [DataNucleus.Datastore] - Query Languages : [JDOQL, JPQL, SQL, STOREDPROC]
+13:27:52,472 (main) DEBUG [DataNucleus.Datastore] - Queries : Timeout=0
+13:27:52,472 (main) DEBUG [DataNucleus.Datastore] - ===========================================================
+13:27:52,472 (main) DEBUG [DataNucleus.Datastore] - Datastore Adapter : org.datanucleus.store.rdbms.adapter.MySQLAdapter
+13:27:52,472 (main) DEBUG [DataNucleus.Datastore] - Datastore : name="MySQL" version="5.6.15"
+13:27:52,472 (main) DEBUG [DataNucleus.Datastore] - Datastore Driver : name="MySQL Connector Java" version="mysql-connector-java-5.1.26 ( Revision: ${bzr.revision-id} )"
+13:27:52,472 (main) DEBUG [DataNucleus.Datastore] - Primary Connection Factory : URL[jdbc:mysql://localhost/tralaladb]
+13:27:52,472 (main) DEBUG [DataNucleus.Datastore] - Secondary Connection Factory : URL[jdbc:mysql://localhost/tralaladb]
+13:27:52,472 (main) DEBUG [DataNucleus.Datastore] - Datastore Identifiers : factory="datanucleus2" case="UPPERCASE" catalog=tralaladb
+13:27:52,472 (main) DEBUG [DataNucleus.Datastore] - Supported Identifier Cases : MixedCase "MixedCase" "UPPERCASE" 
+13:27:52,473 (main) DEBUG [DataNucleus.Datastore] - Supported Identifier Lengths (max) : Table=64 Column=64 Constraint=64 Index=64 Delimiter=`
+13:27:52,473 (main) DEBUG [DataNucleus.Datastore] - Support for Identifiers in DDL : catalog=true schema=false
+13:27:52,473 (main) DEBUG [DataNucleus.Datastore] - Datastore : checkTableViewExistence, rdbmsConstraintCreateMode=DataNucleus, initialiseColumnInfo=ALL
+13:27:52,473 (main) DEBUG [DataNucleus.Datastore] - Support Statement Batching : yes (max-batch-size=50)
+13:27:52,473 (main) DEBUG [DataNucleus.Datastore] - Queries : Results direction=forward, type=forward-only, concurrency=read-only
+13:27:52,473 (main) DEBUG [DataNucleus.Datastore] - Java-Types : string-default-length=255
+13:27:52,473 (main) DEBUG [DataNucleus.Datastore] - JDBC-Types : BLOB, CLOB, TIMESTAMP, TIME, DATE, VARCHAR, DECIMAL, NUMERIC, CHAR, BINARY, FLOAT, LONGVARCHAR, LONGVARBINARY, SMALLINT, VARBINARY, INTEGER, TINYINT, BIGINT, DOUBLE, BIT
+13:27:52,473 (main) DEBUG [DataNucleus.Datastore] - ===========================================================
+13:27:52,474 (main) DEBUG [DataNucleus.Connection] - Connection "org.datanucleus.store.rdbms.datasource.dbcp.PoolingDataSource$PoolGuardConnectionWrapper@3af7dab3" non enlisted to a transaction is being committed.
+13:27:52,475 (main) DEBUG [DataNucleus.Connection] - Connection "org.datanucleus.store.rdbms.datasource.dbcp.PoolingDataSource$PoolGuardConnectionWrapper@3af7dab3" closed
+13:27:52,475 (main) DEBUG [DataNucleus.Datastore] - StoreManager now created
+13:27:52,475 (main) DEBUG [DataNucleus.Persistence] - ================= NucleusContext ===============
+13:27:52,475 (main) DEBUG [DataNucleus.Persistence] - DataNucleus Context : Version "3.2.7" with JRE "1.7.0_45" on "Mac OS X"
+13:27:52,475 (main) DEBUG [DataNucleus.Persistence] - Persistence API : JDO
+13:27:52,475 (main) DEBUG [DataNucleus.Persistence] - Persistence-Unit : TralalaJDO
+13:27:52,475 (main) DEBUG [DataNucleus.Persistence] - Plugin Registry : org.datanucleus.plugin.NonManagedPluginRegistry
+13:27:52,475 (main) DEBUG [DataNucleus.Persistence] - ClassLoading : datanucleus
+13:27:52,476 (main) DEBUG [DataNucleus.Persistence] - Persistence : pm-singlethreaded, nontransactional-read, nontransactional-write, reachability-at-commit, detach-all-on-commit, copy-on-attach, managed-relations(checked), deletion-policy=JDO2, serverTimeZone=Europe/Madrid
+13:27:52,476 (main) DEBUG [DataNucleus.Persistence] - AutoStart : mechanism=None, mode=Quiet
+13:27:52,476 (main) DEBUG [DataNucleus.Persistence] - Transactions : type=RESOURCE_LOCAL, mode=datastore, isolation=read-committed
+13:27:52,476 (main) DEBUG [DataNucleus.Persistence] - ValueGeneration : txn-isolation=read-committed connection=New
+13:27:52,476 (main) DEBUG [DataNucleus.Persistence] - Cache : Level1 (soft), Level2 (soft, mode=UNSPECIFIED), QueryResults (soft), Collections/Maps 
+13:27:52,476 (main) DEBUG [DataNucleus.Persistence] - ================================================
+13:27:52,476 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Handling schema for persistence-unit "TralalaJDO"
+13:27:52,502 (main) DEBUG [DataNucleus.Persistence] - Managing Persistence of Class : data.DBItem [Table : `DBITEM`, InheritanceStrategy : new-table]
+13:27:52,503 (main) DEBUG [DataNucleus.Datastore.Schema] - Column "`DBITEM`.`DBITEM_ID`" added to internal representation of table.
+13:27:52,506 (main) DEBUG [DataNucleus.Persistence] - Managing Persistence of Class : data.Artist [Table : `ARTIST`, InheritanceStrategy : new-table]
+13:27:52,507 (main) DEBUG [DataNucleus.Datastore.Schema] - Column "`ARTIST`.`ARTIST_ID`" added to internal representation of table.
+13:27:52,507 (main) DEBUG [DataNucleus.Persistence] - Managing Persistence of Class : data.Song [Table : `DBITEM`, InheritanceStrategy : superclass-table]
+13:27:52,507 (main) DEBUG [DataNucleus.Persistence] - Managing Persistence of Class : data.Album [Table : `DBITEM`, InheritanceStrategy : superclass-table]
+13:27:52,507 (main) DEBUG [DataNucleus.Persistence] - Managing Persistence of Class : data.Play [Table : `DBITEM`, InheritanceStrategy : superclass-table]
+13:27:52,507 (main) DEBUG [DataNucleus.Persistence] - Managing Persistence of Class : data.Member [Table : `DBITEM`, InheritanceStrategy : superclass-table]
+13:27:52,508 (main) DEBUG [DataNucleus.Datastore.Schema] - Table `DBITEM` will manage the persistence of the fields for class data.DBItem (inheritance strategy="new-table") 
+13:27:52,508 (main) DEBUG [DataNucleus.Datastore.Schema] - Column "`DBITEM`.`ID`" added to internal representation of table.
+13:27:52,510 (main) DEBUG [DataNucleus.Datastore.Schema] - Field [data.DBItem.id] -> Column(s) [`DBITEM`.`ID`] using mapping of type "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
+13:27:52,510 (main) DEBUG [DataNucleus.Datastore.Schema] - Table/View `DBITEM` has been initialised
+13:27:52,510 (main) DEBUG [DataNucleus.Datastore.Schema] - Table `DBITEM` will manage the persistence of the fields for class data.Member (inheritance strategy="superclass-table") 
+13:27:52,510 (main) DEBUG [DataNucleus.Datastore.Schema] - Column "`DBITEM`.`BANKACCOUNT`" added to internal representation of table.
+13:27:52,510 (main) DEBUG [DataNucleus.Datastore.Schema] - Member data.Member.bankAccount uses superclass-table yet the field is not marked as nullable  nor does it have a default value, so setting the column as nullable
+13:27:52,510 (main) DEBUG [DataNucleus.Datastore.Schema] - Field [data.Member.bankAccount] -> Column(s) [`DBITEM`.`BANKACCOUNT`] using mapping of type "org.datanucleus.store.rdbms.mapping.java.LongMapping" (org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping)
+13:27:52,511 (main) DEBUG [DataNucleus.Datastore.Schema] - Column "`DBITEM`.`ID_0`" added to internal representation of table.
+13:27:52,511 (main) DEBUG [DataNucleus.Datastore.Schema] - Field [data.Member.id] -> Column(s) [`DBITEM`.`ID_0`] using mapping of type "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
+13:27:52,511 (main) DEBUG [DataNucleus.Datastore.Schema] - Column "`DBITEM`.`NAME`" added to internal representation of table.
+13:27:52,511 (main) DEBUG [DataNucleus.Datastore.Schema] - Field [data.Member.name] -> Column(s) [`DBITEM`.`NAME`] using mapping of type "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
+13:27:52,511 (main) DEBUG [DataNucleus.Datastore.Schema] - Column "`DBITEM`.`NICK`" added to internal representation of table.
+13:27:52,511 (main) DEBUG [DataNucleus.Datastore.Schema] - Field [data.Member.nick] -> Column(s) [`DBITEM`.`NICK`] using mapping of type "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
+13:27:52,511 (main) DEBUG [DataNucleus.Datastore.Schema] - Column "`DBITEM`.`PAYMENTSERVICE`" added to internal representation of table.
+13:27:52,512 (main) DEBUG [DataNucleus.Datastore.Schema] - Field [data.Member.paymentService] -> Column(s) [`DBITEM`.`PAYMENTSERVICE`] using mapping of type "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
+13:27:52,519 (main) DEBUG [DataNucleus.Persistence] - Managing Persistence of Field : data.Member.plays [Table : `MEMBER_PLAYS`]
+13:27:52,519 (main) DEBUG [DataNucleus.Datastore.Schema] - Field [data.Member.plays] -> Column(s) [[none]] using mapping of type "org.datanucleus.store.rdbms.mapping.java.CollectionMapping" ()
+13:27:52,520 (main) DEBUG [DataNucleus.Datastore.Schema] - Table `ARTIST` will manage the persistence of the fields for class data.Artist (inheritance strategy="new-table") 
+13:27:52,520 (main) DEBUG [DataNucleus.Datastore.Schema] - Column "`ARTIST`.`NAME`" added to internal representation of table.
+13:27:52,520 (main) DEBUG [DataNucleus.Datastore.Schema] - Field [data.Artist.name] -> Column(s) [`ARTIST`.`NAME`] using mapping of type "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
+13:27:52,520 (main) DEBUG [DataNucleus.Persistence] - Managing Persistence of Field : data.Artist.songs [Table : `ARTIST_SONGS`]
+13:27:52,520 (main) DEBUG [DataNucleus.Datastore.Schema] - Field [data.Artist.songs] -> Column(s) [[none]] using mapping of type "org.datanucleus.store.rdbms.mapping.java.CollectionMapping" ()
+13:27:52,520 (main) DEBUG [DataNucleus.Datastore.Schema] - Table/View `ARTIST` has been initialised
+13:27:52,520 (main) DEBUG [DataNucleus.Datastore.Schema] - Table `DBITEM` will manage the persistence of the fields for class data.Song (inheritance strategy="superclass-table") 
+13:27:52,522 (main) DEBUG [DataNucleus.Datastore.Schema] - Column "`DBITEM`.`ALBUM_DBITEM_ID_OID`" added to internal representation of table.
+13:27:52,522 (main) DEBUG [DataNucleus.Datastore.Schema] - Field [data.Song.album] -> Column(s) [`DBITEM`.`ALBUM_DBITEM_ID_OID`] using mapping of type "org.datanucleus.store.rdbms.mapping.java.PersistableMapping" (org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping)
+13:27:52,523 (main) DEBUG [DataNucleus.Datastore.Schema] - Column "`DBITEM`.`ARTIST_ARTIST_ID_OID`" added to internal representation of table.
+13:27:52,523 (main) DEBUG [DataNucleus.Datastore.Schema] - Field [data.Song.artist] -> Column(s) [`DBITEM`.`ARTIST_ARTIST_ID_OID`] using mapping of type "org.datanucleus.store.rdbms.mapping.java.PersistableMapping" (org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping)
+13:27:52,523 (main) DEBUG [DataNucleus.Datastore.Schema] - Column "`DBITEM`.`DURATION`" added to internal representation of table.
+13:27:52,523 (main) DEBUG [DataNucleus.Datastore.Schema] - Member data.Song.duration uses superclass-table yet the field is not marked as nullable  nor does it have a default value, so setting the column as nullable
+13:27:52,523 (main) DEBUG [DataNucleus.Datastore.Schema] - Field [data.Song.duration] -> Column(s) [`DBITEM`.`DURATION`] using mapping of type "org.datanucleus.store.rdbms.mapping.java.IntegerMapping" (org.datanucleus.store.rdbms.mapping.datastore.IntegerRDBMSMapping)
+13:27:52,524 (main) DEBUG [DataNucleus.Datastore.Schema] - Column "`DBITEM`.`PPP`" added to internal representation of table.
+13:27:52,524 (main) DEBUG [DataNucleus.Datastore.Schema] - Member data.Song.ppp uses superclass-table yet the field is not marked as nullable  nor does it have a default value, so setting the column as nullable
+13:27:52,525 (main) DEBUG [DataNucleus.Datastore.Schema] - Field [data.Song.ppp] -> Column(s) [`DBITEM`.`PPP`] using mapping of type "org.datanucleus.store.rdbms.mapping.java.DoubleMapping" (org.datanucleus.store.rdbms.mapping.datastore.DoubleRDBMSMapping)
+13:27:52,525 (main) DEBUG [DataNucleus.Datastore.Schema] - Column "`DBITEM`.`SONGTITLE`" added to internal representation of table.
+13:27:52,525 (main) DEBUG [DataNucleus.Datastore.Schema] - Field [data.Song.songTitle] -> Column(s) [`DBITEM`.`SONGTITLE`] using mapping of type "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
+13:27:52,525 (main) DEBUG [DataNucleus.Datastore.Schema] - Table `DBITEM` will manage the persistence of the fields for class data.Album (inheritance strategy="superclass-table") 
+13:27:52,525 (main) DEBUG [DataNucleus.Datastore.Schema] - Column "`DBITEM`.`RELEASEDATE`" added to internal representation of table.
+13:27:52,525 (main) DEBUG [DataNucleus.Datastore.Schema] - Field [data.Album.releaseDate] -> Column(s) [`DBITEM`.`RELEASEDATE`] using mapping of type "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
+13:27:52,526 (main) DEBUG [DataNucleus.Persistence] - Managing Persistence of Field : data.Album.songs [Table : `ALBUM_SONGS`]
+13:27:52,526 (main) DEBUG [DataNucleus.Datastore.Schema] - Field [data.Album.songs] -> Column(s) [[none]] using mapping of type "org.datanucleus.store.rdbms.mapping.java.CollectionMapping" ()
+13:27:52,526 (main) DEBUG [DataNucleus.Datastore.Schema] - Column "`DBITEM`.`TITLE`" added to internal representation of table.
+13:27:52,526 (main) DEBUG [DataNucleus.Datastore.Schema] - Field [data.Album.title] -> Column(s) [`DBITEM`.`TITLE`] using mapping of type "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
+13:27:52,526 (main) DEBUG [DataNucleus.Datastore.Schema] - Table `DBITEM` will manage the persistence of the fields for class data.Play (inheritance strategy="superclass-table") 
+13:27:52,526 (main) DEBUG [DataNucleus.Datastore.Schema] - Column "`DBITEM`.`DATE`" added to internal representation of table.
+13:27:52,526 (main) DEBUG [DataNucleus.Datastore.Schema] - Field [data.Play.date] -> Column(s) [`DBITEM`.`DATE`] using mapping of type "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
+13:27:52,526 (main) DEBUG [DataNucleus.Datastore.Schema] - Column "`DBITEM`.`MEMBERID`" added to internal representation of table.
+13:27:52,527 (main) DEBUG [DataNucleus.Datastore.Schema] - Field [data.Play.memberId] -> Column(s) [`DBITEM`.`MEMBERID`] using mapping of type "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
+13:27:52,527 (main) DEBUG [DataNucleus.Datastore.Schema] - Column "`DBITEM`.`SONGID`" added to internal representation of table.
+13:27:52,527 (main) DEBUG [DataNucleus.Datastore.Schema] - Field [data.Play.songId] -> Column(s) [`DBITEM`.`SONGID`] using mapping of type "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
+13:27:52,527 (main) DEBUG [DataNucleus.Datastore.Schema] - Column "`DBITEM`.`TIME`" added to internal representation of table.
+13:27:52,527 (main) DEBUG [DataNucleus.Datastore.Schema] - Field [data.Play.time] -> Column(s) [`DBITEM`.`TIME`] using mapping of type "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
+13:27:52,530 (main) DEBUG [DataNucleus.Datastore.Schema] - Column "`ALBUM_SONGS`.`DBITEM_ID_OID`" added to internal representation of table.
+13:27:52,531 (main) DEBUG [DataNucleus.Datastore] - Field [data.Album.songs] -> Column(s) [`ALBUM_SONGS`.`DBITEM_ID_OID`] using mapping of type "org.datanucleus.store.rdbms.mapping.java.PersistableMapping" (org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping)
+13:27:52,531 (main) DEBUG [DataNucleus.Datastore.Schema] - Column "`ALBUM_SONGS`.`DBITEM_ID_EID`" added to internal representation of table.
+13:27:52,531 (main) DEBUG [DataNucleus.Datastore] - Field [data.Album.songs] -> Column(s) [`ALBUM_SONGS`.`DBITEM_ID_EID`] using mapping of type "org.datanucleus.store.rdbms.mapping.java.PersistableMapping" (org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping)
+13:27:52,531 (main) DEBUG [DataNucleus.Datastore.Schema] - Column "`ALBUM_SONGS`.`IDX`" added to internal representation of table.
+13:27:52,531 (main) DEBUG [DataNucleus.Datastore] - Field [data.Album.songs] -> Column(s) [`ALBUM_SONGS`.`IDX`] using mapping of type "org.datanucleus.store.rdbms.mapping.java.IntegerMapping" (org.datanucleus.store.rdbms.mapping.datastore.IntegerRDBMSMapping)
+13:27:52,532 (main) DEBUG [DataNucleus.Datastore.Schema] - Table/View `ALBUM_SONGS` has been initialised
+13:27:52,532 (main) DEBUG [DataNucleus.Datastore.Schema] - Column "`ARTIST_SONGS`.`ARTIST_ID_OID`" added to internal representation of table.
+13:27:52,532 (main) DEBUG [DataNucleus.Datastore] - Field [data.Artist.songs] -> Column(s) [`ARTIST_SONGS`.`ARTIST_ID_OID`] using mapping of type "org.datanucleus.store.rdbms.mapping.java.PersistableMapping" (org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping)
+13:27:52,532 (main) DEBUG [DataNucleus.Datastore.Schema] - Column "`ARTIST_SONGS`.`DBITEM_ID_EID`" added to internal representation of table.
+13:27:52,532 (main) DEBUG [DataNucleus.Datastore] - Field [data.Artist.songs] -> Column(s) [`ARTIST_SONGS`.`DBITEM_ID_EID`] using mapping of type "org.datanucleus.store.rdbms.mapping.java.PersistableMapping" (org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping)
+13:27:52,533 (main) DEBUG [DataNucleus.Datastore.Schema] - Column "`ARTIST_SONGS`.`IDX`" added to internal representation of table.
+13:27:52,533 (main) DEBUG [DataNucleus.Datastore] - Field [data.Artist.songs] -> Column(s) [`ARTIST_SONGS`.`IDX`] using mapping of type "org.datanucleus.store.rdbms.mapping.java.IntegerMapping" (org.datanucleus.store.rdbms.mapping.datastore.IntegerRDBMSMapping)
+13:27:52,533 (main) DEBUG [DataNucleus.Datastore.Schema] - Table/View `ARTIST_SONGS` has been initialised
+13:27:52,533 (main) DEBUG [DataNucleus.Datastore.Schema] - Column "`MEMBER_PLAYS`.`DBITEM_ID_OID`" added to internal representation of table.
+13:27:52,533 (main) DEBUG [DataNucleus.Datastore] - Field [data.Member.plays] -> Column(s) [`MEMBER_PLAYS`.`DBITEM_ID_OID`] using mapping of type "org.datanucleus.store.rdbms.mapping.java.PersistableMapping" (org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping)
+13:27:52,533 (main) DEBUG [DataNucleus.Datastore.Schema] - Column "`MEMBER_PLAYS`.`DBITEM_ID_EID`" added to internal representation of table.
+13:27:52,534 (main) DEBUG [DataNucleus.Datastore] - Field [data.Member.plays] -> Column(s) [`MEMBER_PLAYS`.`DBITEM_ID_EID`] using mapping of type "org.datanucleus.store.rdbms.mapping.java.PersistableMapping" (org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping)
+13:27:52,534 (main) DEBUG [DataNucleus.Datastore.Schema] - Column "`MEMBER_PLAYS`.`IDX`" added to internal representation of table.
+13:27:52,534 (main) DEBUG [DataNucleus.Datastore] - Field [data.Member.plays] -> Column(s) [`MEMBER_PLAYS`.`IDX`] using mapping of type "org.datanucleus.store.rdbms.mapping.java.IntegerMapping" (org.datanucleus.store.rdbms.mapping.datastore.IntegerRDBMSMapping)
+13:27:52,534 (main) DEBUG [DataNucleus.Datastore.Schema] - Table/View `MEMBER_PLAYS` has been initialised
+13:27:52,537 (main) DEBUG [DataNucleus.Connection] - Connection "org.datanucleus.store.rdbms.datasource.dbcp.PoolingDataSource$PoolGuardConnectionWrapper@617085fc" opened with isolation level "serializable" and auto-commit=false
+13:27:52,537 (main) DEBUG [DataNucleus.Datastore.Schema] - Schema Transaction started with connection "org.datanucleus.store.rdbms.datasource.dbcp.PoolingDataSource$PoolGuardConnectionWrapper@617085fc" with isolation "serializable"
+13:27:52,559 (main) DEBUG [DataNucleus.Datastore.Schema] - Check of existence of `DBITEM` returned table type of TABLE
+13:27:52,560 (main) DEBUG [DataNucleus.Datastore.Schema] - Loading column info for table(s) "dbitem, album_songs, artist_songs, artist, member_plays" in Catalog "", Schema ""
+13:27:52,705 (main) DEBUG [DataNucleus.Datastore.Schema] - Column info loaded for Catalog "", Schema "", 5 tables, time = 144 ms
+13:27:52,705 (main) DEBUG [DataNucleus.Datastore.Schema] - Column info retrieved for table "DBITEM" : 18 columns found
+13:27:52,707 (main) DEBUG [DataNucleus.Datastore.Schema] - Check of existence of `ARTIST` returned table type of TABLE
+13:27:52,709 (main) DEBUG [DataNucleus.Datastore.Schema] - Check of existence of `ALBUM_SONGS` returned table type of TABLE
+13:27:52,711 (main) DEBUG [DataNucleus.Datastore.Schema] - Check of existence of `ARTIST_SONGS` returned table type of TABLE
+13:27:52,713 (main) DEBUG [DataNucleus.Datastore.Schema] - Check of existence of `MEMBER_PLAYS` returned table type of TABLE
+13:27:52,722 (main) DEBUG [DataNucleus.Datastore.Schema] - Validating 3 index(es) for table `DBITEM`
+13:27:52,734 (main) DEBUG [DataNucleus.Datastore.Schema] - Validating 2 foreign key(s) for table `DBITEM`
+13:27:52,738 (main) DEBUG [DataNucleus.Datastore.Schema] - Validating 1 unique key(s) for table `DBITEM`
+13:27:52,741 (main) DEBUG [DataNucleus.Datastore.Schema] - Validating 1 index(es) for table `ARTIST`
+13:27:52,743 (main) DEBUG [DataNucleus.Datastore.Schema] - Validating 1 foreign key(s) for table `ARTIST`
+13:27:52,751 (main) DEBUG [DataNucleus.Datastore.Schema] - Validating 1 unique key(s) for table `ARTIST`
+13:27:52,755 (main) DEBUG [DataNucleus.Datastore.Schema] - Validating 3 index(es) for table `ALBUM_SONGS`
+13:27:52,759 (main) DEBUG [DataNucleus.Datastore.Schema] - Validating 2 foreign key(s) for table `ALBUM_SONGS`
+13:27:52,763 (main) DEBUG [DataNucleus.Datastore.Schema] - Validating 1 unique key(s) for table `ALBUM_SONGS`
+13:27:52,766 (main) DEBUG [DataNucleus.Datastore.Schema] - Validating 3 index(es) for table `ARTIST_SONGS`
+13:27:52,769 (main) DEBUG [DataNucleus.Datastore.Schema] - Validating 2 foreign key(s) for table `ARTIST_SONGS`
+13:27:52,772 (main) DEBUG [DataNucleus.Datastore.Schema] - Validating 1 unique key(s) for table `ARTIST_SONGS`
+13:27:52,776 (main) DEBUG [DataNucleus.Datastore.Schema] - Validating 3 index(es) for table `MEMBER_PLAYS`
+13:27:52,779 (main) DEBUG [DataNucleus.Datastore.Schema] - Validating 2 foreign key(s) for table `MEMBER_PLAYS`
+13:27:52,782 (main) DEBUG [DataNucleus.Datastore.Schema] - Validating 1 unique key(s) for table `MEMBER_PLAYS`
+13:27:52,782 (main) DEBUG [DataNucleus.Datastore.Schema] - Schema Transaction committing with connection "org.datanucleus.store.rdbms.datasource.dbcp.PoolingDataSource$PoolGuardConnectionWrapper@617085fc"
+13:27:52,782 (main) DEBUG [DataNucleus.Datastore.Schema] - Schema Transaction closing with connection "org.datanucleus.store.rdbms.datasource.dbcp.PoolingDataSource$PoolGuardConnectionWrapper@617085fc"
+13:27:52,783 (main) DEBUG [DataNucleus.Connection] - Connection "org.datanucleus.store.rdbms.datasource.dbcp.PoolingDataSource$PoolGuardConnectionWrapper@617085fc" non enlisted to a transaction is being committed.
+13:27:52,784 (main) DEBUG [DataNucleus.Connection] - Connection "org.datanucleus.store.rdbms.datasource.dbcp.PoolingDataSource$PoolGuardConnectionWrapper@617085fc" closed
+13:27:52,784 (main) INFO  [DataNucleus.SchemaTool] - SchemaTool completed successfully
+13:27:54,189 (main) DEBUG [DataNucleus.General] - Using PluginRegistry org.datanucleus.plugin.NonManagedPluginRegistry
+13:27:54,237 (main) DEBUG [DataNucleus.General] - Registering bundle org.datanucleus version 3.2.7 at URL file:/Users/Tazze/git/TralalaServer/lib/datanucleus-core-3.2.7.jar.
+13:27:54,286 (main) DEBUG [DataNucleus.General] - Loading extension points from plug-in file jar:file:/Users/Tazze/git/TralalaServer/lib/datanucleus-core-3.2.7.jar!/plugin.xml.
+13:27:54,341 (main) DEBUG [DataNucleus.General] - Loading extensions from plug-in file jar:file:/Users/Tazze/git/TralalaServer/lib/datanucleus-core-3.2.7.jar!/plugin.xml.
+13:27:54,352 (main) DEBUG [DataNucleus.General] - Registering bundle org.datanucleus.api.jdo version 3.2.4 at URL file:/Users/Tazze/git/TralalaServer/lib/datanucleus-api-jdo-3.2.4.jar.
+13:27:54,360 (main) DEBUG [DataNucleus.General] - Loading extension points from plug-in file jar:file:/Users/Tazze/git/TralalaServer/lib/datanucleus-api-jdo-3.2.4.jar!/plugin.xml.
+13:27:54,364 (main) DEBUG [DataNucleus.General] - Loading extensions from plug-in file jar:file:/Users/Tazze/git/TralalaServer/lib/datanucleus-api-jdo-3.2.4.jar!/plugin.xml.
+13:27:54,368 (main) DEBUG [DataNucleus.General] - Registering bundle org.datanucleus.store.rdbms version 3.2.6 at URL file:/Users/Tazze/git/TralalaServer/lib/datanucleus-rdbms-3.2.6.jar.
+13:27:54,421 (main) DEBUG [DataNucleus.General] - Loading extension points from plug-in file jar:file:/Users/Tazze/git/TralalaServer/lib/datanucleus-rdbms-3.2.6.jar!/plugin.xml.
+13:27:54,449 (main) DEBUG [DataNucleus.General] - Loading extensions from plug-in file jar:file:/Users/Tazze/git/TralalaServer/lib/datanucleus-rdbms-3.2.6.jar!/plugin.xml.
+13:27:54,534 (main) DEBUG [DataNucleus.Persistence] - Java types support initialising ...
+13:27:54,582 (main) DEBUG [DataNucleus.Persistence] - Java types support loaded : supported java types=java.util.TimeZone, [Ljava.lang.Byte;, [Ljava.lang.Integer;, java.util.SortedMap, char, java.lang.Boolean, [Ljava.lang.Boolean;, java.lang.Long, java.sql.Timestamp, [Ljava.lang.Double;, java.lang.Float, long, float, java.util.BitSet, java.util.Stack, java.math.BigInteger, java.lang.Double, java.util.Vector, byte, java.util.Locale, java.lang.Class, [Ljava.lang.Long;, java.sql.Time, boolean, [Ljava.lang.Short;, java.util.LinkedList, java.util.PriorityQueue, [Ljava.lang.Enum;, int, java.util.List, java.util.TreeMap, java.lang.Integer, java.lang.Short, double, java.lang.Number, java.util.LinkedHashMap, java.sql.Date, [Ljava.util.Locale;, java.util.Arrays$ArrayList, java.lang.Byte, java.util.UUID, [Ljava.lang.String;, [Ljava.util.Date;, java.util.Currency, java.util.Properties, java.util.Calendar, java.util.Map, java.awt.Color, java.util.HashMap, [Ljava.lang.Character;, short, java.util.GregorianCalendar, java.util.TreeSet, java.lang.Character, java.util.SortedSet, java.util.Set, java.util.Collection, java.util.ArrayList, java.lang.StringBuffer, [Ljava.math.BigDecimal;, [B, java.util.Hashtable, [F, java.lang.String, java.net.URI, [C, java.awt.image.BufferedImage, [D, java.util.Date, [I, [J, [Ljava.lang.Number;, [Ljava.lang.Float;, [Ljava.math.BigInteger;, java.net.URL, java.util.HashSet, java.math.BigDecimal, [S, [Z, java.util.Queue, java.lang.Enum, java.util.LinkedHashSet
+13:27:54,582 (main) DEBUG [DataNucleus.Persistence] - Type converter support initialising ...
+13:27:54,583 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.math.BigDecimal<->java.lang.String using org.datanucleus.store.types.converters.BigDecimalStringConverter
+13:27:54,584 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.math.BigInteger<->java.lang.String using org.datanucleus.store.types.converters.BigIntegerStringConverter
+13:27:54,585 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.util.BitSet<->java.lang.String using org.datanucleus.store.types.converters.BitSetStringConverter
+13:27:54,586 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.util.Calendar<->java.lang.String using org.datanucleus.store.types.converters.CalendarStringConverter
+13:27:54,587 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.lang.Class<->java.lang.String using org.datanucleus.store.types.converters.ClassStringConverter
+13:27:54,588 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.awt.Color<->java.lang.String using org.datanucleus.store.types.converters.ColorStringConverter
+13:27:54,589 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.lang.Integer<->java.lang.String using org.datanucleus.store.types.converters.IntegerStringConverter
+13:27:54,589 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.lang.Long<->java.lang.String using org.datanucleus.store.types.converters.LongStringConverter
+13:27:54,590 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.util.Currency<->java.lang.String using org.datanucleus.store.types.converters.CurrencyStringConverter
+13:27:54,591 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.util.Date<->java.lang.Long using org.datanucleus.store.types.converters.DateLongConverter
+13:27:54,592 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.util.Date<->java.lang.String using org.datanucleus.store.types.converters.DateStringConverter
+13:27:54,593 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.util.Locale<->java.lang.String using org.datanucleus.store.types.converters.LocaleStringConverter
+13:27:54,593 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.sql.Date<->java.lang.Long using org.datanucleus.store.types.converters.SqlDateLongConverter
+13:27:54,594 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.sql.Date<->java.lang.String using org.datanucleus.store.types.converters.SqlDateStringConverter
+13:27:54,595 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.sql.Time<->java.lang.Long using org.datanucleus.store.types.converters.SqlTimeLongConverter
+13:27:54,595 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.sql.Time<->java.lang.String using org.datanucleus.store.types.converters.SqlTimeStringConverter
+13:27:54,596 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.sql.Timestamp<->java.lang.Long using org.datanucleus.store.types.converters.SqlTimestampLongConverter
+13:27:54,596 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.lang.StringBuffer<->java.lang.String using org.datanucleus.store.types.converters.StringBufferStringConverter
+13:27:54,597 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.util.TimeZone<->java.lang.String using org.datanucleus.store.types.converters.TimeZoneStringConverter
+13:27:54,598 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.net.URI<->java.lang.String using org.datanucleus.store.types.converters.URIStringConverter
+13:27:54,598 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.net.URL<->java.lang.String using org.datanucleus.store.types.converters.URLStringConverter
+13:27:54,599 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.util.UUID<->java.lang.String using org.datanucleus.store.types.converters.UUIDStringConverter
+13:27:54,600 (main) DEBUG [DataNucleus.Persistence] - TypeConverter for javax.time.calendar.LocalDate<->java.lang.String ignored since java type not present in CLASSPATH
+13:27:54,601 (main) DEBUG [DataNucleus.Persistence] - TypeConverter for javax.time.calendar.LocalTime<->java.lang.String ignored since java type not present in CLASSPATH
+13:27:54,602 (main) DEBUG [DataNucleus.Persistence] - TypeConverter for javax.time.calendar.LocalTime<->java.lang.Long ignored since java type not present in CLASSPATH
+13:27:54,603 (main) DEBUG [DataNucleus.Persistence] - TypeConverter for javax.time.calendar.LocalDateTime<->java.lang.String ignored since java type not present in CLASSPATH
+13:27:54,604 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.io.Serializable<->java.lang.String using org.datanucleus.store.types.converters.SerializableStringConverter
+13:27:54,605 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.io.Serializable<->[B using org.datanucleus.store.types.converters.SerializableByteArrayConverter
+13:27:54,605 (main) DEBUG [DataNucleus.Persistence] - Type converter support loaded
+13:27:54,606 (main) DEBUG [DataNucleus.MetaData] - MetaDataManager : Input=(XML,Annotations), XML-Validation=false, XML-Suffices=(persistence=*.jdo, orm=orm, query=*.jdoquery), JDO-listener=false
+13:27:54,612 (main) DEBUG [DataNucleus.MetaData] - Parsing MetaData file "file:/Users/Tazze/git/TralalaServer/bin/META-INF/persistence.xml" using handler "persistence" (validation="false")
+13:27:54,631 (main) DEBUG [DataNucleus.MetaData] - Parsing MetaData file "file:/Users/Tazze/git/TralalaServer/resources/META-INF/persistence.xml" using handler "persistence" (validation="false")
+13:27:54,633 (main) DEBUG [DataNucleus.MetaData] - MetaData Management : Loading Metadata for persistence-unit "TralalaJDO" ...
+13:27:54,728 (main) DEBUG [DataNucleus.MetaData] - Class "data.Album" has been specified with JDO annotations so using those.
+13:27:54,733 (main) DEBUG [DataNucleus.MetaData] - Class "data.Play" has been specified with JDO annotations so using those.
+13:27:54,734 (main) DEBUG [DataNucleus.MetaData] - Class "data.Song" has been specified with JDO annotations so using those.
+13:27:54,735 (main) DEBUG [DataNucleus.MetaData] - Class "data.Artist" has been specified with JDO annotations so using those.
+13:27:54,736 (main) DEBUG [DataNucleus.MetaData] - Class "data.DBItem" has been specified with JDO annotations so using those.
+13:27:54,740 (main) DEBUG [DataNucleus.MetaData] - Class "data.Member" has been specified with JDO annotations so using those.
+13:27:54,742 (main) DEBUG [DataNucleus.MetaData] - Populating all MetaData ...
+13:27:54,743 (main) DEBUG [DataNucleus.MetaData] - Class "data.Album" : Populating Meta-Data
+13:27:54,752 (main) DEBUG [DataNucleus.MetaData] - MetaData of type "orm" for class "data.Album" NOT found at /META-INF/package-mysql.orm
+13:27:54,753 (main) DEBUG [DataNucleus.MetaData] - MetaData of type "orm" for class "data.Album" NOT found at /WEB-INF/package-mysql.orm
+13:27:54,754 (main) DEBUG [DataNucleus.MetaData] - Parsing MetaData file "file:/Users/Tazze/git/TralalaServer/resources/package-mysql.orm" using handler "jdo" (validation="false")
+13:27:54,771 (main) DEBUG [DataNucleus.MetaData] - XML Entity Public="" System="file:/javax/jdo/orm.dtd" : using local source "/org/datanucleus/api/jdo/jdo_orm_3_1.dtd"
+13:27:54,798 (main) DEBUG [DataNucleus.MetaData] - MetaData of type "orm" for class "data.Album" will use file:/Users/Tazze/git/TralalaServer/resources/package-mysql.orm
+13:27:54,800 (main) DEBUG [DataNucleus.MetaData] - File "" is having internal MetaData definition updated with ORM information
+13:27:54,801 (main) DEBUG [DataNucleus.MetaData] - Class "data.Album" is having internal MetaData definition updated with ORM information
+13:27:54,801 (main) DEBUG [DataNucleus.MetaData] - Class "data.Album" has had its persistence-capable-superclass set to "data.DBItem" - it wasnt specified in the MetaData.
+13:27:54,801 (main) DEBUG [DataNucleus.MetaData] - Class "data.DBItem" : Populating Meta-Data
+13:27:54,801 (main) DEBUG [DataNucleus.MetaData] - Class "data.DBItem" is having internal MetaData definition updated with ORM information
+13:27:54,804 (main) DEBUG [DataNucleus.MetaData] - Class "data.Play" : Populating Meta-Data
+13:27:54,804 (main) DEBUG [DataNucleus.MetaData] - Class "data.Play" is having internal MetaData definition updated with ORM information
+13:27:54,804 (main) DEBUG [DataNucleus.MetaData] - Class "data.Play" has had its persistence-capable-superclass set to "data.DBItem" - it wasnt specified in the MetaData.
+13:27:54,804 (main) DEBUG [DataNucleus.MetaData] - Class "data.Song" : Populating Meta-Data
+13:27:54,804 (main) DEBUG [DataNucleus.MetaData] - Class "data.Song" is having internal MetaData definition updated with ORM information
+13:27:54,804 (main) DEBUG [DataNucleus.MetaData] - Class "data.Song" has had its persistence-capable-superclass set to "data.DBItem" - it wasnt specified in the MetaData.
+13:27:54,805 (main) DEBUG [DataNucleus.MetaData] - Class "data.Artist" : Populating Meta-Data
+13:27:54,805 (main) DEBUG [DataNucleus.MetaData] - Class "data.Artist" is having internal MetaData definition updated with ORM information
+13:27:54,805 (main) DEBUG [DataNucleus.MetaData] - Class "data.Artist" has had its persistence-capable-superclass set to "data.DBItem" - it wasnt specified in the MetaData.
+13:27:54,806 (main) DEBUG [DataNucleus.MetaData] - Class "data.Member" : Populating Meta-Data
+13:27:54,806 (main) DEBUG [DataNucleus.MetaData] - Class "data.Member" is having internal MetaData definition updated with ORM information
+13:27:54,806 (main) DEBUG [DataNucleus.MetaData] - Class "data.Member" has had its persistence-capable-superclass set to "data.DBItem" - it wasnt specified in the MetaData.
+13:27:54,807 (main) DEBUG [DataNucleus.MetaData] - Class "data.Member" field "id" : Adding Meta-Data for field since it didnt appear in the Meta-Data definition.
+13:27:54,807 (main) DEBUG [DataNucleus.MetaData] - Initialising all MetaData ...
+13:27:54,808 (main) DEBUG [DataNucleus.MetaData] - Class "data.DBItem" : Initialising Meta-Data
+13:27:54,809 (main) DEBUG [DataNucleus.MetaData] - Class "data.Album" : Initialising Meta-Data
+13:27:54,809 (main) DEBUG [DataNucleus.MetaData] - Class "data.Play" : Initialising Meta-Data
+13:27:54,810 (main) DEBUG [DataNucleus.MetaData] - Class "data.Song" : Initialising Meta-Data
+13:27:54,810 (main) DEBUG [DataNucleus.MetaData] - Class "data.Artist" : Initialising Meta-Data
+13:27:54,810 (main) DEBUG [DataNucleus.MetaData] - Class "data.Member" : Initialising Meta-Data
+13:27:54,810 (main) DEBUG [DataNucleus.MetaData] - MetaData Management : Load of Metadata complete
+13:27:54,811 (main) DEBUG [DataNucleus.Datastore] - Creating StoreManager for datastore
+13:27:54,872 (main) DEBUG [DataNucleus.Connection] - Created tx data source using pooling type of dbcp-builtin
+13:27:54,873 (main) DEBUG [DataNucleus.Connection] - Registered transactional connection factory under name "rdbms/tx"
+13:27:54,873 (main) DEBUG [DataNucleus.Connection] - Registered nontransactional connection factory under name "rdbms/nontx"
+13:27:54,911 (main) DEBUG [DataNucleus.Connection] - Created nontx data source using pooling type of dbcp-builtin
+13:27:55,299 (main) DEBUG [DataNucleus.Connection] - Connection "org.datanucleus.store.rdbms.datasource.dbcp.PoolingDataSource$PoolGuardConnectionWrapper@396d3e90" opened
+13:27:55,347 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Boolean (jdbc-type=BIT, sql-type=BIT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BitRDBMSMapping, default=true)
+13:27:55,348 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Boolean (jdbc-type=CHAR, sql-type=CHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.CharRDBMSMapping, default=false)
+13:27:55,348 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Boolean (jdbc-type=BOOLEAN, sql-type=BOOLEAN, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BooleanRDBMSMapping, default=false)
+13:27:55,349 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Boolean (jdbc-type=TINYINT, sql-type=TINYINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TinyIntRDBMSMapping, default=false)
+13:27:55,361 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Boolean (jdbc-type=SMALLINT, sql-type=SMALLINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.SmallIntRDBMSMapping, default=false)
+13:27:55,363 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Byte (jdbc-type=TINYINT, sql-type=TINYINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TinyIntRDBMSMapping, default=true)
+13:27:55,363 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Byte (jdbc-type=SMALLINT, sql-type=SMALLINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.SmallIntRDBMSMapping, default=false)
+13:27:55,363 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Character (jdbc-type=CHAR, sql-type=CHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.CharRDBMSMapping, default=true)
+13:27:55,364 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Character (jdbc-type=INTEGER, sql-type=INTEGER, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.IntegerRDBMSMapping, default=false)
+13:27:55,365 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Double (jdbc-type=DOUBLE, sql-type=DOUBLE, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.DoubleRDBMSMapping, default=true)
+13:27:55,365 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Double (jdbc-type=DECIMAL, sql-type=DECIMAL, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.DecimalRDBMSMapping, default=false)
+13:27:55,366 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Float (jdbc-type=FLOAT, sql-type=FLOAT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.FloatRDBMSMapping, default=true)
+13:27:55,366 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Float (jdbc-type=DOUBLE, sql-type=DOUBLE, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.DoubleRDBMSMapping, default=false)
+13:27:55,367 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Float (jdbc-type=REAL, sql-type=REAL, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.RealRDBMSMapping, default=false)
+13:27:55,367 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Float (jdbc-type=DECIMAL, sql-type=DECIMAL, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.DecimalRDBMSMapping, default=false)
+13:27:55,367 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Integer (jdbc-type=INTEGER, sql-type=INTEGER, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.IntegerRDBMSMapping, default=true)
+13:27:55,368 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Integer (jdbc-type=BIGINT, sql-type=BIGINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping, default=false)
+13:27:55,368 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Integer (jdbc-type=NUMERIC, sql-type=NUMERIC, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.NumericRDBMSMapping, default=false)
+13:27:55,368 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Integer (jdbc-type=TINYINT, sql-type=TINYINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TinyIntRDBMSMapping, default=false)
+13:27:55,369 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Integer (jdbc-type=SMALLINT, sql-type=SMALLINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.SmallIntRDBMSMapping, default=false)
+13:27:55,369 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Long (jdbc-type=BIGINT, sql-type=BIGINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping, default=true)
+13:27:55,369 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Long (jdbc-type=INTEGER, sql-type=INT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.IntegerRDBMSMapping, default=false)
+13:27:55,369 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Long (jdbc-type=NUMERIC, sql-type=NUMERIC, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.NumericRDBMSMapping, default=false)
+13:27:55,382 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Long (jdbc-type=TINYINT, sql-type=TINYINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TinyIntRDBMSMapping, default=false)
+13:27:55,382 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Long (jdbc-type=SMALLINT, sql-type=SMALLINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.SmallIntRDBMSMapping, default=false)
+13:27:55,382 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Short (jdbc-type=SMALLINT, sql-type=SMALLINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.SmallIntRDBMSMapping, default=true)
+13:27:55,382 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Short (jdbc-type=INTEGER, sql-type=INTEGER, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.IntegerRDBMSMapping, default=false)
+13:27:55,382 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.Short (jdbc-type=TINYINT, sql-type=TINYINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TinyIntRDBMSMapping, default=false)
+13:27:55,383 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.String (jdbc-type=VARCHAR, sql-type=VARCHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping, default=true)
+13:27:55,383 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.String (jdbc-type=CHAR, sql-type=CHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.CharRDBMSMapping, default=false)
+13:27:55,384 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.String (jdbc-type=BIGINT, sql-type=BIGINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping, default=false)
+13:27:55,384 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.String (jdbc-type=LONGVARCHAR, sql-type=LONGVARCHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.LongVarcharRDBMSMapping, default=false)
+13:27:55,385 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.String (jdbc-type=CLOB, sql-type=CLOB, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.ClobRDBMSMapping, default=false)
+13:27:55,387 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.String (jdbc-type=BLOB, sql-type=BLOB, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BlobRDBMSMapping, default=false)
+13:27:55,393 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.String (jdbc-type=LONGVARCHAR, sql-type=LONGTEXT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.LongVarcharRDBMSMapping, default=false)
+13:27:55,393 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.String (jdbc-type=LONGVARCHAR, sql-type=MEDIUMTEXT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.LongVarcharRDBMSMapping, default=false)
+13:27:55,393 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.String (jdbc-type=LONGVARCHAR, sql-type=TEXT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.LongVarcharRDBMSMapping, default=false)
+13:27:55,394 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.String (jdbc-type=BLOB, sql-type=LONGBLOB, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BlobRDBMSMapping, default=false)
+13:27:55,394 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.String (jdbc-type=BLOB, sql-type=MEDIUMBLOB, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BlobRDBMSMapping, default=false)
+13:27:55,395 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.String (jdbc-type=NVARCHAR, sql-type=NVARCHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.NVarcharRDBMSMapping, default=false)
+13:27:55,396 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.lang.String (jdbc-type=NCHAR, sql-type=NCHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.NCharRDBMSMapping, default=false)
+13:27:55,396 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.math.BigDecimal (jdbc-type=DECIMAL, sql-type=DECIMAL, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.DecimalRDBMSMapping, default=true)
+13:27:55,396 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.math.BigDecimal (jdbc-type=NUMERIC, sql-type=NUMERIC, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.NumericRDBMSMapping, default=false)
+13:27:55,396 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.math.BigInteger (jdbc-type=NUMERIC, sql-type=NUMERIC, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.NumericRDBMSMapping, default=true)
+13:27:55,397 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.sql.Date (jdbc-type=DATE, sql-type=DATE, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.DateRDBMSMapping, default=true)
+13:27:55,398 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.sql.Date (jdbc-type=TIMESTAMP, sql-type=TIMESTAMP, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TimestampRDBMSMapping, default=false)
+13:27:55,398 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.sql.Date (jdbc-type=CHAR, sql-type=CHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.CharRDBMSMapping, default=false)
+13:27:55,398 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.sql.Date (jdbc-type=VARCHAR, sql-type=VARCHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping, default=false)
+13:27:55,398 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.sql.Date (jdbc-type=BIGINT, sql-type=BIGINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping, default=false)
+13:27:55,399 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.sql.Time (jdbc-type=TIME, sql-type=TIME, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TimeRDBMSMapping, default=true)
+13:27:55,399 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.sql.Time (jdbc-type=TIMESTAMP, sql-type=TIMESTAMP, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TimestampRDBMSMapping, default=false)
+13:27:55,399 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.sql.Time (jdbc-type=CHAR, sql-type=CHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.CharRDBMSMapping, default=false)
+13:27:55,399 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.sql.Time (jdbc-type=VARCHAR, sql-type=VARCHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping, default=false)
+13:27:55,399 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.sql.Time (jdbc-type=BIGINT, sql-type=BIGINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping, default=false)
+13:27:55,400 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.sql.Timestamp (jdbc-type=TIMESTAMP, sql-type=TIMESTAMP, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TimestampRDBMSMapping, default=true)
+13:27:55,400 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.sql.Timestamp (jdbc-type=CHAR, sql-type=CHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.CharRDBMSMapping, default=false)
+13:27:55,400 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.sql.Timestamp (jdbc-type=VARCHAR, sql-type=VARCHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping, default=false)
+13:27:55,400 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.util.Date (jdbc-type=TIMESTAMP, sql-type=TIMESTAMP, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TimestampRDBMSMapping, default=true)
+13:27:55,400 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.util.Date (jdbc-type=DATE, sql-type=DATE, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.DateRDBMSMapping, default=false)
+13:27:55,400 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.util.Date (jdbc-type=CHAR, sql-type=CHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.CharRDBMSMapping, default=false)
+13:27:55,400 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.util.Date (jdbc-type=VARCHAR, sql-type=VARCHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping, default=false)
+13:27:55,401 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.util.Date (jdbc-type=BIGINT, sql-type=BIGINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping, default=false)
+13:27:55,401 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.util.Date (jdbc-type=TIME, sql-type=TIME, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TimeRDBMSMapping, default=false)
+13:27:55,402 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.io.Serializable (jdbc-type=LONGVARBINARY, sql-type=LONGVARBINARY, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.LongVarBinaryRDBMSMapping, default=true)
+13:27:55,402 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.io.Serializable (jdbc-type=BLOB, sql-type=BLOB, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BlobRDBMSMapping, default=false)
+13:27:55,403 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type java.io.Serializable (jdbc-type=VARBINARY, sql-type=VARBINARY, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.VarBinaryRDBMSMapping, default=false)
+13:27:55,403 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type org.datanucleus.identity.OID (jdbc-type=BIGINT, sql-type=BIGINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping, default=true)
+13:27:55,403 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type org.datanucleus.identity.OID (jdbc-type=INTEGER, sql-type=INTEGER, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.IntegerRDBMSMapping, default=false)
+13:27:55,403 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type org.datanucleus.identity.OID (jdbc-type=NUMERIC, sql-type=NUMERIC, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.NumericRDBMSMapping, default=false)
+13:27:55,404 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type org.datanucleus.identity.OID (jdbc-type=CHAR, sql-type=CHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.CharRDBMSMapping, default=false)
+13:27:55,404 (main) DEBUG [DataNucleus.Datastore] - Adding RDBMS support for Java type org.datanucleus.identity.OID (jdbc-type=VARCHAR, sql-type=VARCHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping, default=false)
+13:27:55,427 (main) DEBUG [DataNucleus.Datastore] - Removing RDBMS support for Java type java.lang.Float (jdbc-type=REAL, sql-type=REAL)
+13:27:55,428 (main) DEBUG [DataNucleus.Datastore] - Removing RDBMS support for Java type java.lang.String (jdbc-type=NCHAR, sql-type=NCHAR)
+13:27:55,428 (main) DEBUG [DataNucleus.Datastore] - Removing RDBMS support for Java type java.lang.Boolean (jdbc-type=BOOLEAN, sql-type=BOOLEAN)
+13:27:55,428 (main) DEBUG [DataNucleus.Datastore] - Removing RDBMS support for Java type java.lang.String (jdbc-type=NVARCHAR, sql-type=NVARCHAR)
+13:27:55,470 (main) DEBUG [DataNucleus.Datastore.Schema] - Column "`DELETEME1389875275463`.`UNUSED`" added to internal representation of table.
+13:27:55,472 (main) DEBUG [DataNucleus.Datastore.Schema] - Creating table `DELETEME1389875275463`
+13:27:55,475 (main) DEBUG [DataNucleus.Datastore.Schema] - CREATE TABLE `DELETEME1389875275463`
+(
+    `UNUSED` INTEGER NOT NULL
+) ENGINE=INNODB
+13:27:55,967 (main) DEBUG [DataNucleus.Datastore.Schema] - Execution Time = 491 ms
+13:27:55,978 (main) DEBUG [DataNucleus.Datastore.Schema] - Schema Name could not be determined for this datastore
+13:27:55,978 (main) DEBUG [DataNucleus.Datastore.Schema] - Dropping table `DELETEME1389875275463`
+13:27:55,979 (main) DEBUG [DataNucleus.Datastore.Schema] - DROP TABLE `DELETEME1389875275463`
+13:27:56,017 (main) DEBUG [DataNucleus.Datastore.Schema] - Execution Time = 38 ms
+13:27:56,018 (main) DEBUG [DataNucleus.Datastore] - ======================= Datastore =========================
+13:27:56,018 (main) DEBUG [DataNucleus.Datastore] - StoreManager : "rdbms" (org.datanucleus.store.rdbms.RDBMSStoreManager)
+13:27:56,018 (main) DEBUG [DataNucleus.Datastore] - Datastore : read-write
+13:27:56,018 (main) DEBUG [DataNucleus.Datastore] - Schema Control : AutoCreate(Tables,Columns,Constraints), Validate(None)
+13:27:56,018 (main) DEBUG [DataNucleus.Datastore] - Query Languages : [JDOQL, JPQL, SQL, STOREDPROC]
+13:27:56,018 (main) DEBUG [DataNucleus.Datastore] - Queries : Timeout=0
+13:27:56,018 (main) DEBUG [DataNucleus.Datastore] - ===========================================================
+13:27:56,018 (main) DEBUG [DataNucleus.Datastore] - Datastore Adapter : org.datanucleus.store.rdbms.adapter.MySQLAdapter
+13:27:56,018 (main) DEBUG [DataNucleus.Datastore] - Datastore : name="MySQL" version="5.6.15"
+13:27:56,018 (main) DEBUG [DataNucleus.Datastore] - Datastore Driver : name="MySQL Connector Java" version="mysql-connector-java-5.1.26 ( Revision: ${bzr.revision-id} )"
+13:27:56,019 (main) DEBUG [DataNucleus.Datastore] - Primary Connection Factory : URL[jdbc:mysql://localhost/tralaladb]
+13:27:56,019 (main) DEBUG [DataNucleus.Datastore] - Secondary Connection Factory : URL[jdbc:mysql://localhost/tralaladb]
+13:27:56,019 (main) DEBUG [DataNucleus.Datastore] - Datastore Identifiers : factory="datanucleus2" case="UPPERCASE" catalog=tralaladb
+13:27:56,019 (main) DEBUG [DataNucleus.Datastore] - Supported Identifier Cases : MixedCase "MixedCase" "UPPERCASE" 
+13:27:56,019 (main) DEBUG [DataNucleus.Datastore] - Supported Identifier Lengths (max) : Table=64 Column=64 Constraint=64 Index=64 Delimiter=`
+13:27:56,019 (main) DEBUG [DataNucleus.Datastore] - Support for Identifiers in DDL : catalog=true schema=false
+13:27:56,019 (main) DEBUG [DataNucleus.Datastore] - Datastore : checkTableViewExistence, rdbmsConstraintCreateMode=DataNucleus, initialiseColumnInfo=ALL
+13:27:56,019 (main) DEBUG [DataNucleus.Datastore] - Support Statement Batching : yes (max-batch-size=50)
+13:27:56,019 (main) DEBUG [DataNucleus.Datastore] - Queries : Results direction=forward, type=forward-only, concurrency=read-only
+13:27:56,020 (main) DEBUG [DataNucleus.Datastore] - Java-Types : string-default-length=255
+13:27:56,021 (main) DEBUG [DataNucleus.Datastore] - JDBC-Types : BLOB, CLOB, TIMESTAMP, TIME, DATE, VARCHAR, DECIMAL, NUMERIC, CHAR, BINARY, FLOAT, LONGVARCHAR, LONGVARBINARY, SMALLINT, VARBINARY, INTEGER, TINYINT, BIGINT, DOUBLE, BIT
+13:27:56,021 (main) DEBUG [DataNucleus.Datastore] - ===========================================================
+13:27:56,022 (main) DEBUG [DataNucleus.Connection] - Connection "org.datanucleus.store.rdbms.datasource.dbcp.PoolingDataSource$PoolGuardConnectionWrapper@396d3e90" non enlisted to a transaction is being committed.
+13:27:56,024 (main) DEBUG [DataNucleus.Connection] - Connection "org.datanucleus.store.rdbms.datasource.dbcp.PoolingDataSource$PoolGuardConnectionWrapper@396d3e90" closed
+13:27:56,024 (main) DEBUG [DataNucleus.Datastore] - StoreManager now created
+13:27:56,024 (main) DEBUG [DataNucleus.Persistence] - ================= NucleusContext ===============
+13:27:56,024 (main) DEBUG [DataNucleus.Persistence] - DataNucleus Context : Version "3.2.7" with JRE "1.7.0_45" on "Mac OS X"
+13:27:56,024 (main) DEBUG [DataNucleus.Persistence] - Persistence API : JDO
+13:27:56,024 (main) DEBUG [DataNucleus.Persistence] - Persistence-Unit : TralalaJDO
+13:27:56,024 (main) DEBUG [DataNucleus.Persistence] - Plugin Registry : org.datanucleus.plugin.NonManagedPluginRegistry
+13:27:56,024 (main) DEBUG [DataNucleus.Persistence] - ClassLoading : datanucleus
+13:27:56,025 (main) DEBUG [DataNucleus.Persistence] - Persistence : pm-singlethreaded, nontransactional-read, nontransactional-write, reachability-at-commit, detach-all-on-commit, copy-on-attach, managed-relations(checked), deletion-policy=JDO2, serverTimeZone=Europe/Madrid
+13:27:56,025 (main) DEBUG [DataNucleus.Persistence] - AutoStart : mechanism=None, mode=Quiet
+13:27:56,026 (main) DEBUG [DataNucleus.Persistence] - Transactions : type=RESOURCE_LOCAL, mode=datastore, isolation=read-committed
+13:27:56,026 (main) DEBUG [DataNucleus.Persistence] - ValueGeneration : txn-isolation=read-committed connection=New
+13:27:56,026 (main) DEBUG [DataNucleus.Persistence] - Cache : Level1 (soft), Level2 (soft, mode=UNSPECIFIED), QueryResults (soft), Collections/Maps 
+13:27:56,026 (main) DEBUG [DataNucleus.Persistence] - ================================================
+13:27:56,046 (main) DEBUG [DataNucleus.Cache] - Level 2 Cache of type "soft" initialised
+13:27:56,062 (main) DEBUG [DataNucleus.Persistence] - Started pool of ExecutionContext (maxPool=20, reaperThread=false)
+13:27:56,125 (main) DEBUG [DataNucleus.Persistence] - ExecutionContext "org.datanucleus.ExecutionContextImpl@6f6a5242" opened for datastore "org.datanucleus.store.rdbms.RDBMSStoreManager@9c809c5" with txn="org.datanucleus.TransactionImpl@2d3ea433"
+13:27:56,127 (main) DEBUG [DataNucleus.Cache] - Level 1 Cache of type "soft" initialised
+13:27:56,146 (main) DEBUG [DataNucleus.Transaction] - Transaction created [DataNucleus Transaction, ID=Xid=   , enlisted resources=[]]
+13:27:56,146 (main) DEBUG [DataNucleus.Transaction] - Transaction begun for ExecutionContext org.datanucleus.ExecutionContextImpl@6f6a5242 (optimistic=false)
+13:27:56,149 (main) DEBUG [DataNucleus.Persistence] - Making object persistent : "data.Song@3291ec31"
+13:27:56,156 (main) DEBUG [DataNucleus.Persistence] - Started pool of ObjectProviders (maxPool=0, reaperThread=false)
+13:27:56,187 (main) DEBUG [DataNucleus.Transaction] - Transaction rolling back for ExecutionContext org.datanucleus.ExecutionContextImpl@6f6a5242
+13:27:56,187 (main) DEBUG [DataNucleus.Transaction] - Rolling back [DataNucleus Transaction, ID=Xid=   , enlisted resources=[]]
+13:27:56,187 (main) DEBUG [DataNucleus.Transaction] - Transaction rolled back in 1 ms
+13:27:56,197 (main) DEBUG [DataNucleus.Cache] - Level 1 Cache cleared
+13:27:56,199 (main) DEBUG [DataNucleus.Persistence] - ExecutionContext "org.datanucleus.ExecutionContextImpl@6f6a5242" closed
+13:27:56,201 (main) DEBUG [DataNucleus.Persistence] - ExecutionContext "org.datanucleus.ExecutionContextImpl@6f6a5242" opened for datastore "org.datanucleus.store.rdbms.RDBMSStoreManager@9c809c5" with txn="org.datanucleus.TransactionImpl@14f072a1"
+13:27:56,201 (main) DEBUG [DataNucleus.Transaction] - Transaction created [DataNucleus Transaction, ID=Xid=   , enlisted resources=[]]
+13:27:56,201 (main) DEBUG [DataNucleus.Transaction] - Transaction begun for ExecutionContext org.datanucleus.ExecutionContextImpl@6f6a5242 (optimistic=false)
+13:27:56,201 (main) DEBUG [DataNucleus.Persistence] - Making object persistent : "data.Song@15ab7d89"
+13:27:56,202 (main) DEBUG [DataNucleus.Transaction] - Transaction rolling back for ExecutionContext org.datanucleus.ExecutionContextImpl@6f6a5242
+13:27:56,202 (main) DEBUG [DataNucleus.Transaction] - Rolling back [DataNucleus Transaction, ID=Xid=   , enlisted resources=[]]
+13:27:56,202 (main) DEBUG [DataNucleus.Transaction] - Transaction rolled back in 0 ms
+13:27:56,202 (main) DEBUG [DataNucleus.Cache] - Level 1 Cache cleared
+13:27:56,202 (main) DEBUG [DataNucleus.Persistence] - ExecutionContext "org.datanucleus.ExecutionContextImpl@6f6a5242" closed
+13:27:56,203 (main) DEBUG [DataNucleus.Persistence] - ExecutionContext "org.datanucleus.ExecutionContextImpl@6f6a5242" opened for datastore "org.datanucleus.store.rdbms.RDBMSStoreManager@9c809c5" with txn="org.datanucleus.TransactionImpl@2dbeb87c"
+13:27:56,203 (main) DEBUG [DataNucleus.Transaction] - Transaction created [DataNucleus Transaction, ID=Xid=   , enlisted resources=[]]
+13:27:56,204 (main) DEBUG [DataNucleus.Transaction] - Transaction begun for ExecutionContext org.datanucleus.ExecutionContextImpl@6f6a5242 (optimistic=false)
+13:27:56,204 (main) DEBUG [DataNucleus.Persistence] - Making object persistent : "data.Song@44042bb8"
+13:27:56,204 (main) DEBUG [DataNucleus.Transaction] - Transaction rolling back for ExecutionContext org.datanucleus.ExecutionContextImpl@6f6a5242
+13:27:56,204 (main) DEBUG [DataNucleus.Transaction] - Rolling back [DataNucleus Transaction, ID=Xid=   , enlisted resources=[]]
+13:27:56,204 (main) DEBUG [DataNucleus.Transaction] - Transaction rolled back in 0 ms
+13:27:56,205 (main) DEBUG [DataNucleus.Cache] - Level 1 Cache cleared
+13:27:56,205 (main) DEBUG [DataNucleus.Persistence] - ExecutionContext "org.datanucleus.ExecutionContextImpl@6f6a5242" closed
+13:27:56,206 (main) DEBUG [DataNucleus.Persistence] - ExecutionContext "org.datanucleus.ExecutionContextImpl@6f6a5242" opened for datastore "org.datanucleus.store.rdbms.RDBMSStoreManager@9c809c5" with txn="org.datanucleus.TransactionImpl@6dd25fea"
+13:27:56,206 (main) DEBUG [DataNucleus.Transaction] - Transaction created [DataNucleus Transaction, ID=Xid=   , enlisted resources=[]]
+13:27:56,206 (main) DEBUG [DataNucleus.Transaction] - Transaction begun for ExecutionContext org.datanucleus.ExecutionContextImpl@6f6a5242 (optimistic=false)
+13:27:56,206 (main) DEBUG [DataNucleus.Persistence] - Making object persistent : "data.Song@68d56991"
+13:27:56,206 (main) DEBUG [DataNucleus.Transaction] - Transaction rolling back for ExecutionContext org.datanucleus.ExecutionContextImpl@6f6a5242
+13:27:56,207 (main) DEBUG [DataNucleus.Transaction] - Rolling back [DataNucleus Transaction, ID=Xid=   , enlisted resources=[]]
+13:27:56,207 (main) DEBUG [DataNucleus.Transaction] - Transaction rolled back in 1 ms
+13:27:56,207 (main) DEBUG [DataNucleus.Cache] - Level 1 Cache cleared
+13:27:56,207 (main) DEBUG [DataNucleus.Persistence] - ExecutionContext "org.datanucleus.ExecutionContextImpl@6f6a5242" closed
+13:27:56,208 (main) DEBUG [DataNucleus.Persistence] - ExecutionContext "org.datanucleus.ExecutionContextImpl@6f6a5242" opened for datastore "org.datanucleus.store.rdbms.RDBMSStoreManager@9c809c5" with txn="org.datanucleus.TransactionImpl@1305e45c"
+13:27:56,208 (main) DEBUG [DataNucleus.Transaction] - Transaction created [DataNucleus Transaction, ID=Xid=   , enlisted resources=[]]
+13:27:56,208 (main) DEBUG [DataNucleus.Transaction] - Transaction begun for ExecutionContext org.datanucleus.ExecutionContextImpl@6f6a5242 (optimistic=false)
+13:27:56,208 (main) DEBUG [DataNucleus.Persistence] - Making object persistent : "data.Song@65b165c3"
+13:27:56,209 (main) DEBUG [DataNucleus.Transaction] - Transaction rolling back for ExecutionContext org.datanucleus.ExecutionContextImpl@6f6a5242
+13:27:56,209 (main) DEBUG [DataNucleus.Transaction] - Rolling back [DataNucleus Transaction, ID=Xid=   , enlisted resources=[]]
+13:27:56,209 (main) DEBUG [DataNucleus.Transaction] - Transaction rolled back in 0 ms
+13:27:56,209 (main) DEBUG [DataNucleus.Cache] - Level 1 Cache cleared
+13:27:56,209 (main) DEBUG [DataNucleus.Persistence] - ExecutionContext "org.datanucleus.ExecutionContextImpl@6f6a5242" closed
+13:27:56,210 (main) DEBUG [DataNucleus.Persistence] - ExecutionContext "org.datanucleus.ExecutionContextImpl@6f6a5242" opened for datastore "org.datanucleus.store.rdbms.RDBMSStoreManager@9c809c5" with txn="org.datanucleus.TransactionImpl@6190195d"
+13:27:56,210 (main) DEBUG [DataNucleus.Transaction] - Transaction created [DataNucleus Transaction, ID=Xid=   , enlisted resources=[]]
+13:27:56,210 (main) DEBUG [DataNucleus.Transaction] - Transaction begun for ExecutionContext org.datanucleus.ExecutionContextImpl@6f6a5242 (optimistic=false)
+13:27:56,210 (main) DEBUG [DataNucleus.Persistence] - Making object persistent : "data.Song@efa3f90"
+13:27:56,211 (main) DEBUG [DataNucleus.Transaction] - Transaction rolling back for ExecutionContext org.datanucleus.ExecutionContextImpl@6f6a5242
+13:27:56,211 (main) DEBUG [DataNucleus.Transaction] - Rolling back [DataNucleus Transaction, ID=Xid=   , enlisted resources=[]]
+13:27:56,211 (main) DEBUG [DataNucleus.Transaction] - Transaction rolled back in 0 ms
+13:27:56,211 (main) DEBUG [DataNucleus.Cache] - Level 1 Cache cleared
+13:27:56,211 (main) DEBUG [DataNucleus.Persistence] - ExecutionContext "org.datanucleus.ExecutionContextImpl@6f6a5242" closed
+13:27:56,212 (main) DEBUG [DataNucleus.Persistence] - ExecutionContext "org.datanucleus.ExecutionContextImpl@6f6a5242" opened for datastore "org.datanucleus.store.rdbms.RDBMSStoreManager@9c809c5" with txn="org.datanucleus.TransactionImpl@4f630e9e"
+13:27:56,212 (main) DEBUG [DataNucleus.Transaction] - Transaction created [DataNucleus Transaction, ID=Xid=   , enlisted resources=[]]
+13:27:56,212 (main) DEBUG [DataNucleus.Transaction] - Transaction begun for ExecutionContext org.datanucleus.ExecutionContextImpl@6f6a5242 (optimistic=false)
+13:27:56,212 (main) DEBUG [DataNucleus.Persistence] - Making object persistent : "data.Song@5015cebc"
+13:27:56,212 (main) DEBUG [DataNucleus.Transaction] - Transaction rolling back for ExecutionContext org.datanucleus.ExecutionContextImpl@6f6a5242
+13:27:56,212 (main) DEBUG [DataNucleus.Transaction] - Rolling back [DataNucleus Transaction, ID=Xid=   , enlisted resources=[]]
+13:27:56,213 (main) DEBUG [DataNucleus.Transaction] - Transaction rolled back in 1 ms
+13:27:56,213 (main) DEBUG [DataNucleus.Cache] - Level 1 Cache cleared
+13:27:56,213 (main) DEBUG [DataNucleus.Persistence] - ExecutionContext "org.datanucleus.ExecutionContextImpl@6f6a5242" closed
+13:27:56,213 (main) DEBUG [DataNucleus.Persistence] - ExecutionContext "org.datanucleus.ExecutionContextImpl@6f6a5242" opened for datastore "org.datanucleus.store.rdbms.RDBMSStoreManager@9c809c5" with txn="org.datanucleus.TransactionImpl@47b7c1b7"
+13:27:56,213 (main) DEBUG [DataNucleus.Transaction] - Transaction created [DataNucleus Transaction, ID=Xid=   , enlisted resources=[]]
+13:27:56,213 (main) DEBUG [DataNucleus.Transaction] - Transaction begun for ExecutionContext org.datanucleus.ExecutionContextImpl@6f6a5242 (optimistic=false)
+13:27:56,213 (main) DEBUG [DataNucleus.Persistence] - Making object persistent : "data.Song@e49d3bc"
+13:27:56,214 (main) DEBUG [DataNucleus.Transaction] - Transaction rolling back for ExecutionContext org.datanucleus.ExecutionContextImpl@6f6a5242
+13:27:56,214 (main) DEBUG [DataNucleus.Transaction] - Rolling back [DataNucleus Transaction, ID=Xid=   , enlisted resources=[]]
+13:27:56,214 (main) DEBUG [DataNucleus.Transaction] - Transaction rolled back in 0 ms
+13:27:56,214 (main) DEBUG [DataNucleus.Cache] - Level 1 Cache cleared
+13:27:56,214 (main) DEBUG [DataNucleus.Persistence] - ExecutionContext "org.datanucleus.ExecutionContextImpl@6f6a5242" closed
+13:27:56,214 (main) DEBUG [DataNucleus.Persistence] - ExecutionContext "org.datanucleus.ExecutionContextImpl@6f6a5242" opened for datastore "org.datanucleus.store.rdbms.RDBMSStoreManager@9c809c5" with txn="org.datanucleus.TransactionImpl@10ebe2f8"
+13:27:56,215 (main) DEBUG [DataNucleus.Transaction] - Transaction created [DataNucleus Transaction, ID=Xid=   	, enlisted resources=[]]
+13:27:56,215 (main) DEBUG [DataNucleus.Transaction] - Transaction begun for ExecutionContext org.datanucleus.ExecutionContextImpl@6f6a5242 (optimistic=false)
+13:27:56,215 (main) DEBUG [DataNucleus.Persistence] - Making object persistent : "data.Song@1d06aa01"
+13:27:56,215 (main) DEBUG [DataNucleus.Transaction] - Transaction rolling back for ExecutionContext org.datanucleus.ExecutionContextImpl@6f6a5242
+13:27:56,215 (main) DEBUG [DataNucleus.Transaction] - Rolling back [DataNucleus Transaction, ID=Xid=   	, enlisted resources=[]]
+13:27:56,215 (main) DEBUG [DataNucleus.Transaction] - Transaction rolled back in 0 ms
+13:27:56,215 (main) DEBUG [DataNucleus.Cache] - Level 1 Cache cleared
+13:27:56,215 (main) DEBUG [DataNucleus.Persistence] - ExecutionContext "org.datanucleus.ExecutionContextImpl@6f6a5242" closed
+13:27:56,216 (main) DEBUG [DataNucleus.Persistence] - ExecutionContext "org.datanucleus.ExecutionContextImpl@6f6a5242" opened for datastore "org.datanucleus.store.rdbms.RDBMSStoreManager@9c809c5" with txn="org.datanucleus.TransactionImpl@2083368a"
+13:27:56,216 (main) DEBUG [DataNucleus.Transaction] - Transaction created [DataNucleus Transaction, ID=Xid=   
+, enlisted resources=[]]
+13:27:56,216 (main) DEBUG [DataNucleus.Transaction] - Transaction begun for ExecutionContext org.datanucleus.ExecutionContextImpl@6f6a5242 (optimistic=false)
+13:27:56,216 (main) DEBUG [DataNucleus.Persistence] - Making object persistent : "data.Song@11846d13"
+13:27:56,216 (main) DEBUG [DataNucleus.Transaction] - Transaction rolling back for ExecutionContext org.datanucleus.ExecutionContextImpl@6f6a5242
+13:27:56,216 (main) DEBUG [DataNucleus.Transaction] - Rolling back [DataNucleus Transaction, ID=Xid=   
+, enlisted resources=[]]
+13:27:56,216 (main) DEBUG [DataNucleus.Transaction] - Transaction rolled back in 0 ms
+13:27:56,217 (main) DEBUG [DataNucleus.Cache] - Level 1 Cache cleared
+13:27:56,217 (main) DEBUG [DataNucleus.Persistence] - ExecutionContext "org.datanucleus.ExecutionContextImpl@6f6a5242" closed
+13:27:56,217 (main) DEBUG [DataNucleus.Persistence] - ExecutionContext "org.datanucleus.ExecutionContextImpl@6f6a5242" opened for datastore "org.datanucleus.store.rdbms.RDBMSStoreManager@9c809c5" with txn="org.datanucleus.TransactionImpl@d150361"
+13:27:56,217 (main) DEBUG [DataNucleus.Transaction] - Transaction created [DataNucleus Transaction, ID=Xid=   , enlisted resources=[]]
+13:27:56,217 (main) DEBUG [DataNucleus.Transaction] - Transaction begun for ExecutionContext org.datanucleus.ExecutionContextImpl@6f6a5242 (optimistic=false)
+13:27:56,217 (main) DEBUG [DataNucleus.Persistence] - Making object persistent : "data.Song@785aade4"
+13:27:56,218 (main) DEBUG [DataNucleus.Transaction] - Transaction rolling back for ExecutionContext org.datanucleus.ExecutionContextImpl@6f6a5242
+13:27:56,218 (main) DEBUG [DataNucleus.Transaction] - Rolling back [DataNucleus Transaction, ID=Xid=   , enlisted resources=[]]
+13:27:56,218 (main) DEBUG [DataNucleus.Transaction] - Transaction rolled back in 0 ms
+13:27:56,218 (main) DEBUG [DataNucleus.Cache] - Level 1 Cache cleared
+13:27:56,218 (main) DEBUG [DataNucleus.Persistence] - ExecutionContext "org.datanucleus.ExecutionContextImpl@6f6a5242" closed
+13:27:56,218 (main) DEBUG [DataNucleus.Persistence] - ExecutionContext "org.datanucleus.ExecutionContextImpl@6f6a5242" opened for datastore "org.datanucleus.store.rdbms.RDBMSStoreManager@9c809c5" with txn="org.datanucleus.TransactionImpl@94e9177"
+13:27:56,218 (main) DEBUG [DataNucleus.Transaction] - Transaction created [DataNucleus Transaction, ID=Xid=   , enlisted resources=[]]
+13:27:56,219 (main) DEBUG [DataNucleus.Transaction] - Transaction begun for ExecutionContext org.datanucleus.ExecutionContextImpl@6f6a5242 (optimistic=false)
+13:27:56,219 (main) DEBUG [DataNucleus.Persistence] - Making object persistent : "data.Song@1a9f4cda"
+13:27:56,219 (main) DEBUG [DataNucleus.Transaction] - Transaction rolling back for ExecutionContext org.datanucleus.ExecutionContextImpl@6f6a5242
+13:27:56,219 (main) DEBUG [DataNucleus.Transaction] - Rolling back [DataNucleus Transaction, ID=Xid=   , enlisted resources=[]]
+13:27:56,219 (main) DEBUG [DataNucleus.Transaction] - Transaction rolled back in 0 ms
+13:27:56,219 (main) DEBUG [DataNucleus.Cache] - Level 1 Cache cleared
+13:27:56,219 (main) DEBUG [DataNucleus.Persistence] - ExecutionContext "org.datanucleus.ExecutionContextImpl@6f6a5242" closed
+13:27:56,220 (main) DEBUG [DataNucleus.Persistence] - ExecutionContext "org.datanucleus.ExecutionContextImpl@6f6a5242" opened for datastore "org.datanucleus.store.rdbms.RDBMSStoreManager@9c809c5" with txn="org.datanucleus.TransactionImpl@506e89dd"
+13:27:56,220 (main) DEBUG [DataNucleus.Transaction] - Transaction created [DataNucleus Transaction, ID=Xid=   , enlisted resources=[]]
+13:27:56,220 (main) DEBUG [DataNucleus.Transaction] - Transaction begun for ExecutionContext org.datanucleus.ExecutionContextImpl@6f6a5242 (optimistic=false)
+13:27:56,220 (main) DEBUG [DataNucleus.Persistence] - Making object persistent : "data.Song@5c9e4a20"
+13:27:56,220 (main) DEBUG [DataNucleus.Transaction] - Transaction rolling back for ExecutionContext org.datanucleus.ExecutionContextImpl@6f6a5242
+13:27:56,220 (main) DEBUG [DataNucleus.Transaction] - Rolling back [DataNucleus Transaction, ID=Xid=   , enlisted resources=[]]
+13:27:56,220 (main) DEBUG [DataNucleus.Transaction] - Transaction rolled back in 0 ms
+13:27:56,221 (main) DEBUG [DataNucleus.Cache] - Level 1 Cache cleared
+13:27:56,221 (main) DEBUG [DataNucleus.Persistence] - ExecutionContext "org.datanucleus.ExecutionContextImpl@6f6a5242" closed
+13:27:56,221 (main) DEBUG [DataNucleus.Persistence] - ExecutionContext "org.datanucleus.ExecutionContextImpl@6f6a5242" opened for datastore "org.datanucleus.store.rdbms.RDBMSStoreManager@9c809c5" with txn="org.datanucleus.TransactionImpl@1c14aa61"
+13:27:56,221 (main) DEBUG [DataNucleus.Transaction] - Transaction created [DataNucleus Transaction, ID=Xid=   , enlisted resources=[]]
+13:27:56,221 (main) DEBUG [DataNucleus.Transaction] - Transaction begun for ExecutionContext org.datanucleus.ExecutionContextImpl@6f6a5242 (optimistic=false)
+13:27:56,221 (main) DEBUG [DataNucleus.Persistence] - Making object persistent : "data.Song@1ed5f418"
+13:27:56,222 (main) DEBUG [DataNucleus.Transaction] - Transaction rolling back for ExecutionContext org.datanucleus.ExecutionContextImpl@6f6a5242
+13:27:56,222 (main) DEBUG [DataNucleus.Transaction] - Rolling back [DataNucleus Transaction, ID=Xid=   , enlisted resources=[]]
+13:27:56,222 (main) DEBUG [DataNucleus.Transaction] - Transaction rolled back in 0 ms
+13:27:56,222 (main) DEBUG [DataNucleus.Cache] - Level 1 Cache cleared
+13:27:56,222 (main) DEBUG [DataNucleus.Persistence] - ExecutionContext "org.datanucleus.ExecutionContextImpl@6f6a5242" closed
+13:27:56,223 (main) DEBUG [DataNucleus.Persistence] - ExecutionContext "org.datanucleus.ExecutionContextImpl@6f6a5242" opened for datastore "org.datanucleus.store.rdbms.RDBMSStoreManager@9c809c5" with txn="org.datanucleus.TransactionImpl@708c6378"
+13:27:56,223 (main) DEBUG [DataNucleus.Transaction] - Transaction created [DataNucleus Transaction, ID=Xid=   , enlisted resources=[]]
+13:27:56,223 (main) DEBUG [DataNucleus.Transaction] - Transaction begun for ExecutionContext org.datanucleus.ExecutionContextImpl@6f6a5242 (optimistic=false)
+13:27:56,223 (main) DEBUG [DataNucleus.Persistence] - Making object persistent : "data.Song@77d0bef0"
+13:27:56,223 (main) DEBUG [DataNucleus.Transaction] - Transaction rolling back for ExecutionContext org.datanucleus.ExecutionContextImpl@6f6a5242
+13:27:56,223 (main) DEBUG [DataNucleus.Transaction] - Rolling back [DataNucleus Transaction, ID=Xid=   , enlisted resources=[]]
+13:27:56,224 (main) DEBUG [DataNucleus.Transaction] - Transaction rolled back in 1 ms
+13:27:56,224 (main) DEBUG [DataNucleus.Cache] - Level 1 Cache cleared
+13:27:56,224 (main) DEBUG [DataNucleus.Persistence] - ExecutionContext "org.datanucleus.ExecutionContextImpl@6f6a5242" closed
+13:27:56,224 (main) DEBUG [DataNucleus.Persistence] - ExecutionContext "org.datanucleus.ExecutionContextImpl@6f6a5242" opened for datastore "org.datanucleus.store.rdbms.RDBMSStoreManager@9c809c5" with txn="org.datanucleus.TransactionImpl@29a7bc04"
+13:27:56,225 (main) DEBUG [DataNucleus.Transaction] - Transaction created [DataNucleus Transaction, ID=Xid=   , enlisted resources=[]]
+13:27:56,225 (main) DEBUG [DataNucleus.Transaction] - Transaction begun for ExecutionContext org.datanucleus.ExecutionContextImpl@6f6a5242 (optimistic=false)
+13:27:56,225 (main) DEBUG [DataNucleus.Persistence] - Making object persistent : "data.Song@285396e1"
+13:27:56,229 (main) DEBUG [DataNucleus.Transaction] - Transaction rolling back for ExecutionContext org.datanucleus.ExecutionContextImpl@6f6a5242
+13:27:56,229 (main) DEBUG [DataNucleus.Transaction] - Rolling back [DataNucleus Transaction, ID=Xid=   , enlisted resources=[]]
+13:27:56,229 (main) DEBUG [DataNucleus.Transaction] - Transaction rolled back in 0 ms
+13:27:56,230 (main) DEBUG [DataNucleus.Cache] - Level 1 Cache cleared
+13:27:56,230 (main) DEBUG [DataNucleus.Persistence] - ExecutionContext "org.datanucleus.ExecutionContextImpl@6f6a5242" closed
+13:27:56,230 (main) DEBUG [DataNucleus.Persistence] - ExecutionContext "org.datanucleus.ExecutionContextImpl@6f6a5242" opened for datastore "org.datanucleus.store.rdbms.RDBMSStoreManager@9c809c5" with txn="org.datanucleus.TransactionImpl@550049b6"
+13:27:56,230 (main) DEBUG [DataNucleus.Transaction] - Transaction created [DataNucleus Transaction, ID=Xid=   , enlisted resources=[]]
+13:27:56,231 (main) DEBUG [DataNucleus.Transaction] - Transaction begun for ExecutionContext org.datanucleus.ExecutionContextImpl@6f6a5242 (optimistic=false)
+13:27:56,231 (main) DEBUG [DataNucleus.Persistence] - Making object persistent : "data.Artist@1f4aed2c"
+13:27:56,231 (main) DEBUG [DataNucleus.Transaction] - Transaction rolling back for ExecutionContext org.datanucleus.ExecutionContextImpl@6f6a5242
+13:27:56,232 (main) DEBUG [DataNucleus.Transaction] - Rolling back [DataNucleus Transaction, ID=Xid=   , enlisted resources=[]]
+13:27:56,232 (main) DEBUG [DataNucleus.Transaction] - Transaction rolled back in 1 ms
+13:27:56,232 (main) DEBUG [DataNucleus.Cache] - Level 1 Cache cleared
+13:27:56,232 (main) DEBUG [DataNucleus.Persistence] - ExecutionContext "org.datanucleus.ExecutionContextImpl@6f6a5242" closed
+13:27:56,232 (main) DEBUG [DataNucleus.Persistence] - ExecutionContext "org.datanucleus.ExecutionContextImpl@6f6a5242" opened for datastore "org.datanucleus.store.rdbms.RDBMSStoreManager@9c809c5" with txn="org.datanucleus.TransactionImpl@7018f3c0"
+13:27:56,233 (main) DEBUG [DataNucleus.Transaction] - Transaction created [DataNucleus Transaction, ID=Xid=   , enlisted resources=[]]
+13:27:56,233 (main) DEBUG [DataNucleus.Transaction] - Transaction begun for ExecutionContext org.datanucleus.ExecutionContextImpl@6f6a5242 (optimistic=false)
+13:27:56,233 (main) DEBUG [DataNucleus.Persistence] - Making object persistent : "data.Album@7ff5b38d"
+13:27:56,233 (main) DEBUG [DataNucleus.Transaction] - Transaction rolling back for ExecutionContext org.datanucleus.ExecutionContextImpl@6f6a5242
+13:27:56,233 (main) DEBUG [DataNucleus.Transaction] - Rolling back [DataNucleus Transaction, ID=Xid=   , enlisted resources=[]]
+13:27:56,233 (main) DEBUG [DataNucleus.Transaction] - Transaction rolled back in 0 ms
+13:27:56,233 (main) DEBUG [DataNucleus.Cache] - Level 1 Cache cleared
+13:27:56,233 (main) DEBUG [DataNucleus.Persistence] - ExecutionContext "org.datanucleus.ExecutionContextImpl@6f6a5242" closed

@@ -24,7 +24,7 @@ public class Member extends DBItem implements IVisitable{
 		this.nick=nick;
 		this.bankAccount=bankAccount;
 		this.plays=new ArrayList<Play>();
-		
+		paymentService="none";
 	}
 
 	public String getId() {
