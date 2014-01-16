@@ -30,6 +30,7 @@ public class Artist extends DBItem {
 		songs.add(song);
 	}
 	public void addSong(Song song){
+		song.setArtist(this);
 		songs.add(song);
 	}
 	public ArrayList<Song> getSongs(){

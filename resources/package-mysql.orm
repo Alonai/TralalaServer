@@ -20,6 +20,7 @@
          </class>
          
          <class name="Album">
+         	<inheritance strategy="new-table"/>
             <field name="title">
            		<column length="40" jdbc-type="VARCHAR"/>
             </field>
@@ -33,6 +34,7 @@
          </class>
          
         <class name="Song">
+        	<inheritance strategy="new-table"/>
             <field name="songTitle">
                 <column length="40" jdbc-type="VARCHAR"/>
             </field>
@@ -42,13 +44,14 @@
             <field name="ppp">
                 <column jdbc-type="DOUBLE"/>
             </field>
-            <field name="artist">               
+            <field name="artist" default-fetch-group="true">               
             </field>
             <field name="album" default-fetch-group="true">               
             </field>
 		</class>
 		
 		<class name="Member">
+			<inheritance strategy="new-table"/>
             <field name="name">
                 <column length="128" jdbc-type="VARCHAR"/>
             </field>
@@ -68,6 +71,7 @@
 		</class>
 		
 		<class name="Play">
+			<inheritance strategy="new-table"/>
             <field name="date">
                 <column length="128" jdbc-type="VARCHAR"/>
             </field>

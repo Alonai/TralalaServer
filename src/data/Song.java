@@ -47,7 +47,6 @@ public class Song extends DBItem {
 	}
 	public void setAlbum(Album album){
 		this.album = album;
-		album.addSong(this);
 	}
 	
 }

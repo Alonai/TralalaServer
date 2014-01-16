@@ -1,6 +1,7 @@
 package launcher;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import data.*;
 import data.dao.DBItemDAO;
@@ -45,13 +46,24 @@ public class DBDataCreator {
 		for(DBItem song:items){
 			daftPunk.addSong((Song)song);
 			homework.addSong((Song)song);
+			System.out.println(((Song)song).getArtist().getName()+" - "+((Song)song).getTitle());
 		}
 		items.add(daftPunk);
 		items.add(homework);
 		DBItemDAO dao=new DBItemDAO();
-		for(DBItem item:items){
-			dao.storeItem(item);
+		dao.storeArtist(daftPunk);
+		System.out.println("Getting list of songs...");
+		List<Song> songs=dao.getSongs();
+		for(Song song:songs){
+			if(song!=null){
+				if(song.getArtist()!=null){
+					System.out.println(song.getArtist().getName()+" - "+song.getTitle());
+				}else{
+					System.out.println("artists are null");
+				}
+			}else{
+				System.out.println("songs are null");
+			}
 		}
-		
 	}
 }

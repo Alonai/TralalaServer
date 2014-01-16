@@ -33,6 +33,7 @@ public class Album extends DBItem {
 		return songs;
 	}
 	public void addSong(Song song){
+		song.setAlbum(this);
 		songs.add(song);
 	}	
 }
