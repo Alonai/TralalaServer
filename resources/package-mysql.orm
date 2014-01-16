@@ -33,18 +33,18 @@
          </class>
          
         <class name="Song">
-            <field name="title">
-                <column length="128" jdbc-type="VARCHAR"/>
+            <field name="songTitle">
+                <column length="40" jdbc-type="VARCHAR"/>
             </field>
 			<field name="duration">
-                <column length="128" jdbc-type="INTEGER"/>
+                <column length="40" jdbc-type="INTEGER"/>
             </field>
             <field name="ppp">
                 <column length="128" jdbc-type="DOUBLE"/>
             </field>
-            <field name="Artist">               
+            <field name="artist">               
             </field>
-            <field name="Album" default-fetch-group="true">               
+            <field name="album" default-fetch-group="true">               
             </field>
 		</class>
 		
