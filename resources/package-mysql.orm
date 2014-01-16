@@ -40,7 +40,7 @@
                 <column length="40" jdbc-type="INTEGER"/>
             </field>
             <field name="ppp">
-                <column length="128" jdbc-type="DOUBLE"/>
+                <column jdbc-type="DOUBLE"/>
             </field>
             <field name="artist">               
             </field>
