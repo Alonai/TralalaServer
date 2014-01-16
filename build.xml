@@ -8,9 +8,31 @@
 	<property name="lib.dir" location="lib"/>
 	<property name="classpath" location="bin"/>
 	<property name="version" value="2.0"/>
-	<property name="server.port" value="1099"/> 
-	<property name="server.IP" value="127.0.0.1"/>
-	<property name="server.Name" value="TralalaServer"/>
+	<!-- PaymentSessionFacade -->
+	<property name="payment.port" value="1099"/> 
+	<property name="payment.IP" value="127.0.0.1"/>
+	<property name="payment.Name" value="TS-Payment"/>
+	<!-- SongSessionFacade -->
+	<property name="songs.port" value="1099"/> 
+	<property name="songs.IP" value="127.0.0.1"/>
+	<property name="songs.Name" value="TS-Songs"/>
+	<!-- ManagementSessionFacade -->
+	<property name="manage.port" value="1099"/> 
+	<property name="manage.IP" value="127.0.0.1"/>
+	<property name="manage.Name" value="TS-Manage"/>
+	<!-- AuthGateway -->
+	<property name="auth-server.port" value="1099"/> 
+	<property name="auth-server.IP" value="127.0.0.1"/>
+	<property name="auth-server.Name" value="AuthorizationServer"/>
+	<!-- Paypal -->
+	<property name="paypal-server.port" value="1099"/> 
+	<property name="paypal-server.IP" value="127.0.0.1"/>
+	<property name="paypal-server.Name" value="PayPalServer"/>
+	<!-- Banking -->
+	<property name="bank-server.port" value="1099"/> 
+	<property name="bank-server.IP" value="127.0.0.1"/>
+	<property name="bank-server.Name" value="BankingServer"/>
+	
 	<property name="export.file" value="TralalaServer-${version}.jar"/>
 	<property name="policy.file" location="security/java.policy"/>	
 
@@ -109,10 +131,31 @@
 	<target name="server" depends="build, enhance" description="Runs the Server">
 		<java classname="launcher.TralalaLauncher" classpath="${classpath}" fork="true">
 			<jvmarg value="-Djava.rmi.server.codebase=file:${build.dir}/"/>
-			<jvmarg value="-Djava.security.policy=${policy.file}"/>			
-        	<arg value="${server.IP}"/> 
-	 		<arg value="${server.port}"/> 
-			<arg value="${server.Name}"/> 
+			<jvmarg value="-Djava.security.policy=${policy.file}"/>
+			<!-- PaymentSessionFacade --> 
+        	<arg value="${payment.IP}"/> 
+	 		<arg value="${payment.port}"/> 
+			<arg value="${payment.Name}"/> 
+			<!-- SongSessionFacade -->
+			<arg value="${songs.IP}"/> 
+			<arg value="${songs.port}"/> 
+			<arg value="${songs.Name}"/> 
+			<!-- ManagementSessionFacade --> 
+			<arg value="${manage.IP}"/> 
+			<arg value="${manage.port}"/> 
+			<arg value="${manage.Name}"/>
+			<!-- AuthGateway -->
+			<arg value="${auth-server.IP}"/> 
+			<arg value="${auth-server.port}"/> 
+			<arg value="${auth-server.Name}"/>
+			<!-- PaypalGateway -->
+			<arg value="${paypal-server.IP}}"/> 
+			<arg value="${paypal-server.port}"/> 
+			<arg value="${paypal-server.Name}"/>
+			<!-- BankingGateway -->
+			<arg value="${bank-server.IP}"/> 
+			<arg value="${bank-server.port}"/> 
+			<arg value="${bank-server.Name}"/>			
         </java>
     </target>
 </project>
