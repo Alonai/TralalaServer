@@ -4,7 +4,7 @@ import server.PPServer;
 
 public class PayPalGW extends PaymentGateway{
 
-	private final String name= "//127.0.0.1:1234/PayPalServer";
+	private final String name= "//127.0.0.1:1099/PayPalServer";
 	private String[] options;
 	/** [0]: credit card number
 	 *  [1]: amount to pay

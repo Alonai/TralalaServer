@@ -4,7 +4,7 @@ import server.BankingServer;
 
 public class BankingGW extends PaymentGateway{
 	
-	private final String name= "//127.0.0.1:4321/BankingServer";
+	private final String name= "//127.0.0.1:1099/BankingServer";
 	private String[] options;
 	/** [0]: bank account
 	 *  [1]: amount to pay

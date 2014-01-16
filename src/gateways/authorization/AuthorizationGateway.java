@@ -12,7 +12,7 @@ import gateways.Gateway;
 
 public class AuthorizationGateway extends Gateway{
 
-	private final String name= "//127.0.0.1:4322/AuthorizationServer";
+	private final String name= "//127.0.0.1:1099/AuthorizationServer";
 	private IAuthService server;
 	public AuthorizationGateway() throws Exception{
 		super();
