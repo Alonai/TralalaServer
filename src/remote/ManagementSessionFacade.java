@@ -13,7 +13,7 @@ public class ManagementSessionFacade extends UnicastRemoteObject implements IMan
 		manager = memberM;
 	}
 	
-	public boolean signIn(String user, String pass) {
+	public boolean signIn(String user, String pass) throws RemoteException{
 		return manager.signIn(user, pass);
 	}
 }

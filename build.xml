@@ -128,7 +128,7 @@
 	<target name="export" depends="build" description="Export the project into a .jar file">
 		<delete dir="${dist.dir}"/>
 		<mkdir dir="${dist.dir}"/>
-		<jar destfile="${dist.dir}/${export.file}" basedir="${build.dir}">
+		<jar destfile="${dist.dir}/${export.file}" basedir="${build.dir}" includes="**/**SessionFacade.class, **/**DTO.class">
 			
 			<zipgroupfileset dir="${lib.dir}" includes="*.jar" />
 		</jar>

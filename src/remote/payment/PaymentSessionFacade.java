@@ -14,7 +14,7 @@ public class PaymentSessionFacade extends UnicastRemoteObject{
 		payServ = pay;
 	}
 	
-	public double currentAmount(Member m) {
+	public double currentAmount(Member m) throws RemoteException{
 		return payServ.currentAmount(m);
 	}
 	

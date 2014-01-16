@@ -18,7 +18,7 @@ public class SongSessionFacade extends UnicastRemoteObject implements ISongSessi
 	}
 
 	@Override
-	public ArrayList<String> getListSongs() {
+	public ArrayList<String> getListSongs() throws RemoteException{
 		//Convertir lista de songs a list de strings
 		ArrayList<String> ret = new ArrayList<String>();
 		List<Song> songs = provider.getListSongs();
@@ -30,7 +30,7 @@ public class SongSessionFacade extends UnicastRemoteObject implements ISongSessi
 	}
 
 	@Override
-	public SongDTO downloadSong(String name) {
+	public SongDTO downloadSong(String name) throws RemoteException{
 		return provider.giveSong(name);
 	}
 
