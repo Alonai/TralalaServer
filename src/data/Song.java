@@ -11,8 +11,10 @@ public class Song extends DBItem {
 	private Artist artist;
 	private Album album;
 	
-	public Song(String id) {
+	public Song(String id,String title, int duration) {
 		super(id);
+		songTitle=title;
+		this.duration=duration;
 	}
 	
 	public String getTitle() {

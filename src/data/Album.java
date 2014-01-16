@@ -8,11 +8,14 @@ import javax.jdo.annotations.PersistenceCapable;
 public class Album extends DBItem {
 	
 	private String title;
-	private Object releaseDate;
+	private String releaseDate;
 	private ArrayList<Song> songs;
 	
-	public Album(String id){
+	public Album(String id, String title, String releaseDate){
 		super(id);
+		this.releaseDate=releaseDate;
+		this.title=title;
+		songs=new ArrayList<Song>();
 	}
 	public String getTitle() {
 		return title;
@@ -20,10 +23,10 @@ public class Album extends DBItem {
 	public void setTitle(String title) {
 		this.title = title;
 	}
-	public Object getReleaseDate() {
+	public String getReleaseDate() {
 		return releaseDate;
 	}
-	public void setReleaseDate(Object releaseDate) {
+	public void setReleaseDate(String releaseDate) {
 		this.releaseDate = releaseDate;
 	}
 	public ArrayList<Song> getSongs() {
