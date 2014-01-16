@@ -44,7 +44,7 @@
             <field name="ppp">
                 <column jdbc-type="DOUBLE"/>
             </field>
-            <field name="artist" default-fetch-group="true">               
+            <field name="artist">               
             </field>
             <field name="album" default-fetch-group="true">               
             </field>

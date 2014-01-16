@@ -56,10 +56,21 @@ public class DBDataCreator {
 		List<Song> songs=dao.getSongs();
 		for(Song song:songs){
 			if(song!=null){
+				if(song.getAlbum()!=null){
+					System.out.println(song.getAlbum().getTitle()+" - "+song.getTitle());
+				}else{
+					System.out.println("Albums are null");
+				}
+			}else{
+				System.out.println("songs are null");
+			}
+		}
+		for(Song song:songs){
+			if(song!=null){
 				if(song.getArtist()!=null){
 					System.out.println(song.getArtist().getName()+" - "+song.getTitle());
 				}else{
-					System.out.println("artists are null");
+					System.out.println("Artists are null");
 				}
 			}else{
 				System.out.println("songs are null");

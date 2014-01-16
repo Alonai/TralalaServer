@@ -78,7 +78,7 @@
     </target>
 
     <!-- TARGET : SchemaTool "create" -->
-    <target name="createschema">
+    <target name="createschema"  depends="deleteschema">
         <taskdef name="schematool" classpathref="classpath" classname="org.datanucleus.store.schema.SchemaToolTask"/>
 
         <schematool mode="create" classpathref="classpath" failonerror="true" persistenceUnit="TralalaJDO" props="META-INF/persistence.xml">
@@ -102,7 +102,7 @@
     </target>
 	
     <!-- TARGET : Run -->	
-	<target name="run" depends="createschema">
+	<target name="run" depends="enhance, createschema">
         <java classname="launcher.DBDataCreator" classpathref="classpath" fork="true">
         	<jvmarg value="-Dlog4j.configuration=log4j.properties"/>
 		</java>
