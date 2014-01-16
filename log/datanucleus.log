@@ -1,0 +1,764 @@
+09:28:09,036 (main) DEBUG [DataNucleus.General] - Using PluginRegistry org.datanucleus.plugin.NonManagedPluginRegistry
+09:28:09,083 (main) DEBUG [DataNucleus.General] - Registering bundle org.datanucleus.store.rdbms version 3.2.6 at URL file:/F:/Documentos/GitHub/TralalaServer/lib/datanucleus-rdbms-3.2.6.jar.
+09:28:09,193 (main) DEBUG [DataNucleus.General] - Loading extension points from plug-in file jar:file:/F:/Documentos/GitHub/TralalaServer/lib/datanucleus-rdbms-3.2.6.jar!/plugin.xml.
+09:28:09,224 (main) DEBUG [DataNucleus.General] - Loading extensions from plug-in file jar:file:/F:/Documentos/GitHub/TralalaServer/lib/datanucleus-rdbms-3.2.6.jar!/plugin.xml.
+09:28:09,243 (main) DEBUG [DataNucleus.General] - Registering bundle org.datanucleus version 3.2.7 at URL file:/F:/Documentos/GitHub/TralalaServer/lib/datanucleus-core-3.2.7.jar.
+09:28:09,260 (main) DEBUG [DataNucleus.General] - Loading extension points from plug-in file jar:file:/F:/Documentos/GitHub/TralalaServer/lib/datanucleus-core-3.2.7.jar!/plugin.xml.
+09:28:09,275 (main) DEBUG [DataNucleus.General] - Loading extensions from plug-in file jar:file:/F:/Documentos/GitHub/TralalaServer/lib/datanucleus-core-3.2.7.jar!/plugin.xml.
+09:28:09,282 (main) DEBUG [DataNucleus.General] - Registering bundle org.datanucleus.api.jdo version 3.2.4 at URL file:/F:/Documentos/GitHub/TralalaServer/lib/datanucleus-api-jdo-3.2.4.jar.
+09:28:09,287 (main) DEBUG [DataNucleus.General] - Loading extension points from plug-in file jar:file:/F:/Documentos/GitHub/TralalaServer/lib/datanucleus-api-jdo-3.2.4.jar!/plugin.xml.
+09:28:09,290 (main) DEBUG [DataNucleus.General] - Loading extensions from plug-in file jar:file:/F:/Documentos/GitHub/TralalaServer/lib/datanucleus-api-jdo-3.2.4.jar!/plugin.xml.
+09:28:09,343 (main) DEBUG [DataNucleus.Persistence] - Tipos de Java inicializando ...
+09:28:09,410 (main) DEBUG [DataNucleus.Persistence] - Soporte para tipos de Java listo : tipos soportados = java.util.TimeZone, [Ljava.lang.Byte;, [Ljava.lang.Integer;, java.util.SortedMap, char, java.lang.Boolean, [Ljava.lang.Boolean;, java.lang.Long, java.sql.Timestamp, [Ljava.lang.Double;, java.lang.Float, long, float, java.util.BitSet, java.util.Stack, java.math.BigInteger, java.lang.Double, java.util.Vector, byte, java.util.Locale, java.lang.Class, [Ljava.lang.Long;, java.sql.Time, boolean, [Ljava.lang.Short;, java.util.LinkedList, java.util.PriorityQueue, [Ljava.lang.Enum;, int, java.util.List, java.util.TreeMap, java.lang.Integer, java.lang.Short, double, java.lang.Number, java.util.LinkedHashMap, java.sql.Date, [Ljava.util.Locale;, java.util.Arrays$ArrayList, java.lang.Byte, java.util.UUID, [Ljava.lang.String;, [Ljava.util.Date;, java.util.Currency, java.util.Properties, java.util.Calendar, java.util.Map, java.awt.Color, java.util.HashMap, [Ljava.lang.Character;, short, java.util.GregorianCalendar, java.util.TreeSet, java.lang.Character, java.util.SortedSet, java.util.Set, java.util.Collection, java.util.ArrayList, java.lang.StringBuffer, [Ljava.math.BigDecimal;, [B, java.util.Hashtable, [F, java.lang.String, java.net.URI, [C, java.awt.image.BufferedImage, [D, java.util.Date, [I, [J, [Ljava.lang.Number;, [Ljava.lang.Float;, [Ljava.math.BigInteger;, java.net.URL, java.util.HashSet, java.math.BigDecimal, [S, [Z, java.util.Queue, java.lang.Enum, java.util.LinkedHashSet
+09:28:09,410 (main) DEBUG [DataNucleus.Persistence] - Inicializando TypeConverters ...
+09:28:09,411 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.math.BigDecimal<->java.lang.String using org.datanucleus.store.types.converters.BigDecimalStringConverter
+09:28:09,412 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.math.BigInteger<->java.lang.String using org.datanucleus.store.types.converters.BigIntegerStringConverter
+09:28:09,412 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.util.BitSet<->java.lang.String using org.datanucleus.store.types.converters.BitSetStringConverter
+09:28:09,413 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.util.Calendar<->java.lang.String using org.datanucleus.store.types.converters.CalendarStringConverter
+09:28:09,414 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.lang.Class<->java.lang.String using org.datanucleus.store.types.converters.ClassStringConverter
+09:28:09,415 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.awt.Color<->java.lang.String using org.datanucleus.store.types.converters.ColorStringConverter
+09:28:09,415 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.lang.Integer<->java.lang.String using org.datanucleus.store.types.converters.IntegerStringConverter
+09:28:09,416 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.lang.Long<->java.lang.String using org.datanucleus.store.types.converters.LongStringConverter
+09:28:09,416 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.util.Currency<->java.lang.String using org.datanucleus.store.types.converters.CurrencyStringConverter
+09:28:09,417 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.util.Date<->java.lang.Long using org.datanucleus.store.types.converters.DateLongConverter
+09:28:09,418 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.util.Date<->java.lang.String using org.datanucleus.store.types.converters.DateStringConverter
+09:28:09,418 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.util.Locale<->java.lang.String using org.datanucleus.store.types.converters.LocaleStringConverter
+09:28:09,419 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.sql.Date<->java.lang.Long using org.datanucleus.store.types.converters.SqlDateLongConverter
+09:28:09,419 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.sql.Date<->java.lang.String using org.datanucleus.store.types.converters.SqlDateStringConverter
+09:28:09,420 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.sql.Time<->java.lang.Long using org.datanucleus.store.types.converters.SqlTimeLongConverter
+09:28:09,420 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.sql.Time<->java.lang.String using org.datanucleus.store.types.converters.SqlTimeStringConverter
+09:28:09,421 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.sql.Timestamp<->java.lang.Long using org.datanucleus.store.types.converters.SqlTimestampLongConverter
+09:28:09,422 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.lang.StringBuffer<->java.lang.String using org.datanucleus.store.types.converters.StringBufferStringConverter
+09:28:09,422 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.util.TimeZone<->java.lang.String using org.datanucleus.store.types.converters.TimeZoneStringConverter
+09:28:09,423 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.net.URI<->java.lang.String using org.datanucleus.store.types.converters.URIStringConverter
+09:28:09,423 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.net.URL<->java.lang.String using org.datanucleus.store.types.converters.URLStringConverter
+09:28:09,424 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.util.UUID<->java.lang.String using org.datanucleus.store.types.converters.UUIDStringConverter
+09:28:09,425 (main) DEBUG [DataNucleus.Persistence] - TypeConverter for javax.time.calendar.LocalDate<->java.lang.String ignored since java type not present in CLASSPATH
+09:28:09,426 (main) DEBUG [DataNucleus.Persistence] - TypeConverter for javax.time.calendar.LocalTime<->java.lang.String ignored since java type not present in CLASSPATH
+09:28:09,427 (main) DEBUG [DataNucleus.Persistence] - TypeConverter for javax.time.calendar.LocalTime<->java.lang.Long ignored since java type not present in CLASSPATH
+09:28:09,427 (main) DEBUG [DataNucleus.Persistence] - TypeConverter for javax.time.calendar.LocalDateTime<->java.lang.String ignored since java type not present in CLASSPATH
+09:28:09,428 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.io.Serializable<->java.lang.String using org.datanucleus.store.types.converters.SerializableStringConverter
+09:28:09,429 (main) DEBUG [DataNucleus.Persistence] - Added converter for java.io.Serializable<->[B using org.datanucleus.store.types.converters.SerializableByteArrayConverter
+09:28:09,429 (main) DEBUG [DataNucleus.Persistence] - TypeConverters listo
+09:28:09,430 (main) DEBUG [DataNucleus.MetaData] - MetaDataManager : Input=(XML,Annotations), XML-Validation=false, XML-Suffices=(persistence=*.jdo, orm=orm, query=*.jdoquery), JDO-listener=false
+09:28:09,430 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versi�n 3.2.7) para el API "JDO" utilisando el JRE "1.7"
+09:28:09,431 (main) DEBUG [DataNucleus.Enhancer] - DataNucleus Enhancer : Classpath
+09:28:09,431 (main) DEBUG [DataNucleus.Enhancer] - >>  F:\Documentos\GitHub\TralalaServer\lib\AuthorizationServer.jar
+09:28:09,431 (main) DEBUG [DataNucleus.Enhancer] - >>  F:\Documentos\GitHub\TralalaServer\lib\BankingServer.jar
+09:28:09,431 (main) DEBUG [DataNucleus.Enhancer] - >>  F:\Documentos\GitHub\TralalaServer\lib\PayPalServer.jar
+09:28:09,431 (main) DEBUG [DataNucleus.Enhancer] - >>  F:\Documentos\GitHub\TralalaServer\lib\datanucleus-api-jdo-3.2.4.jar
+09:28:09,431 (main) DEBUG [DataNucleus.Enhancer] - >>  F:\Documentos\GitHub\TralalaServer\lib\datanucleus-core-3.2.7.jar
+09:28:09,431 (main) DEBUG [DataNucleus.Enhancer] - >>  F:\Documentos\GitHub\TralalaServer\lib\datanucleus-rdbms-3.2.6.jar
+09:28:09,431 (main) DEBUG [DataNucleus.Enhancer] - >>  F:\Documentos\GitHub\TralalaServer\lib\jdo-api-3.0.1.jar
+09:28:09,431 (main) DEBUG [DataNucleus.Enhancer] - >>  F:\Documentos\GitHub\TralalaServer\lib\log4j-1.2.14.jar
+09:28:09,431 (main) DEBUG [DataNucleus.Enhancer] - >>  F:\Documentos\GitHub\TralalaServer\lib\mysql-connector-java-5.1.26-bin.jar
+09:28:09,431 (main) DEBUG [DataNucleus.Enhancer] - >>  F:\Documentos\GitHub\TralalaServer\bin
+09:28:09,432 (main) DEBUG [DataNucleus.Enhancer] - >>  F:\Documentos\GitHub\TralalaServer\resources
+09:28:09,432 (main) DEBUG [DataNucleus.Enhancer] - Enhancing classes for JRE=1.7 with stackmap-frames=true
+09:28:09,546 (main) DEBUG [DataNucleus.MetaData] - MetaData Management : Carga de Metadata de las clases "[data.Album, data.Artist, data.DBItem, data.Member, data.Play, data.Song, data.dao.DBItemDAO, data.dao.IDBItemDAO, data.dto.SongAssembler, data.dto.SongDTO, gateways.Gateway, gateways.authorization.AuthorizationGateway, gateways.payment.BankingGW, gateways.payment.PayPalGW, gateways.payment.PaymentGWFactory$1, gateways.payment.PaymentGWFactory, gateways.payment.PaymentGateway, gateways.payment.enums.PaymentService, launcher.TralalaLauncher, management.IMemberManagement, management.MemberManagement, remote.IManagementSessionFacade, remote.ISongSessionFacade, remote.ManagementSessionFacade, remote.SongProvider, remote.SongSessionFacade, remote.payment.IPaymentSessionFacade, remote.payment.PaymentSessionFacade, server.EPaymentMethod, server.FavourablePay, server.IPaymentService, server.IVisitable, server.Pay, server.Visitor]" ...
+09:28:09,629 (main) DEBUG [DataNucleus.MetaData] - Clase "data.Album" tiene anotaciones de JDO y vamos a usarlas.
+09:28:09,632 (main) DEBUG [DataNucleus.MetaData] - Clase "data.Artist" tiene anotaciones de JDO y vamos a usarlas.
+09:28:09,633 (main) DEBUG [DataNucleus.MetaData] - Clase "data.DBItem" tiene anotaciones de JDO y vamos a usarlas.
+09:28:09,634 (main) DEBUG [DataNucleus.MetaData] - Clase "data.Member" tiene anotaciones de JDO y vamos a usarlas.
+09:28:09,636 (main) DEBUG [DataNucleus.MetaData] - Clase "data.Play" tiene anotaciones de JDO y vamos a usarlas.
+09:28:09,636 (main) DEBUG [DataNucleus.MetaData] - Clase "data.Song" tiene anotaciones de JDO y vamos a usarlas.
+09:28:09,638 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "data.dao.DBItemDAO" en /META-INF/package.jdo
+09:28:09,639 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "data.dao.DBItemDAO" en /WEB-INF/package.jdo
+09:28:09,639 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "data.dao.DBItemDAO" en /package.jdo
+09:28:09,639 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "data.dao.DBItemDAO" en /data/package.jdo
+09:28:09,640 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "data.dao.DBItemDAO" en /data.jdo
+09:28:09,640 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "data.dao.DBItemDAO" en /data/dao/package.jdo
+09:28:09,641 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "data.dao.DBItemDAO" en /data/dao.jdo
+09:28:09,641 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "data.dao.DBItemDAO" en /data/dao/DBItemDAO.jdo
+09:28:09,641 (main) DEBUG [DataNucleus.MetaData] - No hemos encontrado el MetaData del tipo "jdo" por la clase "data.dao.DBItemDAO"
+09:28:09,641 (main) DEBUG [DataNucleus.MetaData] - Registrando la clase "data.dao.DBItemDAO" no tener Meta-Data
+09:28:09,641 (main) DEBUG [DataNucleus.MetaData] - La clase "data.dao.DBItemDAO" no tiene MetaData o annotaciones.
+09:28:09,641 (main) DEBUG [DataNucleus.MetaData] - La clase "data.dao.IDBItemDAO" no tiene MetaData o annotaciones.
+09:28:09,642 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "data.dto.SongAssembler" en /META-INF/package.jdo
+09:28:09,643 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "data.dto.SongAssembler" en /WEB-INF/package.jdo
+09:28:09,643 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "data.dto.SongAssembler" en /package.jdo
+09:28:09,643 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "data.dto.SongAssembler" en /data/package.jdo
+09:28:09,644 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "data.dto.SongAssembler" en /data.jdo
+09:28:09,644 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "data.dto.SongAssembler" en /data/dto/package.jdo
+09:28:09,644 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "data.dto.SongAssembler" en /data/dto.jdo
+09:28:09,645 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "data.dto.SongAssembler" en /data/dto/SongAssembler.jdo
+09:28:09,645 (main) DEBUG [DataNucleus.MetaData] - No hemos encontrado el MetaData del tipo "jdo" por la clase "data.dto.SongAssembler"
+09:28:09,645 (main) DEBUG [DataNucleus.MetaData] - Registrando la clase "data.dto.SongAssembler" no tener Meta-Data
+09:28:09,645 (main) DEBUG [DataNucleus.MetaData] - La clase "data.dto.SongAssembler" no tiene MetaData o annotaciones.
+09:28:09,646 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "data.dto.SongDTO" en /META-INF/package.jdo
+09:28:09,646 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "data.dto.SongDTO" en /WEB-INF/package.jdo
+09:28:09,647 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "data.dto.SongDTO" en /package.jdo
+09:28:09,647 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "data.dto.SongDTO" en /data/package.jdo
+09:28:09,648 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "data.dto.SongDTO" en /data.jdo
+09:28:09,648 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "data.dto.SongDTO" en /data/dto/package.jdo
+09:28:09,648 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "data.dto.SongDTO" en /data/dto.jdo
+09:28:09,649 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "data.dto.SongDTO" en /data/dto/SongDTO.jdo
+09:28:09,649 (main) DEBUG [DataNucleus.MetaData] - No hemos encontrado el MetaData del tipo "jdo" por la clase "data.dto.SongDTO"
+09:28:09,649 (main) DEBUG [DataNucleus.MetaData] - Registrando la clase "data.dto.SongDTO" no tener Meta-Data
+09:28:09,649 (main) DEBUG [DataNucleus.MetaData] - La clase "data.dto.SongDTO" no tiene MetaData o annotaciones.
+09:28:09,650 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "gateways.Gateway" en /META-INF/package.jdo
+09:28:09,650 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "gateways.Gateway" en /WEB-INF/package.jdo
+09:28:09,651 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "gateways.Gateway" en /package.jdo
+09:28:09,651 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "gateways.Gateway" en /gateways/package.jdo
+09:28:09,651 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "gateways.Gateway" en /gateways.jdo
+09:28:09,652 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "gateways.Gateway" en /gateways/Gateway.jdo
+09:28:09,652 (main) DEBUG [DataNucleus.MetaData] - No hemos encontrado el MetaData del tipo "jdo" por la clase "gateways.Gateway"
+09:28:09,652 (main) DEBUG [DataNucleus.MetaData] - Registrando la clase "gateways.Gateway" no tener Meta-Data
+09:28:09,652 (main) DEBUG [DataNucleus.MetaData] - La clase "gateways.Gateway" no tiene MetaData o annotaciones.
+09:28:09,653 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "gateways.authorization.AuthorizationGateway" en /META-INF/package.jdo
+09:28:09,653 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "gateways.authorization.AuthorizationGateway" en /WEB-INF/package.jdo
+09:28:09,653 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "gateways.authorization.AuthorizationGateway" en /package.jdo
+09:28:09,654 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "gateways.authorization.AuthorizationGateway" en /gateways/package.jdo
+09:28:09,654 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "gateways.authorization.AuthorizationGateway" en /gateways.jdo
+09:28:09,655 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "gateways.authorization.AuthorizationGateway" en /gateways/authorization/package.jdo
+09:28:09,655 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "gateways.authorization.AuthorizationGateway" en /gateways/authorization.jdo
+09:28:09,655 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "gateways.authorization.AuthorizationGateway" en /gateways/authorization/AuthorizationGateway.jdo
+09:28:09,655 (main) DEBUG [DataNucleus.MetaData] - No hemos encontrado el MetaData del tipo "jdo" por la clase "gateways.authorization.AuthorizationGateway"
+09:28:09,655 (main) DEBUG [DataNucleus.MetaData] - Registrando la clase "gateways.authorization.AuthorizationGateway" no tener Meta-Data
+09:28:09,656 (main) DEBUG [DataNucleus.MetaData] - La clase "gateways.authorization.AuthorizationGateway" no tiene MetaData o annotaciones.
+09:28:09,657 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "gateways.payment.BankingGW" en /META-INF/package.jdo
+09:28:09,657 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "gateways.payment.BankingGW" en /WEB-INF/package.jdo
+09:28:09,657 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "gateways.payment.BankingGW" en /package.jdo
+09:28:09,658 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "gateways.payment.BankingGW" en /gateways/package.jdo
+09:28:09,658 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "gateways.payment.BankingGW" en /gateways.jdo
+09:28:09,659 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "gateways.payment.BankingGW" en /gateways/payment/package.jdo
+09:28:09,659 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "gateways.payment.BankingGW" en /gateways/payment.jdo
+09:28:09,659 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "gateways.payment.BankingGW" en /gateways/payment/BankingGW.jdo
+09:28:09,659 (main) DEBUG [DataNucleus.MetaData] - No hemos encontrado el MetaData del tipo "jdo" por la clase "gateways.payment.BankingGW"
+09:28:09,659 (main) DEBUG [DataNucleus.MetaData] - Registrando la clase "gateways.payment.BankingGW" no tener Meta-Data
+09:28:09,660 (main) DEBUG [DataNucleus.MetaData] - La clase "gateways.payment.BankingGW" no tiene MetaData o annotaciones.
+09:28:09,660 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "gateways.payment.PayPalGW" en /META-INF/package.jdo
+09:28:09,661 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "gateways.payment.PayPalGW" en /WEB-INF/package.jdo
+09:28:09,661 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "gateways.payment.PayPalGW" en /package.jdo
+09:28:09,662 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "gateways.payment.PayPalGW" en /gateways/package.jdo
+09:28:09,662 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "gateways.payment.PayPalGW" en /gateways.jdo
+09:28:09,662 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "gateways.payment.PayPalGW" en /gateways/payment/package.jdo
+09:28:09,663 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "gateways.payment.PayPalGW" en /gateways/payment.jdo
+09:28:09,663 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "gateways.payment.PayPalGW" en /gateways/payment/PayPalGW.jdo
+09:28:09,663 (main) DEBUG [DataNucleus.MetaData] - No hemos encontrado el MetaData del tipo "jdo" por la clase "gateways.payment.PayPalGW"
+09:28:09,663 (main) DEBUG [DataNucleus.MetaData] - Registrando la clase "gateways.payment.PayPalGW" no tener Meta-Data
+09:28:09,663 (main) DEBUG [DataNucleus.MetaData] - La clase "gateways.payment.PayPalGW" no tiene MetaData o annotaciones.
+09:28:09,664 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "gateways.payment.PaymentGWFactory$1" en /META-INF/package.jdo
+09:28:09,664 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "gateways.payment.PaymentGWFactory$1" en /WEB-INF/package.jdo
+09:28:09,665 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "gateways.payment.PaymentGWFactory$1" en /package.jdo
+09:28:09,666 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "gateways.payment.PaymentGWFactory$1" en /gateways/package.jdo
+09:28:09,666 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "gateways.payment.PaymentGWFactory$1" en /gateways.jdo
+09:28:09,667 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "gateways.payment.PaymentGWFactory$1" en /gateways/payment/package.jdo
+09:28:09,667 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "gateways.payment.PaymentGWFactory$1" en /gateways/payment.jdo
+09:28:09,668 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "gateways.payment.PaymentGWFactory$1" en /gateways/payment/PaymentGWFactory$1.jdo
+09:28:09,668 (main) DEBUG [DataNucleus.MetaData] - No hemos encontrado el MetaData del tipo "jdo" por la clase "gateways.payment.PaymentGWFactory$1"
+09:28:09,668 (main) DEBUG [DataNucleus.MetaData] - Registrando la clase "gateways.payment.PaymentGWFactory$1" no tener Meta-Data
+09:28:09,668 (main) DEBUG [DataNucleus.MetaData] - La clase "gateways.payment.PaymentGWFactory$1" no tiene MetaData o annotaciones.
+09:28:09,670 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "gateways.payment.PaymentGWFactory" en /META-INF/package.jdo
+09:28:09,670 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "gateways.payment.PaymentGWFactory" en /WEB-INF/package.jdo
+09:28:09,671 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "gateways.payment.PaymentGWFactory" en /package.jdo
+09:28:09,673 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "gateways.payment.PaymentGWFactory" en /gateways/package.jdo
+09:28:09,673 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "gateways.payment.PaymentGWFactory" en /gateways.jdo
+09:28:09,674 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "gateways.payment.PaymentGWFactory" en /gateways/payment/package.jdo
+09:28:09,674 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "gateways.payment.PaymentGWFactory" en /gateways/payment.jdo
+09:28:09,675 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "gateways.payment.PaymentGWFactory" en /gateways/payment/PaymentGWFactory.jdo
+09:28:09,675 (main) DEBUG [DataNucleus.MetaData] - No hemos encontrado el MetaData del tipo "jdo" por la clase "gateways.payment.PaymentGWFactory"
+09:28:09,675 (main) DEBUG [DataNucleus.MetaData] - Registrando la clase "gateways.payment.PaymentGWFactory" no tener Meta-Data
+09:28:09,676 (main) DEBUG [DataNucleus.MetaData] - La clase "gateways.payment.PaymentGWFactory" no tiene MetaData o annotaciones.
+09:28:09,676 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "gateways.payment.PaymentGateway" en /META-INF/package.jdo
+09:28:09,677 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "gateways.payment.PaymentGateway" en /WEB-INF/package.jdo
+09:28:09,677 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "gateways.payment.PaymentGateway" en /package.jdo
+09:28:09,678 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "gateways.payment.PaymentGateway" en /gateways/package.jdo
+09:28:09,679 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "gateways.payment.PaymentGateway" en /gateways.jdo
+09:28:09,679 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "gateways.payment.PaymentGateway" en /gateways/payment/package.jdo
+09:28:09,680 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "gateways.payment.PaymentGateway" en /gateways/payment.jdo
+09:28:09,681 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "gateways.payment.PaymentGateway" en /gateways/payment/PaymentGateway.jdo
+09:28:09,681 (main) DEBUG [DataNucleus.MetaData] - No hemos encontrado el MetaData del tipo "jdo" por la clase "gateways.payment.PaymentGateway"
+09:28:09,681 (main) DEBUG [DataNucleus.MetaData] - Registrando la clase "gateways.payment.PaymentGateway" no tener Meta-Data
+09:28:09,681 (main) DEBUG [DataNucleus.MetaData] - La clase "gateways.payment.PaymentGateway" no tiene MetaData o annotaciones.
+09:28:09,682 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "gateways.payment.enums.PaymentService" en /META-INF/package.jdo
+09:28:09,683 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "gateways.payment.enums.PaymentService" en /WEB-INF/package.jdo
+09:28:09,683 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "gateways.payment.enums.PaymentService" en /package.jdo
+09:28:09,684 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "gateways.payment.enums.PaymentService" en /gateways/package.jdo
+09:28:09,684 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "gateways.payment.enums.PaymentService" en /gateways.jdo
+09:28:09,685 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "gateways.payment.enums.PaymentService" en /gateways/payment/package.jdo
+09:28:09,686 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "gateways.payment.enums.PaymentService" en /gateways/payment.jdo
+09:28:09,686 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "gateways.payment.enums.PaymentService" en /gateways/payment/enums/package.jdo
+09:28:09,687 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "gateways.payment.enums.PaymentService" en /gateways/payment/enums.jdo
+09:28:09,688 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "gateways.payment.enums.PaymentService" en /gateways/payment/enums/PaymentService.jdo
+09:28:09,688 (main) DEBUG [DataNucleus.MetaData] - No hemos encontrado el MetaData del tipo "jdo" por la clase "gateways.payment.enums.PaymentService"
+09:28:09,688 (main) DEBUG [DataNucleus.MetaData] - Registrando la clase "gateways.payment.enums.PaymentService" no tener Meta-Data
+09:28:09,688 (main) DEBUG [DataNucleus.MetaData] - La clase "gateways.payment.enums.PaymentService" no tiene MetaData o annotaciones.
+09:28:09,690 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "launcher.TralalaLauncher" en /META-INF/package.jdo
+09:28:09,690 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "launcher.TralalaLauncher" en /WEB-INF/package.jdo
+09:28:09,691 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "launcher.TralalaLauncher" en /package.jdo
+09:28:09,691 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "launcher.TralalaLauncher" en /launcher/package.jdo
+09:28:09,692 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "launcher.TralalaLauncher" en /launcher.jdo
+09:28:09,693 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "launcher.TralalaLauncher" en /launcher/TralalaLauncher.jdo
+09:28:09,693 (main) DEBUG [DataNucleus.MetaData] - No hemos encontrado el MetaData del tipo "jdo" por la clase "launcher.TralalaLauncher"
+09:28:09,693 (main) DEBUG [DataNucleus.MetaData] - Registrando la clase "launcher.TralalaLauncher" no tener Meta-Data
+09:28:09,693 (main) DEBUG [DataNucleus.MetaData] - La clase "launcher.TralalaLauncher" no tiene MetaData o annotaciones.
+09:28:09,694 (main) DEBUG [DataNucleus.MetaData] - La clase "management.IMemberManagement" no tiene MetaData o annotaciones.
+09:28:09,695 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "management.MemberManagement" en /META-INF/package.jdo
+09:28:09,696 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "management.MemberManagement" en /WEB-INF/package.jdo
+09:28:09,697 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "management.MemberManagement" en /package.jdo
+09:28:09,697 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "management.MemberManagement" en /management/package.jdo
+09:28:09,698 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "management.MemberManagement" en /management.jdo
+09:28:09,698 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "management.MemberManagement" en /management/MemberManagement.jdo
+09:28:09,699 (main) DEBUG [DataNucleus.MetaData] - No hemos encontrado el MetaData del tipo "jdo" por la clase "management.MemberManagement"
+09:28:09,699 (main) DEBUG [DataNucleus.MetaData] - Registrando la clase "management.MemberManagement" no tener Meta-Data
+09:28:09,699 (main) DEBUG [DataNucleus.MetaData] - La clase "management.MemberManagement" no tiene MetaData o annotaciones.
+09:28:09,700 (main) DEBUG [DataNucleus.MetaData] - La clase "remote.IManagementSessionFacade" no tiene MetaData o annotaciones.
+09:28:09,701 (main) DEBUG [DataNucleus.MetaData] - La clase "remote.ISongSessionFacade" no tiene MetaData o annotaciones.
+09:28:09,703 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "remote.ManagementSessionFacade" en /META-INF/package.jdo
+09:28:09,703 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "remote.ManagementSessionFacade" en /WEB-INF/package.jdo
+09:28:09,704 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "remote.ManagementSessionFacade" en /package.jdo
+09:28:09,704 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "remote.ManagementSessionFacade" en /remote/package.jdo
+09:28:09,705 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "remote.ManagementSessionFacade" en /remote.jdo
+09:28:09,706 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "remote.ManagementSessionFacade" en /remote/ManagementSessionFacade.jdo
+09:28:09,706 (main) DEBUG [DataNucleus.MetaData] - No hemos encontrado el MetaData del tipo "jdo" por la clase "remote.ManagementSessionFacade"
+09:28:09,706 (main) DEBUG [DataNucleus.MetaData] - Registrando la clase "remote.ManagementSessionFacade" no tener Meta-Data
+09:28:09,706 (main) DEBUG [DataNucleus.MetaData] - La clase "remote.ManagementSessionFacade" no tiene MetaData o annotaciones.
+09:28:09,707 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "remote.SongProvider" en /META-INF/package.jdo
+09:28:09,708 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "remote.SongProvider" en /WEB-INF/package.jdo
+09:28:09,708 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "remote.SongProvider" en /package.jdo
+09:28:09,709 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "remote.SongProvider" en /remote/package.jdo
+09:28:09,710 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "remote.SongProvider" en /remote.jdo
+09:28:09,710 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "remote.SongProvider" en /remote/SongProvider.jdo
+09:28:09,710 (main) DEBUG [DataNucleus.MetaData] - No hemos encontrado el MetaData del tipo "jdo" por la clase "remote.SongProvider"
+09:28:09,710 (main) DEBUG [DataNucleus.MetaData] - Registrando la clase "remote.SongProvider" no tener Meta-Data
+09:28:09,711 (main) DEBUG [DataNucleus.MetaData] - La clase "remote.SongProvider" no tiene MetaData o annotaciones.
+09:28:09,712 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "remote.SongSessionFacade" en /META-INF/package.jdo
+09:28:09,712 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "remote.SongSessionFacade" en /WEB-INF/package.jdo
+09:28:09,712 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "remote.SongSessionFacade" en /package.jdo
+09:28:09,713 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "remote.SongSessionFacade" en /remote/package.jdo
+09:28:09,713 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "remote.SongSessionFacade" en /remote.jdo
+09:28:09,713 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "remote.SongSessionFacade" en /remote/SongSessionFacade.jdo
+09:28:09,713 (main) DEBUG [DataNucleus.MetaData] - No hemos encontrado el MetaData del tipo "jdo" por la clase "remote.SongSessionFacade"
+09:28:09,713 (main) DEBUG [DataNucleus.MetaData] - Registrando la clase "remote.SongSessionFacade" no tener Meta-Data
+09:28:09,714 (main) DEBUG [DataNucleus.MetaData] - La clase "remote.SongSessionFacade" no tiene MetaData o annotaciones.
+09:28:09,714 (main) DEBUG [DataNucleus.MetaData] - La clase "remote.payment.IPaymentSessionFacade" no tiene MetaData o annotaciones.
+09:28:09,715 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "remote.payment.PaymentSessionFacade" en /META-INF/package.jdo
+09:28:09,715 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "remote.payment.PaymentSessionFacade" en /WEB-INF/package.jdo
+09:28:09,716 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "remote.payment.PaymentSessionFacade" en /package.jdo
+09:28:09,716 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "remote.payment.PaymentSessionFacade" en /remote/package.jdo
+09:28:09,716 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "remote.payment.PaymentSessionFacade" en /remote.jdo
+09:28:09,717 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "remote.payment.PaymentSessionFacade" en /remote/payment/package.jdo
+09:28:09,717 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "remote.payment.PaymentSessionFacade" en /remote/payment.jdo
+09:28:09,717 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "remote.payment.PaymentSessionFacade" en /remote/payment/PaymentSessionFacade.jdo
+09:28:09,718 (main) DEBUG [DataNucleus.MetaData] - No hemos encontrado el MetaData del tipo "jdo" por la clase "remote.payment.PaymentSessionFacade"
+09:28:09,718 (main) DEBUG [DataNucleus.MetaData] - Registrando la clase "remote.payment.PaymentSessionFacade" no tener Meta-Data
+09:28:09,718 (main) DEBUG [DataNucleus.MetaData] - La clase "remote.payment.PaymentSessionFacade" no tiene MetaData o annotaciones.
+09:28:09,719 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "server.EPaymentMethod" en /META-INF/package.jdo
+09:28:09,719 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "server.EPaymentMethod" en /WEB-INF/package.jdo
+09:28:09,720 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "server.EPaymentMethod" en /package.jdo
+09:28:09,720 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "server.EPaymentMethod" en /server/package.jdo
+09:28:09,720 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "server.EPaymentMethod" en /server.jdo
+09:28:09,721 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "server.EPaymentMethod" en /server/EPaymentMethod.jdo
+09:28:09,721 (main) DEBUG [DataNucleus.MetaData] - No hemos encontrado el MetaData del tipo "jdo" por la clase "server.EPaymentMethod"
+09:28:09,721 (main) DEBUG [DataNucleus.MetaData] - Registrando la clase "server.EPaymentMethod" no tener Meta-Data
+09:28:09,721 (main) DEBUG [DataNucleus.MetaData] - La clase "server.EPaymentMethod" no tiene MetaData o annotaciones.
+09:28:09,722 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "server.FavourablePay" en /META-INF/package.jdo
+09:28:09,722 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "server.FavourablePay" en /WEB-INF/package.jdo
+09:28:09,723 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "server.FavourablePay" en /package.jdo
+09:28:09,723 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "server.FavourablePay" en /server/package.jdo
+09:28:09,723 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "server.FavourablePay" en /server.jdo
+09:28:09,724 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "server.FavourablePay" en /server/FavourablePay.jdo
+09:28:09,724 (main) DEBUG [DataNucleus.MetaData] - No hemos encontrado el MetaData del tipo "jdo" por la clase "server.FavourablePay"
+09:28:09,724 (main) DEBUG [DataNucleus.MetaData] - Registrando la clase "server.FavourablePay" no tener Meta-Data
+09:28:09,724 (main) DEBUG [DataNucleus.MetaData] - La clase "server.FavourablePay" no tiene MetaData o annotaciones.
+09:28:09,724 (main) DEBUG [DataNucleus.MetaData] - La clase "server.IPaymentService" no tiene MetaData o annotaciones.
+09:28:09,724 (main) DEBUG [DataNucleus.MetaData] - La clase "server.IVisitable" no tiene MetaData o annotaciones.
+09:28:09,725 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "server.Pay" en /META-INF/package.jdo
+09:28:09,725 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "server.Pay" en /WEB-INF/package.jdo
+09:28:09,725 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "server.Pay" en /package.jdo
+09:28:09,726 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "server.Pay" en /server/package.jdo
+09:28:09,726 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "server.Pay" en /server.jdo
+09:28:09,727 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "server.Pay" en /server/Pay.jdo
+09:28:09,727 (main) DEBUG [DataNucleus.MetaData] - No hemos encontrado el MetaData del tipo "jdo" por la clase "server.Pay"
+09:28:09,727 (main) DEBUG [DataNucleus.MetaData] - Registrando la clase "server.Pay" no tener Meta-Data
+09:28:09,727 (main) DEBUG [DataNucleus.MetaData] - La clase "server.Pay" no tiene MetaData o annotaciones.
+09:28:09,727 (main) DEBUG [DataNucleus.MetaData] - La clase "server.Visitor" no tiene MetaData o annotaciones.
+09:28:09,767 (main) DEBUG [DataNucleus.MetaData] - Populaci�n del MetaData ...
+09:28:09,767 (main) DEBUG [DataNucleus.MetaData] - Clase "data.Album" : Populando Meta-Data
+09:28:09,768 (main) DEBUG [DataNucleus.MetaData] - Clase "data.Album" : DataNucleus ha puesto un valor de persistence-capable-superclass "data.DBItem"; no tenia valor en el MetaData.
+09:28:09,768 (main) DEBUG [DataNucleus.MetaData] - Clase "data.DBItem" : Populando Meta-Data
+09:28:09,768 (main) DEBUG [DataNucleus.MetaData] - Clase "data.DBItem" campo "id" : a�adiendo el Meta-Data por el campo como no estaba en la definici�n de Meta-Data.
+09:28:09,775 (main) DEBUG [DataNucleus.MetaData] - Clase "data.Album" campo "title" : a�adiendo el Meta-Data por el campo como no estaba en la definici�n de Meta-Data.
+09:28:09,776 (main) DEBUG [DataNucleus.MetaData] - Clase "data.Album" campo "releaseDate" : a�adiendo el Meta-Data por el campo como no estaba en la definici�n de Meta-Data.
+09:28:09,776 (main) DEBUG [DataNucleus.MetaData] - Clase "data.Album" campo "songs" : a�adiendo el Meta-Data por el campo como no estaba en la definici�n de Meta-Data.
+09:28:09,778 (main) DEBUG [DataNucleus.MetaData] - Clase "data.Artist" : Populando Meta-Data
+09:28:09,778 (main) DEBUG [DataNucleus.MetaData] - Clase "data.Artist" : DataNucleus ha puesto un valor de persistence-capable-superclass "data.DBItem"; no tenia valor en el MetaData.
+09:28:09,778 (main) DEBUG [DataNucleus.MetaData] - Clase "data.Artist" campo "name" : a�adiendo el Meta-Data por el campo como no estaba en la definici�n de Meta-Data.
+09:28:09,778 (main) DEBUG [DataNucleus.MetaData] - Clase "data.Artist" campo "songs" : a�adiendo el Meta-Data por el campo como no estaba en la definici�n de Meta-Data.
+09:28:09,779 (main) DEBUG [DataNucleus.MetaData] - Clase "data.Member" : Populando Meta-Data
+09:28:09,779 (main) DEBUG [DataNucleus.MetaData] - Clase "data.Member" : DataNucleus ha puesto un valor de persistence-capable-superclass "data.DBItem"; no tenia valor en el MetaData.
+09:28:09,779 (main) DEBUG [DataNucleus.MetaData] - Clase "data.Member" campo "id" : a�adiendo el Meta-Data por el campo como no estaba en la definici�n de Meta-Data.
+09:28:09,779 (main) DEBUG [DataNucleus.MetaData] - Clase "data.Member" campo "name" : a�adiendo el Meta-Data por el campo como no estaba en la definici�n de Meta-Data.
+09:28:09,779 (main) DEBUG [DataNucleus.MetaData] - Clase "data.Member" campo "nick" : a�adiendo el Meta-Data por el campo como no estaba en la definici�n de Meta-Data.
+09:28:09,779 (main) DEBUG [DataNucleus.MetaData] - Clase "data.Member" campo "plays" : a�adiendo el Meta-Data por el campo como no estaba en la definici�n de Meta-Data.
+09:28:09,779 (main) DEBUG [DataNucleus.MetaData] - Clase "data.Member" campo "bankAccount" : a�adiendo el Meta-Data por el campo como no estaba en la definici�n de Meta-Data.
+09:28:09,779 (main) DEBUG [DataNucleus.MetaData] - Clase "data.Member" campo "paymentService" : a�adiendo el Meta-Data por el campo como no estaba en la definici�n de Meta-Data.
+09:28:09,780 (main) DEBUG [DataNucleus.MetaData] - Clase "data.Play" : Populando Meta-Data
+09:28:09,780 (main) DEBUG [DataNucleus.MetaData] - Clase "data.Play" : DataNucleus ha puesto un valor de persistence-capable-superclass "data.DBItem"; no tenia valor en el MetaData.
+09:28:09,780 (main) DEBUG [DataNucleus.MetaData] - Clase "data.Play" campo "date" : a�adiendo el Meta-Data por el campo como no estaba en la definici�n de Meta-Data.
+09:28:09,780 (main) DEBUG [DataNucleus.MetaData] - Clase "data.Play" campo "time" : a�adiendo el Meta-Data por el campo como no estaba en la definici�n de Meta-Data.
+09:28:09,780 (main) DEBUG [DataNucleus.MetaData] - Clase "data.Play" campo "songId" : a�adiendo el Meta-Data por el campo como no estaba en la definici�n de Meta-Data.
+09:28:09,780 (main) DEBUG [DataNucleus.MetaData] - Clase "data.Play" campo "memberId" : a�adiendo el Meta-Data por el campo como no estaba en la definici�n de Meta-Data.
+09:28:09,780 (main) DEBUG [DataNucleus.MetaData] - Clase "data.Song" : Populando Meta-Data
+09:28:09,780 (main) DEBUG [DataNucleus.MetaData] - Clase "data.Song" : DataNucleus ha puesto un valor de persistence-capable-superclass "data.DBItem"; no tenia valor en el MetaData.
+09:28:09,780 (main) DEBUG [DataNucleus.MetaData] - Clase "data.Song" campo "songTitle" : a�adiendo el Meta-Data por el campo como no estaba en la definici�n de Meta-Data.
+09:28:09,780 (main) DEBUG [DataNucleus.MetaData] - Clase "data.Song" campo "duration" : a�adiendo el Meta-Data por el campo como no estaba en la definici�n de Meta-Data.
+09:28:09,780 (main) DEBUG [DataNucleus.MetaData] - Clase "data.Song" campo "ppp" : a�adiendo el Meta-Data por el campo como no estaba en la definici�n de Meta-Data.
+09:28:09,781 (main) DEBUG [DataNucleus.MetaData] - Clase "data.Song" campo "artist" : a�adiendo el Meta-Data por el campo como no estaba en la definici�n de Meta-Data.
+09:28:09,781 (main) DEBUG [DataNucleus.MetaData] - Clase "data.Song" campo "album" : a�adiendo el Meta-Data por el campo como no estaba en la definici�n de Meta-Data.
+09:28:09,781 (main) DEBUG [DataNucleus.MetaData] - Inicialisaci�n del MetaData ...
+09:28:09,782 (main) DEBUG [DataNucleus.MetaData] - Clase "data.DBItem" : Inicializando Meta-Data
+09:28:09,785 (main) DEBUG [DataNucleus.MetaData] - Clase "data.Album" : Inicializando Meta-Data
+09:28:09,785 (main) DEBUG [DataNucleus.MetaData] - Clase "data.Artist" : Inicializando Meta-Data
+09:28:09,785 (main) DEBUG [DataNucleus.MetaData] - Clase "data.Member" : Inicializando Meta-Data
+09:28:09,785 (main) DEBUG [DataNucleus.MetaData] - Clase "data.Play" : Inicializando Meta-Data
+09:28:09,785 (main) DEBUG [DataNucleus.MetaData] - Clase "data.Song" : Inicializando Meta-Data
+09:28:09,785 (main) DEBUG [DataNucleus.MetaData] - MetaData Management : Carga de Metadata ya ha terminado
+09:28:09,795 (main) DEBUG [DataNucleus.Enhancer] - Enhance de la clase "data.Album" empezando ...
+09:28:09,807 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Album" no implementa el interfaz "javax.jdo.spi.PersistenceCapable"!
+09:28:09,807 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Album" no implementa el interfaz "javax.jdo.spi.Detachable"!
+09:28:09,807 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Album" no tiene el campo "jdoInheritedFieldCount" pero lo necesita
+09:28:09,807 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Album" no tiene el campo "jdoFieldNames" pero lo necesita
+09:28:09,807 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Album" no tiene el campo "jdoPersistenceCapableSuperclass" pero lo necesita
+09:28:09,807 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Album" no tiene el campo "jdoFieldTypes" pero lo necesita
+09:28:09,807 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Album" no tiene el campo "jdoFieldFlags" pero lo necesita
+09:28:09,807 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Album" no tiene el metodo "jdoProvideField" pero lo necesita
+09:28:09,807 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Album" no tiene el metodo "jdoNewInstance" pero lo necesita
+09:28:09,807 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Album" no tiene el metodo "jdoNewInstance" pero lo necesita
+09:28:09,807 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Album" no tiene el metodo "__jdoGetInheritedFieldCount" pero lo necesita
+09:28:09,807 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Album" no tiene el metodo "jdoReplaceField" pero lo necesita
+09:28:09,807 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Album" no tiene el metodo "jdoCopyField" pero lo necesita
+09:28:09,807 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Album" no tiene el metodo "jdoCopyFields" pero lo necesita
+09:28:09,807 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Album" no tiene el metodo "jdoGetManagedFieldCount" pero lo necesita
+09:28:09,807 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Album" no tiene el metodo "jdoIsDetached" pero lo necesita
+09:28:09,808 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Album" no tiene el metodo "__jdoPersistenceCapableSuperclassInit" pero lo necesita
+09:28:09,808 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Album" no tiene el metodo "jdoMakeDirty" pero lo necesita
+09:28:09,808 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Album" no tiene el metodo "__jdoFieldFlagsInit" pero lo necesita
+09:28:09,808 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Album" no tiene el metodo "jdoSuperClone" pero lo necesita
+09:28:09,808 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Album" no tiene el metodo "___jdo$loadClass" pero lo necesita
+09:28:09,808 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Album" no tiene el metodo "__jdoFieldNamesInit" pero lo necesita
+09:28:09,808 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Album" no tiene el metodo "__jdoFieldTypesInit" pero lo necesita
+09:28:09,817 (main) DEBUG [DataNucleus.Enhancer] - Agregando el interfaz: javax.jdo.spi.Detachable
+09:28:09,817 (main) DEBUG [DataNucleus.Enhancer] - Agregando el interfaz: javax.jdo.spi.PersistenceCapable
+09:28:09,823 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original data.Album.getTitle, cambiando el uso del campo "data.Album.title" para utilisar "jdoGettitle()"
+09:28:09,824 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original data.Album.setTitle, cambiando el uso del campo "data.Album.title" para utilisar "jdoSettitle()"
+09:28:09,824 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original data.Album.getSongs, cambiando el uso del campo "data.Album.songs" para utilisar "jdoGetsongs()"
+09:28:09,824 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original data.Album.addSong, cambiando el uso del campo "data.Album.songs" para utilisar "jdoGetsongs()"
+09:28:09,824 (main) DEBUG [DataNucleus.Enhancer] - Agregando el campo "[B jdoFieldFlags"
+09:28:09,824 (main) DEBUG [DataNucleus.Enhancer] - Agregando el campo "java.lang.Class jdoPersistenceCapableSuperclass"
+09:28:09,824 (main) DEBUG [DataNucleus.Enhancer] - Agregando el campo "[Ljava.lang.Class; jdoFieldTypes"
+09:28:09,824 (main) DEBUG [DataNucleus.Enhancer] - Agregando el campo "[Ljava.lang.String; jdoFieldNames"
+09:28:09,824 (main) DEBUG [DataNucleus.Enhancer] - Agregando el campo "int jdoInheritedFieldCount"
+09:28:09,825 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void <clinit>()"
+09:28:09,826 (main) DEBUG [DataNucleus.Enhancer] - Agregando el constructor "data.Album()"
+09:28:09,827 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void jdoMakeDirty(class java.lang.String fieldName)"
+09:28:09,827 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "boolean jdoIsDetached()"
+09:28:09,828 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "javax.jdo.spi.PersistenceCapable jdoNewInstance(interface javax.jdo.spi.StateManager sm)"
+09:28:09,828 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "javax.jdo.spi.PersistenceCapable jdoNewInstance(interface javax.jdo.spi.StateManager sm, class java.lang.Object obj)"
+09:28:09,829 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void jdoReplaceField(int index)"
+09:28:09,829 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void jdoProvideField(int index)"
+09:28:09,829 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void jdoCopyField(class data.Album obj, int index)"
+09:28:09,830 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void jdoCopyFields(class java.lang.Object obj, class [I indices)"
+09:28:09,830 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "[Ljava.lang.String; __jdoFieldNamesInit()"
+09:28:09,830 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "[Ljava.lang.Class; __jdoFieldTypesInit()"
+09:28:09,830 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "[B __jdoFieldFlagsInit()"
+09:28:09,830 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "int __jdoGetInheritedFieldCount()"
+09:28:09,830 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "int jdoGetManagedFieldCount()"
+09:28:09,830 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.Class __jdoPersistenceCapableSuperclassInit()"
+09:28:09,831 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.Class ___jdo$loadClass(class java.lang.String className)"
+09:28:09,831 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.Object jdoSuperClone()"
+09:28:09,832 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.util.ArrayList jdoGetsongs(class data.Album objPC)"
+09:28:09,833 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void jdoSetsongs(class data.Album objPC, class java.util.ArrayList val)"
+09:28:09,834 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.String jdoGettitle(class data.Album objPC)"
+09:28:09,834 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void jdoSettitle(class data.Album objPC, class java.lang.String val)"
+09:28:09,835 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\GitHub\TralalaServer\bin\data\Album.class" con definicion enhanced
+09:28:09,836 (main) DEBUG [DataNucleus.Enhancer] - Enhance de la clase "data.Album" ha terminado
+09:28:09,836 (main) DEBUG [DataNucleus.Enhancer] - Enhance de la clase "data.Artist" empezando ...
+09:28:09,837 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Artist" no implementa el interfaz "javax.jdo.spi.PersistenceCapable"!
+09:28:09,837 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Artist" no implementa el interfaz "javax.jdo.spi.Detachable"!
+09:28:09,837 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Artist" no tiene el campo "jdoInheritedFieldCount" pero lo necesita
+09:28:09,837 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Artist" no tiene el campo "jdoFieldNames" pero lo necesita
+09:28:09,837 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Artist" no tiene el campo "jdoPersistenceCapableSuperclass" pero lo necesita
+09:28:09,837 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Artist" no tiene el campo "jdoFieldTypes" pero lo necesita
+09:28:09,837 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Artist" no tiene el campo "jdoFieldFlags" pero lo necesita
+09:28:09,837 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Artist" no tiene el metodo "jdoProvideField" pero lo necesita
+09:28:09,837 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Artist" no tiene el metodo "jdoNewInstance" pero lo necesita
+09:28:09,837 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Artist" no tiene el metodo "jdoNewInstance" pero lo necesita
+09:28:09,837 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Artist" no tiene el metodo "__jdoGetInheritedFieldCount" pero lo necesita
+09:28:09,837 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Artist" no tiene el metodo "jdoReplaceField" pero lo necesita
+09:28:09,837 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Artist" no tiene el metodo "jdoCopyField" pero lo necesita
+09:28:09,837 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Artist" no tiene el metodo "jdoCopyFields" pero lo necesita
+09:28:09,838 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Artist" no tiene el metodo "jdoGetManagedFieldCount" pero lo necesita
+09:28:09,838 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Artist" no tiene el metodo "jdoIsDetached" pero lo necesita
+09:28:09,838 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Artist" no tiene el metodo "__jdoPersistenceCapableSuperclassInit" pero lo necesita
+09:28:09,838 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Artist" no tiene el metodo "jdoMakeDirty" pero lo necesita
+09:28:09,838 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Artist" no tiene el metodo "__jdoFieldFlagsInit" pero lo necesita
+09:28:09,838 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Artist" no tiene el metodo "jdoSuperClone" pero lo necesita
+09:28:09,838 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Artist" no tiene el metodo "___jdo$loadClass" pero lo necesita
+09:28:09,838 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Artist" no tiene el metodo "__jdoFieldNamesInit" pero lo necesita
+09:28:09,838 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Artist" no tiene el metodo "__jdoFieldTypesInit" pero lo necesita
+09:28:09,838 (main) DEBUG [DataNucleus.Enhancer] - Agregando el interfaz: javax.jdo.spi.Detachable
+09:28:09,838 (main) DEBUG [DataNucleus.Enhancer] - Agregando el interfaz: javax.jdo.spi.PersistenceCapable
+09:28:09,839 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original data.Artist.<init> : ignorando enhance de set del campo "data.Artist.name"
+09:28:09,839 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original data.Artist.<init> : ignorando enhance de set del campo "data.Artist.songs"
+09:28:09,839 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original data.Artist.getName, cambiando el uso del campo "data.Artist.name" para utilisar "jdoGetname()"
+09:28:09,839 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original data.Artist.setName, cambiando el uso del campo "data.Artist.name" para utilisar "jdoSetname()"
+09:28:09,839 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original data.Artist.addSong, cambiando el uso del campo "data.Artist.songs" para utilisar "jdoGetsongs()"
+09:28:09,839 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original data.Artist.getSongs, cambiando el uso del campo "data.Artist.songs" para utilisar "jdoGetsongs()"
+09:28:09,840 (main) DEBUG [DataNucleus.Enhancer] - Agregando el campo "[B jdoFieldFlags"
+09:28:09,840 (main) DEBUG [DataNucleus.Enhancer] - Agregando el campo "java.lang.Class jdoPersistenceCapableSuperclass"
+09:28:09,840 (main) DEBUG [DataNucleus.Enhancer] - Agregando el campo "[Ljava.lang.Class; jdoFieldTypes"
+09:28:09,840 (main) DEBUG [DataNucleus.Enhancer] - Agregando el campo "[Ljava.lang.String; jdoFieldNames"
+09:28:09,840 (main) DEBUG [DataNucleus.Enhancer] - Agregando el campo "int jdoInheritedFieldCount"
+09:28:09,840 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void <clinit>()"
+09:28:09,840 (main) DEBUG [DataNucleus.Enhancer] - Agregando el constructor "data.Artist()"
+09:28:09,841 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void jdoMakeDirty(class java.lang.String fieldName)"
+09:28:09,841 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "boolean jdoIsDetached()"
+09:28:09,841 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "javax.jdo.spi.PersistenceCapable jdoNewInstance(interface javax.jdo.spi.StateManager sm)"
+09:28:09,841 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "javax.jdo.spi.PersistenceCapable jdoNewInstance(interface javax.jdo.spi.StateManager sm, class java.lang.Object obj)"
+09:28:09,842 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void jdoReplaceField(int index)"
+09:28:09,842 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void jdoProvideField(int index)"
+09:28:09,842 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void jdoCopyField(class data.Artist obj, int index)"
+09:28:09,842 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void jdoCopyFields(class java.lang.Object obj, class [I indices)"
+09:28:09,842 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "[Ljava.lang.String; __jdoFieldNamesInit()"
+09:28:09,842 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "[Ljava.lang.Class; __jdoFieldTypesInit()"
+09:28:09,842 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "[B __jdoFieldFlagsInit()"
+09:28:09,842 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "int __jdoGetInheritedFieldCount()"
+09:28:09,843 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "int jdoGetManagedFieldCount()"
+09:28:09,843 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.Class __jdoPersistenceCapableSuperclassInit()"
+09:28:09,843 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.Class ___jdo$loadClass(class java.lang.String className)"
+09:28:09,843 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.Object jdoSuperClone()"
+09:28:09,843 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.String jdoGetname(class data.Artist objPC)"
+09:28:09,843 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void jdoSetname(class data.Artist objPC, class java.lang.String val)"
+09:28:09,843 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.util.ArrayList jdoGetsongs(class data.Artist objPC)"
+09:28:09,844 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void jdoSetsongs(class data.Artist objPC, class java.util.ArrayList val)"
+09:28:09,844 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\GitHub\TralalaServer\bin\data\Artist.class" con definicion enhanced
+09:28:09,844 (main) DEBUG [DataNucleus.Enhancer] - Enhance de la clase "data.Artist" ha terminado
+09:28:09,845 (main) DEBUG [DataNucleus.Enhancer] - Enhance de la clase "data.DBItem" empezando ...
+09:28:09,861 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.DBItem" no implementa el interfaz "javax.jdo.spi.PersistenceCapable"!
+09:28:09,861 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.DBItem" no implementa el interfaz "javax.jdo.spi.Detachable"!
+09:28:09,862 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.DBItem" no tiene el campo "jdoInheritedFieldCount" pero lo necesita
+09:28:09,862 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.DBItem" no tiene el campo "jdoFieldNames" pero lo necesita
+09:28:09,862 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.DBItem" no tiene el campo "jdoPersistenceCapableSuperclass" pero lo necesita
+09:28:09,862 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.DBItem" no tiene el campo "jdoDetachedState" pero lo necesita
+09:28:09,862 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.DBItem" no tiene el campo "jdoFieldTypes" pero lo necesita
+09:28:09,862 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.DBItem" no tiene el campo "jdoStateManager" pero lo necesita
+09:28:09,862 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.DBItem" no tiene el campo "jdoFieldFlags" pero lo necesita
+09:28:09,862 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.DBItem" no tiene el campo "jdoFlags" pero lo necesita
+09:28:09,862 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.DBItem" no tiene el metodo "__jdoGetInheritedFieldCount" pero lo necesita
+09:28:09,862 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.DBItem" no tiene el metodo "jdoNewInstance" pero lo necesita
+09:28:09,862 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.DBItem" no tiene el metodo "jdoNewInstance" pero lo necesita
+09:28:09,863 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.DBItem" no tiene el metodo "jdoReplaceField" pero lo necesita
+09:28:09,863 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.DBItem" no tiene el metodo "jdoIsDirty" pero lo necesita
+09:28:09,863 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.DBItem" no tiene el metodo "jdoReplaceFields" pero lo necesita
+09:28:09,863 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.DBItem" no tiene el metodo "jdoIsPersistent" pero lo necesita
+09:28:09,863 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.DBItem" no tiene el metodo "jdoIsNew" pero lo necesita
+09:28:09,863 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.DBItem" no tiene el metodo "jdoIsTransactional" pero lo necesita
+09:28:09,863 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.DBItem" no tiene el metodo "jdoProvideFields" pero lo necesita
+09:28:09,863 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.DBItem" no tiene el metodo "jdoCopyFields" pero lo necesita
+09:28:09,863 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.DBItem" no tiene el metodo "jdoCopyKeyFieldsToObjectId" pero lo necesita
+09:28:09,863 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.DBItem" no tiene el metodo "jdoCopyKeyFieldsToObjectId" pero lo necesita
+09:28:09,863 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.DBItem" no tiene el metodo "jdoGetManagedFieldCount" pero lo necesita
+09:28:09,863 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.DBItem" no tiene el metodo "jdoCopyKeyFieldsFromObjectId" pero lo necesita
+09:28:09,864 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.DBItem" no tiene el metodo "jdoCopyKeyFieldsFromObjectId" pero lo necesita
+09:28:09,864 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.DBItem" no tiene el metodo "jdoReplaceStateManager" pero lo necesita
+09:28:09,864 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.DBItem" no tiene el metodo "jdoNewObjectIdInstance" pero lo necesita
+09:28:09,864 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.DBItem" no tiene el metodo "jdoNewObjectIdInstance" pero lo necesita
+09:28:09,864 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.DBItem" no tiene el metodo "jdoGetTransactionalObjectId" pero lo necesita
+09:28:09,864 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.DBItem" no tiene el metodo "jdoGetPersistenceManager" pero lo necesita
+09:28:09,864 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.DBItem" no tiene el metodo "jdoMakeDirty" pero lo necesita
+09:28:09,864 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.DBItem" no tiene el metodo "__jdoFieldFlagsInit" pero lo necesita
+09:28:09,864 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.DBItem" no tiene el metodo "jdoSuperClone" pero lo necesita
+09:28:09,864 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.DBItem" no tiene el metodo "__jdoFieldNamesInit" pero lo necesita
+09:28:09,864 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.DBItem" no tiene el metodo "jdoProvideField" pero lo necesita
+09:28:09,864 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.DBItem" no tiene el metodo "jdoReplaceDetachedState" pero lo necesita
+09:28:09,864 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.DBItem" no tiene el metodo "jdoPreSerialize" pero lo necesita
+09:28:09,864 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.DBItem" no tiene el metodo "jdoCopyField" pero lo necesita
+09:28:09,864 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.DBItem" no tiene el metodo "jdoIsDeleted" pero lo necesita
+09:28:09,864 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.DBItem" no tiene el metodo "jdoReplaceFlags" pero lo necesita
+09:28:09,864 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.DBItem" no tiene el metodo "jdoGetObjectId" pero lo necesita
+09:28:09,864 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.DBItem" no tiene el metodo "jdoIsDetached" pero lo necesita
+09:28:09,865 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.DBItem" no tiene el metodo "__jdoPersistenceCapableSuperclassInit" pero lo necesita
+09:28:09,865 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.DBItem" no tiene el metodo "___jdo$loadClass" pero lo necesita
+09:28:09,865 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.DBItem" no tiene el metodo "__jdoFieldTypesInit" pero lo necesita
+09:28:09,865 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.DBItem" no tiene el metodo "jdoGetVersion" pero lo necesita
+09:28:09,865 (main) DEBUG [DataNucleus.Enhancer] - Agregando el interfaz: javax.jdo.spi.Detachable
+09:28:09,865 (main) DEBUG [DataNucleus.Enhancer] - Agregando el interfaz: javax.jdo.spi.PersistenceCapable
+09:28:09,865 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original data.DBItem.<init> : ignorando enhance de set del campo "data.DBItem.id"
+09:28:09,866 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original data.DBItem.getId, cambiando el uso del campo "data.DBItem.id" para utilisar "jdoGetid()"
+09:28:09,866 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original data.DBItem.setId, cambiando el uso del campo "data.DBItem.id" para utilisar "jdoSetid()"
+09:28:09,866 (main) DEBUG [DataNucleus.Enhancer] - Agregando el campo "javax.jdo.spi.StateManager jdoStateManager"
+09:28:09,866 (main) DEBUG [DataNucleus.Enhancer] - Agregando el campo "byte jdoFlags"
+09:28:09,866 (main) DEBUG [DataNucleus.Enhancer] - Agregando el campo "[Ljava.lang.Object; jdoDetachedState"
+09:28:09,866 (main) DEBUG [DataNucleus.Enhancer] - Agregando el campo "[B jdoFieldFlags"
+09:28:09,866 (main) DEBUG [DataNucleus.Enhancer] - Agregando el campo "java.lang.Class jdoPersistenceCapableSuperclass"
+09:28:09,866 (main) DEBUG [DataNucleus.Enhancer] - Agregando el campo "[Ljava.lang.Class; jdoFieldTypes"
+09:28:09,866 (main) DEBUG [DataNucleus.Enhancer] - Agregando el campo "[Ljava.lang.String; jdoFieldNames"
+09:28:09,866 (main) DEBUG [DataNucleus.Enhancer] - Agregando el campo "int jdoInheritedFieldCount"
+09:28:09,867 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void <clinit>()"
+09:28:09,867 (main) DEBUG [DataNucleus.Enhancer] - Agregando el constructor "data.DBItem()"
+09:28:09,867 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void jdoCopyKeyFieldsFromObjectId(interface javax.jdo.spi.PersistenceCapable$ObjectIdFieldConsumer fc, class java.lang.Object oid)"
+09:28:09,867 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void jdoCopyKeyFieldsFromObjectId(class java.lang.Object oid)"
+09:28:09,868 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void jdoCopyKeyFieldsToObjectId(class java.lang.Object oid)"
+09:28:09,868 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void jdoCopyKeyFieldsToObjectId(interface javax.jdo.spi.PersistenceCapable$ObjectIdFieldSupplier fs, class java.lang.Object oid)"
+09:28:09,868 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.Object jdoGetObjectId()"
+09:28:09,868 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.Object jdoGetVersion()"
+09:28:09,868 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void jdoPreSerialize()"
+09:28:09,868 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "javax.jdo.PersistenceManager jdoGetPersistenceManager()"
+09:28:09,869 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.Object jdoGetTransactionalObjectId()"
+09:28:09,869 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "boolean jdoIsDeleted()"
+09:28:09,869 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "boolean jdoIsDirty()"
+09:28:09,869 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "boolean jdoIsNew()"
+09:28:09,869 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "boolean jdoIsPersistent()"
+09:28:09,870 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "boolean jdoIsTransactional()"
+09:28:09,870 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void jdoMakeDirty(class java.lang.String fieldName)"
+09:28:09,870 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.Object jdoNewObjectIdInstance()"
+09:28:09,870 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.Object jdoNewObjectIdInstance(class java.lang.Object key)"
+09:28:09,870 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void jdoProvideFields(class [I indices)"
+09:28:09,871 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void jdoReplaceFields(class [I indices)"
+09:28:09,871 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void jdoReplaceFlags()"
+09:28:09,871 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void jdoReplaceStateManager(interface javax.jdo.spi.StateManager sm)"
+09:28:09,872 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void jdoReplaceDetachedState()"
+09:28:09,872 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "boolean jdoIsDetached()"
+09:28:09,872 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "javax.jdo.spi.PersistenceCapable jdoNewInstance(interface javax.jdo.spi.StateManager sm)"
+09:28:09,872 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "javax.jdo.spi.PersistenceCapable jdoNewInstance(interface javax.jdo.spi.StateManager sm, class java.lang.Object obj)"
+09:28:09,872 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void jdoReplaceField(int index)"
+09:28:09,873 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void jdoProvideField(int index)"
+09:28:09,873 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void jdoCopyField(class data.DBItem obj, int index)"
+09:28:09,873 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void jdoCopyFields(class java.lang.Object obj, class [I indices)"
+09:28:09,873 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "[Ljava.lang.String; __jdoFieldNamesInit()"
+09:28:09,873 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "[Ljava.lang.Class; __jdoFieldTypesInit()"
+09:28:09,873 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "[B __jdoFieldFlagsInit()"
+09:28:09,874 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "int __jdoGetInheritedFieldCount()"
+09:28:09,874 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "int jdoGetManagedFieldCount()"
+09:28:09,874 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.Class __jdoPersistenceCapableSuperclassInit()"
+09:28:09,874 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.Class ___jdo$loadClass(class java.lang.String className)"
+09:28:09,874 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.Object jdoSuperClone()"
+09:28:09,874 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.String jdoGetid(class data.DBItem objPC)"
+09:28:09,874 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void jdoSetid(class data.DBItem objPC, class java.lang.String val)"
+09:28:09,875 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\GitHub\TralalaServer\bin\data\DBItem.class" con definicion enhanced
+09:28:09,876 (main) DEBUG [DataNucleus.Enhancer] - Enhance de la clase "data.DBItem" ha terminado
+09:28:09,876 (main) DEBUG [DataNucleus.Enhancer] - Enhance de la clase "data.Member" empezando ...
+09:28:09,876 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Member" no implementa el interfaz "javax.jdo.spi.PersistenceCapable"!
+09:28:09,876 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Member" no implementa el interfaz "javax.jdo.spi.Detachable"!
+09:28:09,877 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Member" no tiene el campo "jdoInheritedFieldCount" pero lo necesita
+09:28:09,877 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Member" no tiene el campo "jdoFieldNames" pero lo necesita
+09:28:09,877 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Member" no tiene el campo "jdoPersistenceCapableSuperclass" pero lo necesita
+09:28:09,877 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Member" no tiene el campo "jdoFieldTypes" pero lo necesita
+09:28:09,877 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Member" no tiene el campo "jdoFieldFlags" pero lo necesita
+09:28:09,877 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Member" no tiene el metodo "jdoProvideField" pero lo necesita
+09:28:09,877 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Member" no tiene el metodo "jdoNewInstance" pero lo necesita
+09:28:09,877 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Member" no tiene el metodo "jdoNewInstance" pero lo necesita
+09:28:09,877 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Member" no tiene el metodo "__jdoGetInheritedFieldCount" pero lo necesita
+09:28:09,877 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Member" no tiene el metodo "jdoReplaceField" pero lo necesita
+09:28:09,877 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Member" no tiene el metodo "jdoCopyField" pero lo necesita
+09:28:09,877 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Member" no tiene el metodo "jdoCopyFields" pero lo necesita
+09:28:09,877 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Member" no tiene el metodo "jdoGetManagedFieldCount" pero lo necesita
+09:28:09,878 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Member" no tiene el metodo "jdoIsDetached" pero lo necesita
+09:28:09,878 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Member" no tiene el metodo "__jdoPersistenceCapableSuperclassInit" pero lo necesita
+09:28:09,878 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Member" no tiene el metodo "jdoMakeDirty" pero lo necesita
+09:28:09,878 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Member" no tiene el metodo "__jdoFieldFlagsInit" pero lo necesita
+09:28:09,878 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Member" no tiene el metodo "jdoSuperClone" pero lo necesita
+09:28:09,878 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Member" no tiene el metodo "___jdo$loadClass" pero lo necesita
+09:28:09,878 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Member" no tiene el metodo "__jdoFieldNamesInit" pero lo necesita
+09:28:09,878 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Member" no tiene el metodo "__jdoFieldTypesInit" pero lo necesita
+09:28:09,879 (main) DEBUG [DataNucleus.Enhancer] - Agregando el interfaz: javax.jdo.spi.Detachable
+09:28:09,879 (main) DEBUG [DataNucleus.Enhancer] - Agregando el interfaz: javax.jdo.spi.PersistenceCapable
+09:28:09,879 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original data.Member.<init> : ignorando enhance de set del campo "data.Member.name"
+09:28:09,879 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original data.Member.<init> : ignorando enhance de set del campo "data.Member.nick"
+09:28:09,879 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original data.Member.<init> : ignorando enhance de set del campo "data.Member.bankAccount"
+09:28:09,879 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original data.Member.<init> : ignorando enhance de set del campo "data.Member.plays"
+09:28:09,880 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original data.Member.getId, cambiando el uso del campo "data.Member.id" para utilisar "jdoGetid()"
+09:28:09,880 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original data.Member.setId, cambiando el uso del campo "data.Member.id" para utilisar "jdoSetid()"
+09:28:09,880 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original data.Member.getName, cambiando el uso del campo "data.Member.name" para utilisar "jdoGetname()"
+09:28:09,880 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original data.Member.setName, cambiando el uso del campo "data.Member.name" para utilisar "jdoSetname()"
+09:28:09,880 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original data.Member.getNick, cambiando el uso del campo "data.Member.nick" para utilisar "jdoGetnick()"
+09:28:09,880 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original data.Member.getPlays, cambiando el uso del campo "data.Member.plays" para utilisar "jdoGetplays()"
+09:28:09,881 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original data.Member.addPlay, cambiando el uso del campo "data.Member.plays" para utilisar "jdoGetplays()"
+09:28:09,881 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original data.Member.addPlay, cambiando el uso del campo "data.Member.id" para utilisar "jdoGetid()"
+09:28:09,881 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original data.Member.getBankAccount, cambiando el uso del campo "data.Member.bankAccount" para utilisar "jdoGetbankAccount()"
+09:28:09,881 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original data.Member.setBankAccount, cambiando el uso del campo "data.Member.bankAccount" para utilisar "jdoSetbankAccount()"
+09:28:09,881 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original data.Member.getPaymentService, cambiando el uso del campo "data.Member.paymentService" para utilisar "jdoGetpaymentService()"
+09:28:09,881 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original data.Member.setPaymentService, cambiando el uso del campo "data.Member.paymentService" para utilisar "jdoSetpaymentService()"
+09:28:09,881 (main) DEBUG [DataNucleus.Enhancer] - Agregando el campo "[B jdoFieldFlags"
+09:28:09,882 (main) DEBUG [DataNucleus.Enhancer] - Agregando el campo "java.lang.Class jdoPersistenceCapableSuperclass"
+09:28:09,882 (main) DEBUG [DataNucleus.Enhancer] - Agregando el campo "[Ljava.lang.Class; jdoFieldTypes"
+09:28:09,882 (main) DEBUG [DataNucleus.Enhancer] - Agregando el campo "[Ljava.lang.String; jdoFieldNames"
+09:28:09,882 (main) DEBUG [DataNucleus.Enhancer] - Agregando el campo "int jdoInheritedFieldCount"
+09:28:09,882 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void <clinit>()"
+09:28:09,882 (main) DEBUG [DataNucleus.Enhancer] - Agregando el constructor "data.Member()"
+09:28:09,883 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void jdoMakeDirty(class java.lang.String fieldName)"
+09:28:09,883 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "boolean jdoIsDetached()"
+09:28:09,883 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "javax.jdo.spi.PersistenceCapable jdoNewInstance(interface javax.jdo.spi.StateManager sm)"
+09:28:09,883 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "javax.jdo.spi.PersistenceCapable jdoNewInstance(interface javax.jdo.spi.StateManager sm, class java.lang.Object obj)"
+09:28:09,884 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void jdoReplaceField(int index)"
+09:28:09,884 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void jdoProvideField(int index)"
+09:28:09,884 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void jdoCopyField(class data.Member obj, int index)"
+09:28:09,884 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void jdoCopyFields(class java.lang.Object obj, class [I indices)"
+09:28:09,885 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "[Ljava.lang.String; __jdoFieldNamesInit()"
+09:28:09,885 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "[Ljava.lang.Class; __jdoFieldTypesInit()"
+09:28:09,885 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "[B __jdoFieldFlagsInit()"
+09:28:09,885 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "int __jdoGetInheritedFieldCount()"
+09:28:09,885 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "int jdoGetManagedFieldCount()"
+09:28:09,885 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.Class __jdoPersistenceCapableSuperclassInit()"
+09:28:09,885 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.Class ___jdo$loadClass(class java.lang.String className)"
+09:28:09,885 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.Object jdoSuperClone()"
+09:28:09,885 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "long jdoGetbankAccount(class data.Member objPC)"
+09:28:09,886 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void jdoSetbankAccount(class data.Member objPC, long val)"
+09:28:09,886 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.String jdoGetid(class data.Member objPC)"
+09:28:09,886 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void jdoSetid(class data.Member objPC, class java.lang.String val)"
+09:28:09,886 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.String jdoGetname(class data.Member objPC)"
+09:28:09,887 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void jdoSetname(class data.Member objPC, class java.lang.String val)"
+09:28:09,887 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.String jdoGetnick(class data.Member objPC)"
+09:28:09,887 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void jdoSetnick(class data.Member objPC, class java.lang.String val)"
+09:28:09,887 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.String jdoGetpaymentService(class data.Member objPC)"
+09:28:09,887 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void jdoSetpaymentService(class data.Member objPC, class java.lang.String val)"
+09:28:09,888 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.util.ArrayList jdoGetplays(class data.Member objPC)"
+09:28:09,888 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void jdoSetplays(class data.Member objPC, class java.util.ArrayList val)"
+09:28:09,889 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\GitHub\TralalaServer\bin\data\Member.class" con definicion enhanced
+09:28:09,889 (main) DEBUG [DataNucleus.Enhancer] - Enhance de la clase "data.Member" ha terminado
+09:28:09,890 (main) DEBUG [DataNucleus.Enhancer] - Enhance de la clase "data.Play" empezando ...
+09:28:09,890 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Play" no implementa el interfaz "javax.jdo.spi.PersistenceCapable"!
+09:28:09,890 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Play" no implementa el interfaz "javax.jdo.spi.Detachable"!
+09:28:09,890 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Play" no tiene el campo "jdoInheritedFieldCount" pero lo necesita
+09:28:09,890 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Play" no tiene el campo "jdoFieldNames" pero lo necesita
+09:28:09,890 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Play" no tiene el campo "jdoPersistenceCapableSuperclass" pero lo necesita
+09:28:09,890 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Play" no tiene el campo "jdoFieldTypes" pero lo necesita
+09:28:09,890 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Play" no tiene el campo "jdoFieldFlags" pero lo necesita
+09:28:09,890 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Play" no tiene el metodo "jdoProvideField" pero lo necesita
+09:28:09,891 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Play" no tiene el metodo "jdoNewInstance" pero lo necesita
+09:28:09,891 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Play" no tiene el metodo "jdoNewInstance" pero lo necesita
+09:28:09,891 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Play" no tiene el metodo "__jdoGetInheritedFieldCount" pero lo necesita
+09:28:09,891 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Play" no tiene el metodo "jdoReplaceField" pero lo necesita
+09:28:09,891 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Play" no tiene el metodo "jdoCopyField" pero lo necesita
+09:28:09,891 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Play" no tiene el metodo "jdoCopyFields" pero lo necesita
+09:28:09,891 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Play" no tiene el metodo "jdoGetManagedFieldCount" pero lo necesita
+09:28:09,891 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Play" no tiene el metodo "jdoIsDetached" pero lo necesita
+09:28:09,891 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Play" no tiene el metodo "__jdoPersistenceCapableSuperclassInit" pero lo necesita
+09:28:09,891 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Play" no tiene el metodo "jdoMakeDirty" pero lo necesita
+09:28:09,891 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Play" no tiene el metodo "__jdoFieldFlagsInit" pero lo necesita
+09:28:09,891 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Play" no tiene el metodo "jdoSuperClone" pero lo necesita
+09:28:09,891 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Play" no tiene el metodo "___jdo$loadClass" pero lo necesita
+09:28:09,891 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Play" no tiene el metodo "__jdoFieldNamesInit" pero lo necesita
+09:28:09,891 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Play" no tiene el metodo "__jdoFieldTypesInit" pero lo necesita
+09:28:09,892 (main) DEBUG [DataNucleus.Enhancer] - Agregando el interfaz: javax.jdo.spi.Detachable
+09:28:09,892 (main) DEBUG [DataNucleus.Enhancer] - Agregando el interfaz: javax.jdo.spi.PersistenceCapable
+09:28:09,892 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original data.Play.<init> : ignorando enhance de set del campo "data.Play.date"
+09:28:09,892 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original data.Play.<init> : ignorando enhance de set del campo "data.Play.time"
+09:28:09,892 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original data.Play.<init> : ignorando enhance de set del campo "data.Play.memberId"
+09:28:09,892 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original data.Play.<init> : ignorando enhance de set del campo "data.Play.songId"
+09:28:09,892 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original data.Play.getDate, cambiando el uso del campo "data.Play.date" para utilisar "jdoGetdate()"
+09:28:09,893 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original data.Play.setDate, cambiando el uso del campo "data.Play.date" para utilisar "jdoSetdate()"
+09:28:09,893 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original data.Play.getTime, cambiando el uso del campo "data.Play.time" para utilisar "jdoGettime()"
+09:28:09,893 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original data.Play.setTime, cambiando el uso del campo "data.Play.time" para utilisar "jdoSettime()"
+09:28:09,893 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original data.Play.getSongId, cambiando el uso del campo "data.Play.songId" para utilisar "jdoGetsongId()"
+09:28:09,893 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original data.Play.setSongId, cambiando el uso del campo "data.Play.songId" para utilisar "jdoSetsongId()"
+09:28:09,893 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original data.Play.getMemberId, cambiando el uso del campo "data.Play.memberId" para utilisar "jdoGetmemberId()"
+09:28:09,894 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original data.Play.setMemberId, cambiando el uso del campo "data.Play.memberId" para utilisar "jdoSetmemberId()"
+09:28:09,894 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original data.Play.getSong, cambiando el uso del campo "data.Play.songId" para utilisar "jdoGetsongId()"
+09:28:09,894 (main) DEBUG [DataNucleus.Enhancer] - Agregando el campo "[B jdoFieldFlags"
+09:28:09,894 (main) DEBUG [DataNucleus.Enhancer] - Agregando el campo "java.lang.Class jdoPersistenceCapableSuperclass"
+09:28:09,894 (main) DEBUG [DataNucleus.Enhancer] - Agregando el campo "[Ljava.lang.Class; jdoFieldTypes"
+09:28:09,894 (main) DEBUG [DataNucleus.Enhancer] - Agregando el campo "[Ljava.lang.String; jdoFieldNames"
+09:28:09,894 (main) DEBUG [DataNucleus.Enhancer] - Agregando el campo "int jdoInheritedFieldCount"
+09:28:09,895 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void <clinit>()"
+09:28:09,895 (main) DEBUG [DataNucleus.Enhancer] - Agregando el constructor "data.Play()"
+09:28:09,895 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void jdoMakeDirty(class java.lang.String fieldName)"
+09:28:09,895 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "boolean jdoIsDetached()"
+09:28:09,895 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "javax.jdo.spi.PersistenceCapable jdoNewInstance(interface javax.jdo.spi.StateManager sm)"
+09:28:09,896 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "javax.jdo.spi.PersistenceCapable jdoNewInstance(interface javax.jdo.spi.StateManager sm, class java.lang.Object obj)"
+09:28:09,896 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void jdoReplaceField(int index)"
+09:28:09,896 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void jdoProvideField(int index)"
+09:28:09,897 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void jdoCopyField(class data.Play obj, int index)"
+09:28:09,897 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void jdoCopyFields(class java.lang.Object obj, class [I indices)"
+09:28:09,897 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "[Ljava.lang.String; __jdoFieldNamesInit()"
+09:28:09,897 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "[Ljava.lang.Class; __jdoFieldTypesInit()"
+09:28:09,897 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "[B __jdoFieldFlagsInit()"
+09:28:09,897 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "int __jdoGetInheritedFieldCount()"
+09:28:09,898 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "int jdoGetManagedFieldCount()"
+09:28:09,898 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.Class __jdoPersistenceCapableSuperclassInit()"
+09:28:09,898 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.Class ___jdo$loadClass(class java.lang.String className)"
+09:28:09,898 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.Object jdoSuperClone()"
+09:28:09,898 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.String jdoGetdate(class data.Play objPC)"
+09:28:09,899 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void jdoSetdate(class data.Play objPC, class java.lang.String val)"
+09:28:09,899 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.String jdoGetmemberId(class data.Play objPC)"
+09:28:09,899 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void jdoSetmemberId(class data.Play objPC, class java.lang.String val)"
+09:28:09,899 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.String jdoGetsongId(class data.Play objPC)"
+09:28:09,900 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void jdoSetsongId(class data.Play objPC, class java.lang.String val)"
+09:28:09,900 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.String jdoGettime(class data.Play objPC)"
+09:28:09,900 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void jdoSettime(class data.Play objPC, class java.lang.String val)"
+09:28:09,901 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\GitHub\TralalaServer\bin\data\Play.class" con definicion enhanced
+09:28:09,901 (main) DEBUG [DataNucleus.Enhancer] - Enhance de la clase "data.Play" ha terminado
+09:28:09,902 (main) DEBUG [DataNucleus.Enhancer] - Enhance de la clase "data.Song" empezando ...
+09:28:09,902 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Song" no implementa el interfaz "javax.jdo.spi.PersistenceCapable"!
+09:28:09,902 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Song" no implementa el interfaz "javax.jdo.spi.Detachable"!
+09:28:09,902 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Song" no tiene el campo "jdoInheritedFieldCount" pero lo necesita
+09:28:09,903 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Song" no tiene el campo "jdoFieldNames" pero lo necesita
+09:28:09,903 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Song" no tiene el campo "jdoPersistenceCapableSuperclass" pero lo necesita
+09:28:09,903 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Song" no tiene el campo "jdoFieldTypes" pero lo necesita
+09:28:09,903 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Song" no tiene el campo "jdoFieldFlags" pero lo necesita
+09:28:09,903 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Song" no tiene el metodo "jdoProvideField" pero lo necesita
+09:28:09,903 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Song" no tiene el metodo "jdoNewInstance" pero lo necesita
+09:28:09,903 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Song" no tiene el metodo "jdoNewInstance" pero lo necesita
+09:28:09,903 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Song" no tiene el metodo "__jdoGetInheritedFieldCount" pero lo necesita
+09:28:09,903 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Song" no tiene el metodo "jdoReplaceField" pero lo necesita
+09:28:09,903 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Song" no tiene el metodo "jdoCopyField" pero lo necesita
+09:28:09,903 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Song" no tiene el metodo "jdoCopyFields" pero lo necesita
+09:28:09,903 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Song" no tiene el metodo "jdoGetManagedFieldCount" pero lo necesita
+09:28:09,903 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Song" no tiene el metodo "jdoIsDetached" pero lo necesita
+09:28:09,903 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Song" no tiene el metodo "__jdoPersistenceCapableSuperclassInit" pero lo necesita
+09:28:09,903 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Song" no tiene el metodo "jdoMakeDirty" pero lo necesita
+09:28:09,903 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Song" no tiene el metodo "__jdoFieldFlagsInit" pero lo necesita
+09:28:09,903 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Song" no tiene el metodo "jdoSuperClone" pero lo necesita
+09:28:09,903 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Song" no tiene el metodo "___jdo$loadClass" pero lo necesita
+09:28:09,903 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Song" no tiene el metodo "__jdoFieldNamesInit" pero lo necesita
+09:28:09,903 (main) DEBUG [DataNucleus.Enhancer] - La clase "data.Song" no tiene el metodo "__jdoFieldTypesInit" pero lo necesita
+09:28:09,904 (main) DEBUG [DataNucleus.Enhancer] - Agregando el interfaz: javax.jdo.spi.Detachable
+09:28:09,904 (main) DEBUG [DataNucleus.Enhancer] - Agregando el interfaz: javax.jdo.spi.PersistenceCapable
+09:28:09,904 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original data.Song.getTitle, cambiando el uso del campo "data.Song.songTitle" para utilisar "jdoGetsongTitle()"
+09:28:09,904 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original data.Song.setTitle, cambiando el uso del campo "data.Song.songTitle" para utilisar "jdoSetsongTitle()"
+09:28:09,904 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original data.Song.getDuration, cambiando el uso del campo "data.Song.duration" para utilisar "jdoGetduration()"
+09:28:09,904 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original data.Song.setDuration, cambiando el uso del campo "data.Song.duration" para utilisar "jdoSetduration()"
+09:28:09,905 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original data.Song.getPpp, cambiando el uso del campo "data.Song.ppp" para utilisar "jdoGetppp()"
+09:28:09,905 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original data.Song.setPpp, cambiando el uso del campo "data.Song.ppp" para utilisar "jdoSetppp()"
+09:28:09,905 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original data.Song.getArtist, cambiando el uso del campo "data.Song.artist" para utilisar "jdoGetartist()"
+09:28:09,905 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original data.Song.setArtist, cambiando el uso del campo "data.Song.artist" para utilisar "jdoSetartist()"
+09:28:09,905 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original data.Song.getAlbum, cambiando el uso del campo "data.Song.album" para utilisar "jdoGetalbum()"
+09:28:09,905 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original data.Song.setAlbum, cambiando el uso del campo "data.Song.album" para utilisar "jdoSetalbum()"
+09:28:09,905 (main) DEBUG [DataNucleus.Enhancer] - Agregando el campo "[B jdoFieldFlags"
+09:28:09,905 (main) DEBUG [DataNucleus.Enhancer] - Agregando el campo "java.lang.Class jdoPersistenceCapableSuperclass"
+09:28:09,905 (main) DEBUG [DataNucleus.Enhancer] - Agregando el campo "[Ljava.lang.Class; jdoFieldTypes"
+09:28:09,905 (main) DEBUG [DataNucleus.Enhancer] - Agregando el campo "[Ljava.lang.String; jdoFieldNames"
+09:28:09,905 (main) DEBUG [DataNucleus.Enhancer] - Agregando el campo "int jdoInheritedFieldCount"
+09:28:09,906 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void <clinit>()"
+09:28:09,906 (main) DEBUG [DataNucleus.Enhancer] - Agregando el constructor "data.Song()"
+09:28:09,906 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void jdoMakeDirty(class java.lang.String fieldName)"
+09:28:09,906 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "boolean jdoIsDetached()"
+09:28:09,906 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "javax.jdo.spi.PersistenceCapable jdoNewInstance(interface javax.jdo.spi.StateManager sm)"
+09:28:09,906 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "javax.jdo.spi.PersistenceCapable jdoNewInstance(interface javax.jdo.spi.StateManager sm, class java.lang.Object obj)"
+09:28:09,907 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void jdoReplaceField(int index)"
+09:28:09,907 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void jdoProvideField(int index)"
+09:28:09,907 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void jdoCopyField(class data.Song obj, int index)"
+09:28:09,907 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void jdoCopyFields(class java.lang.Object obj, class [I indices)"
+09:28:09,908 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "[Ljava.lang.String; __jdoFieldNamesInit()"
+09:28:09,908 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "[Ljava.lang.Class; __jdoFieldTypesInit()"
+09:28:09,908 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "[B __jdoFieldFlagsInit()"
+09:28:09,908 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "int __jdoGetInheritedFieldCount()"
+09:28:09,908 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "int jdoGetManagedFieldCount()"
+09:28:09,908 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.Class __jdoPersistenceCapableSuperclassInit()"
+09:28:09,909 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.Class ___jdo$loadClass(class java.lang.String className)"
+09:28:09,910 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.Object jdoSuperClone()"
+09:28:09,910 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "data.Album jdoGetalbum(class data.Song objPC)"
+09:28:09,911 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void jdoSetalbum(class data.Song objPC, class data.Album val)"
+09:28:09,911 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "data.Artist jdoGetartist(class data.Song objPC)"
+09:28:09,911 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void jdoSetartist(class data.Song objPC, class data.Artist val)"
+09:28:09,912 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "int jdoGetduration(class data.Song objPC)"
+09:28:09,912 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void jdoSetduration(class data.Song objPC, int val)"
+09:28:09,912 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "double jdoGetppp(class data.Song objPC)"
+09:28:09,913 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void jdoSetppp(class data.Song objPC, double val)"
+09:28:09,913 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.String jdoGetsongTitle(class data.Song objPC)"
+09:28:09,913 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void jdoSetsongTitle(class data.Song objPC, class java.lang.String val)"
+09:28:09,914 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "F:\Documentos\GitHub\TralalaServer\bin\data\Song.class" con definicion enhanced
+09:28:09,915 (main) DEBUG [DataNucleus.Enhancer] - Enhance de la clase "data.Song" ha terminado
+09:28:09,916 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 6 clases.
