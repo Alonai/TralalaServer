@@ -101,6 +101,12 @@
         </schematool>
     </target>
 	
+    <!-- TARGET : Run -->	
+	<target name="run" depends="createschema">
+        <java classname="launcher.DBDataCreator" classpathref="classpath" fork="true">
+        	<jvmarg value="-Dlog4j.configuration=log4j.properties"/>
+		</java>
+    </target>
 	
 	
 	<target name="help">

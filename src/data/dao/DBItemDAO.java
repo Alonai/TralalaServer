@@ -19,7 +19,7 @@ public class DBItemDAO implements IDBItemDAO {
 	private PersistenceManagerFactory pmf;
 	
 	public DBItemDAO(){
-		pmf = JDOHelper.getPersistenceManagerFactory("Items");
+		pmf = JDOHelper.getPersistenceManagerFactory("TralalaJDO");
 	}
 	
 	public void storeItem(DBItem item) {
