@@ -12,19 +12,20 @@ import gateways.Gateway;
 
 public class AuthorizationGateway extends Gateway{
 
-	private final String name= "//127.0.0.1:1099/AuthorizationServer";
+	private String name;
 	private IAuthService server;
-	public AuthorizationGateway() throws Exception{
+	public AuthorizationGateway(String name) throws Exception{
 		super();
+		this.name= name;
 		server= (IAuthService) lookup(name);
 	}
 
 	public IAuthService lookup(String name) throws RemoteException, MalformedURLException, NotBoundException {		
 		return (IAuthService) Naming.lookup(name);
 	}
-	public boolean doesUserExist(String name){
+	public boolean doesUserExist(String user){
 		try {
-			return server.doesUserExist(name);
+			return server.doesUserExist(user);
 		} catch (RemoteException e) {
 			e.printStackTrace();
 			return false;

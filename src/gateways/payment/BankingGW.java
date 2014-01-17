@@ -4,16 +4,20 @@ import server.BankingServer;
 
 public class BankingGW extends PaymentGateway{
 	
-	private final String name= "//127.0.0.1:1099/BankingServer";
-	private String[] options;
+	private String[] options=null;
+	private BankingServer server;
+	
+
+	public BankingGW(String name)throws Exception{
+		super();
+		server= (BankingServer) lookup(name);
+	}
 	/** [0]: bank account
 	 *  [1]: amount to pay
 	 * @param options
 	 */
-	public BankingGW(String[] options){
-		super();
+	public void setOptions(String[] options){
 		this.options= options;
-		
 	}
 	/**Pay to PayPal
 	 */
@@ -29,7 +33,6 @@ public class BankingGW extends PaymentGateway{
 	private boolean payToBank(String account, double amount){
 		boolean ret= false;
 		try {
-			BankingServer server= (BankingServer) lookup(name);
 			ret= server.pay(account, amount);
 		} catch (Exception e) {
 			e.printStackTrace();
