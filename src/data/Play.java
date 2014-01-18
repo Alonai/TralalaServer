@@ -36,10 +36,6 @@ public class Play{
 		this.time = time;
 	}
 
-	public Song getSongId() {
-		return song;
-	}
-
 	public void setSong(Song song) {
 		this.song= song;
 	}
