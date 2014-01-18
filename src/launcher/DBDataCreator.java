@@ -8,25 +8,25 @@ import data.dao.DBItemDAO;
 
 public class DBDataCreator {
 	public static void main(String[]argv){
-		ArrayList<DBItem>items=new ArrayList<DBItem>();
-		Artist daftPunk=new Artist("AR0001","Daft Punk");
-		Album homework=new Album("AL0001","Homework","17/01/1997");
-		Song one=new Song("S0001", "Daftendirekt", 164);
-		Song two=new Song("S0002", "WDPK 83.7 FM", 28);
-		Song three=new Song("S0003","Revolution 909", 326);
-		Song four=new Song("S0004", "Da Funk", 328);
-		Song five=new Song("S0005", "Phoenix", 164);
-		Song six=new Song("S0006", "Fresh", 164);
-		Song seven=new Song("S0007", "Around the World", 164);
-		Song eight=new Song("S0008", "Rollin' & Scratchin'", 164);
-		Song nine=new Song("S0009", "Teachers", 164);
-		Song ten=new Song("S0010", "High Fidelity", 164);
-		Song eleven=new Song("S0011", "Rock'n Roll", 164);
-		Song twelve=new Song("S0012", "Oh Yeah", 164);
-		Song thirteen=new Song("S0013", "Burnin'", 164);
-		Song fourteen=new Song("S0014", "Indo Silver Club", 164);
-		Song fifteen=new Song("S0015", "Alive", 164);
-		Song sixteen=new Song("S0016", "Funk Ad", 164);
+		ArrayList<Object>items=new ArrayList<Object>();
+		Artist daftPunk=new Artist("Daft Punk");
+		Album homework=new Album("Homework","17/01/1997");
+		Song one=new Song("Daftendirekt", 164);
+		Song two=new Song("WDPK 83.7 FM", 28);
+		Song three=new Song("Revolution 909", 326);
+		Song four=new Song("Da Funk", 328);
+		Song five=new Song("Phoenix", 164);
+		Song six=new Song("Fresh", 164);
+		Song seven=new Song("Around the World", 164);
+		Song eight=new Song("Rollin' & Scratchin'", 164);
+		Song nine=new Song("Teachers", 164);
+		Song ten=new Song("High Fidelity", 164);
+		Song eleven=new Song("Rock'n Roll", 164);
+		Song twelve=new Song("Oh Yeah", 164);
+		Song thirteen=new Song("Burnin'", 164);
+		Song fourteen=new Song("Indo Silver Club", 164);
+		Song fifteen=new Song("Alive", 164);
+		Song sixteen=new Song("Funk Ad", 164);
 		items.add(one);
 		items.add(two);
 		items.add(three);
@@ -43,7 +43,7 @@ public class DBDataCreator {
 		items.add(fourteen);
 		items.add(fifteen);
 		items.add(sixteen);
-		for(DBItem song:items){
+		for(Object song:items){
 			daftPunk.addSong((Song)song);
 			homework.addSong((Song)song);
 			System.out.println(((Song)song).getArtist().getName()+" - "+((Song)song).getTitle());
@@ -51,7 +51,10 @@ public class DBDataCreator {
 		items.add(daftPunk);
 		items.add(homework);
 		DBItemDAO dao=new DBItemDAO();
-		dao.storeArtist(daftPunk);
+		for(Object o: items){
+			dao.storeItem(o);
+		}
+		//dao.storeArtist(daftPunk);
 		System.out.println("Getting list of songs...");
 		List<Song> songs=dao.getSongs();
 		for(Song song:songs){
@@ -65,15 +68,14 @@ public class DBDataCreator {
 				System.out.println("songs are null");
 			}
 		}
-		for(Song song:songs){
-			if(song!=null){
-				if(song.getArtist()!=null){
-					System.out.println(song.getArtist().getName()+" - "+song.getTitle());
-				}else{
-					System.out.println("Artists are null");
-				}
-			}else{
-				System.out.println("songs are null");
+		List<Artist> artists=dao.getArtists();
+		for(Artist artist: artists){
+			System.out.println(artist.getName());
+			for(Song song: artist.getSongs()){
+				System.out.println(artist.getName()+" - "+song.getTitle());
+			}
+			for(Song song: artist.getSongs()){
+				System.out.println(song.getArtist().getName()+" - "+song.getTitle());
 			}
 		}
 	}

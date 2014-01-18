@@ -3,7 +3,7 @@ package data;
 import javax.jdo.annotations.PersistenceCapable;
 
 @PersistenceCapable(detachable = "true")
-public class Song extends DBItem {
+public class Song {
 
 	private String songTitle;
 	private int duration;
@@ -11,8 +11,7 @@ public class Song extends DBItem {
 	private Artist artist;
 	private Album album;
 	
-	public Song(String id,String title, int duration) {
-		super(id);
+	public Song(String title, int duration) {
 		songTitle=title;
 		this.duration=duration;
 		ppp=0;

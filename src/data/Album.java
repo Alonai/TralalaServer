@@ -5,14 +5,13 @@ import java.util.ArrayList;
 import javax.jdo.annotations.PersistenceCapable;
 
 @PersistenceCapable(detachable = "true")
-public class Album extends DBItem {
+public class Album {
 	
 	private String title;
 	private String releaseDate;
 	private ArrayList<Song> songs;
 	
-	public Album(String id, String title, String releaseDate){
-		super(id);
+	public Album(String title, String releaseDate){
 		this.releaseDate=releaseDate;
 		this.title=title;
 		songs=new ArrayList<Song>();

@@ -24,7 +24,7 @@ public class SongSessionFacade extends UnicastRemoteObject implements ISongSessi
 		List<Song> songs = provider.getListSongs();
 		for (Iterator<Song> it = songs.iterator(); it.hasNext(); ) {
 	        Song song = it.next();
-	        ret.add(song.getTitle() + " - " + song.getArtist() + " - " + song.getId());
+	        ret.add(song.getTitle() + " - " + song.getArtist());
 	    }
 		return ret;
 	}

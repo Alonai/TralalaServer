@@ -6,7 +6,6 @@
 
     <!-- data "unit" -->
     <persistence-unit name="TralalaJDO">
-        <class>data.DBItem</class>
 		<class>data.Album</class>
 		<class>data.Artist</class>
 		<class>data.Member</class>

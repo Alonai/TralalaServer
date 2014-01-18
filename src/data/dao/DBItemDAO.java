@@ -11,7 +11,6 @@ import javax.jdo.Query;
 import javax.jdo.Transaction;
 
 import data.Artist;
-import data.DBItem;
 import data.Song;
 
 public class DBItemDAO implements IDBItemDAO {
@@ -22,7 +21,7 @@ public class DBItemDAO implements IDBItemDAO {
 		pmf = JDOHelper.getPersistenceManagerFactory("TralalaJDO");
 	}
 	
-	public void storeItem(DBItem item) {
+	public void storeItem(Object item) {
 		this.storeObject(item);
 	}
 
@@ -50,18 +49,18 @@ public class DBItemDAO implements IDBItemDAO {
 	    }
 	}
 	
-	public List<DBItem> getItems() {
+	public List<Object> getItems() {
 		PersistenceManager pm = pmf.getPersistenceManager();
 		Transaction tx = pm.currentTransaction();
-		List<DBItem> items = new ArrayList<DBItem>();
+		List<Object> items = new ArrayList<Object>();
 		
 		try {
 			System.out.println("   * Retrieving an Extent for Items.");
 			
 			tx.begin();			
-			Extent<DBItem> extent = pm.getExtent(DBItem.class, true);
+			Extent<Object> extent = pm.getExtent(Object.class, true);
 			
-			for (DBItem item : extent) {
+			for (Object item : extent) {
 				items.add(item);
 			}
 			
@@ -137,19 +136,19 @@ public class DBItemDAO implements IDBItemDAO {
 		return songs;
 	}
 
-	public List<DBItem> getItems(String condition) {
+	public List<Object> getItems(String condition) {
 		PersistenceManager pm = pmf.getPersistenceManager();
 	    Transaction tx = pm.currentTransaction();
-	    List<DBItem> items = new ArrayList<DBItem>();
+	    List<Object> items = new ArrayList<Object>();
 	        
 	    try {
 	    	System.out.println("   * Executing a Query for Items given a condition: " + condition);
 	    	
 	    	tx.begin();	    	
-			Extent<DBItem> extent = pm.getExtent(DBItem.class, true);
+			Extent<Object> extent = pm.getExtent(Object.class, true);
 			Query query = pm.newQuery(extent, condition);
 
-			for (DBItem item : (List<DBItem>)query.execute()) {
+			for (Object item : (List<Object>)query.execute()) {
 				items.add(item);
 			}
 			
@@ -167,32 +166,7 @@ public class DBItemDAO implements IDBItemDAO {
 	    return items;
 	}
 
-	public DBItem getItem(String id) {
-		PersistenceManager pm = pmf.getPersistenceManager();
-		Transaction tx = pm.currentTransaction();
-		DBItem item = null;
-	    
-		try {
-			System.out.println ("   * Querying an Item: " + id);
-	    	tx.begin();
-	    	Query query = pm.newQuery("SELECT FROM " + DBItem.class.getName() + " WHERE id == '" + id + "'");
-	    	query.setUnique(true);
-	    	item = (DBItem)query.execute();	    	
-	    	tx.commit();
-	     } catch (Exception ex) {
-		   	System.out.println("   $ Error retreiving an extent: " + ex.getMessage());
-	     } finally {
-		   	if (tx != null && tx.isActive()) {
-		   		tx.rollback();
-		   	}
-				
-	   		pm.close();
-	     }
-	    
-	    return item;
-	}
-
-	public void updateItem(DBItem item) {
+	public void updateItem(Object item) {
 		PersistenceManager pm = pmf.getPersistenceManager();
 	    Transaction tx = pm.currentTransaction();
 	    
@@ -218,9 +192,9 @@ public class DBItemDAO implements IDBItemDAO {
 	    try {
 	    	tx.begin();
 	    	
-	    	Extent<DBItem> extent = pm.getExtent(DBItem.class, true);
+	    	Extent<Object> extent = pm.getExtent(Object.class, true);
 			
-			for (DBItem item : extent) {
+			for (Object item : extent) {
 				pm.deletePersistent(item);
 			}
 	    	

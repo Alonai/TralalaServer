@@ -5,13 +5,12 @@ import java.util.ArrayList;
 import javax.jdo.annotations.PersistenceCapable;
 
 @PersistenceCapable(detachable = "true")
-public class Artist extends DBItem {
+public class Artist {
 	
 	private String name;
 	private ArrayList<Song> songs;
 	
-	public Artist(String id, String name){
-		super(id);
+	public Artist(String name){
 		this.name=name;
 		songs=new ArrayList<Song>();
 	}
@@ -21,7 +20,7 @@ public class Artist extends DBItem {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public void addSong(Song song, String id, String title, int duration, double ppp,Album album){
+	public void addSong(Song song, String title, int duration, double ppp,Album album){
 		song.setTitle(title);
 		song.setDuration(duration);
 		song.setPpp(ppp);

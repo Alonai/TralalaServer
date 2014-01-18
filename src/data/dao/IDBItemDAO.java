@@ -3,17 +3,15 @@ package data.dao;
 import java.util.List;
 
 import data.Artist;
-import data.DBItem;
 import data.Song;
 
 public interface IDBItemDAO {
-	public void storeItem(DBItem item);
+	public void storeItem(Object item);
 	public void storeArtist(Artist artist);
-	public List<DBItem> getItems();
+	public List<Object> getItems();
 	public List<Artist> getArtists();
 	public List<Song> getSongs();
-	public List<DBItem> getItems(String condition);
-	public DBItem getItem(String id);
-	public void updateItem(DBItem product);
+	public List<Object> getItems(String condition);
+	public void updateItem(Object product);
 	public void deleteItems();
 }

@@ -8,9 +8,8 @@ import server.IVisitable;
 import server.Visitor;
 
 @PersistenceCapable(detachable = "true")
-public class Member extends DBItem implements IVisitable{
+public class Member implements IVisitable{
 
-	private String id;
 	private String name;
 	private String nick;
 	private ArrayList<Play> plays;
@@ -18,21 +17,12 @@ public class Member extends DBItem implements IVisitable{
 	private String paymentService;
 	
 	
-	public Member(String id, String name, String nick, long bankAccount){
-		super(id);
+	public Member(String name, String nick, long bankAccount){
 		this.name=name;
 		this.nick=nick;
 		this.bankAccount=bankAccount;
 		this.plays=new ArrayList<Play>();
 		paymentService="none";
-	}
-
-	public String getId() {
-		return id;
-	}
-
-	public void setId(String id) {
-		this.id = id;
 	}
 
 	public String getName() {
@@ -51,8 +41,8 @@ public class Member extends DBItem implements IVisitable{
 		return plays;
 	}
 
-	public void addPlay(String date, String time, String songId, String playId) {
-		plays.add(new Play(date, time, songId, id, playId));
+	public void addPlay(String date, String time, Song song) {
+		plays.add(new Play(date, time, song,this));
 	}
 
 	public long getBankAccount() {

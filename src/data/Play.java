@@ -6,19 +6,18 @@ import javax.jdo.annotations.PersistenceCapable;
 
 
 @PersistenceCapable(detachable = "true")
-public class Play extends DBItem{
+public class Play{
 
 	private String date;
 	private String time;
-	private String songId;
-	private String memberId;
+	private Song song;
+	private Member member;
 	
-	public Play(String date, String time,String songID, String memberID, String id){
-		super(id);
+	public Play(String date, String time,Song song, Member member){
 		this.date=date;
 		this.time=time;
-		memberId=memberID;
-		songId=songID;
+		this.member=member;
+		this.song=song;
 	}
 
 	public String getDate() {
@@ -37,24 +36,23 @@ public class Play extends DBItem{
 		this.time = time;
 	}
 
-	public String getSongId() {
-		return songId;
+	public Song getSongId() {
+		return song;
 	}
 
-	public void setSongId(String songId) {
-		this.songId = songId;
+	public void setSong(Song song) {
+		this.song= song;
 	}
 
-	public String getMemberId() {
-		return memberId;
+	public Member getMember() {
+		return member;
 	}
 
-	public void setMemberId(String memberId) {
-		this.memberId = memberId;
+	public void setMember(Member member) {
+		this.member = member;
 	}
 	public Song getSong(){
-		DBItemDAO dbAccess=new DBItemDAO();
-	 	return (Song)dbAccess.getItem(songId);
+	 	return song;
 	}
 	
 }

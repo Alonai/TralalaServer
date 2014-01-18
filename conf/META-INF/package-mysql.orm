@@ -2,14 +2,7 @@
 <!DOCTYPE orm SYSTEM "file:/javax/jdo/orm.dtd">
 <orm>
     <package name="data">    
-        <class name="DBItem">
-            <field name="id">
-                <column length="100" jdbc-type="VARCHAR"/>
-            </field>
-        </class>
-        
         <class name="Artist">
-            <inheritance strategy="new-table"/>
             <field name="name">
                 <column length="40" jdbc-type="VARCHAR"/>
             </field>
@@ -42,7 +35,7 @@
             <field name="ppp">
                 <column length="128" jdbc-type="DOUBLE"/>
             </field>
-            <field name="Artist">               
+            <field name="Artist" default-fetch-group="true">               
             </field>
             <field name="Album" default-fetch-group="true">               
             </field>
@@ -74,10 +67,10 @@
 			<field name="time">
                 <column length="128" jdbc-type="VARCHAR"/>
             </field>
-            <field name="songId">
+            <field name="song">
                 <column length="128" jdbc-type="VARCHAR"/>
             </field>
-            <field name="memberId">
+            <field name="member">
                 <column length="128" jdbc-type="VARCHAR"/>
             </field>
 		</class>

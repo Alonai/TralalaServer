@@ -19,9 +19,13 @@ public class SongProvider {
 	}
 	
 	public SongDTO giveSong(String name) {
-		//NEcesito el metodo para sacar la song que yo quiera
-		return SongAssembler.createSongDTO((Song)controller.getItem(name));
+		List<Song> songs= getListSongs();
+		for(Song song:songs){
+			if(song.getTitle().equals(name)){
+				return SongAssembler.createSongDTO(song);
+			}
+		}
+		return null;
 	}
-
 	
 }
