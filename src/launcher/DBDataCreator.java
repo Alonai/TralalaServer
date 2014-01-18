@@ -74,9 +74,6 @@ public class DBDataCreator {
 			for(Song song: artist.getSongs()){
 				System.out.println(artist.getName()+" - "+song.getTitle());
 			}
-			for(Song song: artist.getSongs()){
-				System.out.println(song.getArtist().getName()+" - "+song.getTitle());
-			}
 		}
 	}
 }
