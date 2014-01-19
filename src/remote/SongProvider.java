@@ -27,8 +27,11 @@ public class SongProvider {
 				//TODO Sacar member de la bd, añadir el play y actualizar
 				String date = "1/1/11";
 				String time = "00:00";
-				Member member;
-				Play play = new Play(date, time, song, member);
+				Member member = getMember(nick);
+				if (member != null) {
+					member.addPlay(date, time, song);
+					controller.updateItem(member);
+				}
 				return SongAssembler.createSongDTO(song);
 			}
 		}
