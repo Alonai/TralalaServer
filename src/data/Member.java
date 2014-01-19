@@ -15,24 +15,30 @@ public class Member implements IVisitable{
 	private ArrayList<Play> plays;
 	private long bankAccount;
 	private String paymentService;
+	private String paymentMethod;
 	
 	
-	public Member(String name, String nick, long bankAccount){
+	public Member(String name, String nick, long bankAccount, String paymentMethod){
 		this.name=name;
 		this.nick=nick;
 		this.bankAccount=bankAccount;
 		this.plays=new ArrayList<Play>();
 		paymentService="none";
+		this.paymentMethod=paymentMethod;
 	}
 
+	public String getPaymentMethod(){
+		return paymentMethod;
+	}
+	public void setPaymentMethod(String paymentMethod){
+		this.paymentMethod=paymentMethod;
+	}
 	public String getName() {
 		return name;
 	}
-
 	public void setName(String name) {
 		this.name = name;
 	}
-
 	public String getNick() {
 		return nick;
 	}
