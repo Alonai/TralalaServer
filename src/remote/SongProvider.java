@@ -21,21 +21,15 @@ public class SongProvider {
 	}
 	
 	public SongDTO giveSong(String name, String nick) {
-		List<Song> songs= getListSongs();
-		for(Song song:songs){
-			if(song.getTitle().equals(name)){
-				//TODO Sacar member de la bd, añadir el play y actualizar
-				String date = "1/1/11";
-				String time = "00:00";
-				Member member = getMember(nick);
-				if (member != null) {
-					member.addPlay(date, time, song);
-					controller.updateItem(member);
-				}
-				return SongAssembler.createSongDTO(song);
-			}
+		Song song = controller.getSong(name);
+		String date = "1/1/11";
+		String time = "00:00";
+		Member member = controller.getMember(nick);
+		if (member != null) {
+			member.addPlay(date, time, song);
+			controller.updateItem(member);
 		}
-		return null;
+		return SongAssembler.createSongDTO(song);
 	}
 	
 }

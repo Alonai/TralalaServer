@@ -4,16 +4,20 @@ import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 
 import data.Member;
+import data.dao.DBItemDAO;
 import server.EPaymentMethod;
 
 public class PaymentSessionFacade extends UnicastRemoteObject{
+	DBItemDAO dao;
 	
-	public PaymentSessionFacade() throws RemoteException{
+	public PaymentSessionFacade(DBItemDAO dbDAO) throws RemoteException{
 		super();
+		dao = dbDAO;
 	}
 	
 	public double currentAmount(String nick) throws RemoteException{
-		//TODO return EPaymentMethod.currentAmount(nick);
+		Member member = dao.getMember(nick);
+		return EPaymentMethod.currentAmount(member);
 	}
 	
 }

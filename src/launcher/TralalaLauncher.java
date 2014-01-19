@@ -52,12 +52,10 @@ public class TralalaLauncher {
 		//SongProvider setup
 		SongProvider songP = new SongProvider(dbDAO);
 		
-		//EPaymentMethod setup
-		
 		//Facades setup
 		IManagementSessionFacade manSF = new ManagementSessionFacade(memMan);
 		ISongSessionFacade songSF = new SongSessionFacade(songP);
-		IPaymentSessionFacade paySF = new PaymentSessionFacade();
+		IPaymentSessionFacade paySF = (IPaymentSessionFacade) new PaymentSessionFacade(dbDAO);
 		
 		//Rebinds
 		Naming.rebind(nameManageFac, manSF);
