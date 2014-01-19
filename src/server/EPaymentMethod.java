@@ -6,13 +6,13 @@ import data.Member;
 import data.Play;
 import data.Song;
 
-public abstract class EPaymentMethod implements IPaymentService{
+public abstract class EPaymentMethod{
 
 	/** Returns the amount of money that the member has to play.
 	 * @param m : Member
 	 * @return double : amount of money.
 	 */
-	public double currentAmount(Member m) {
+	public static double currentAmount(Member m) {
 		
 		double amount = 0;
 		

@@ -7,15 +7,13 @@ import data.Member;
 import server.EPaymentMethod;
 
 public class PaymentSessionFacade extends UnicastRemoteObject{
-	private EPaymentMethod payServ;
 	
-	public PaymentSessionFacade(EPaymentMethod pay) throws RemoteException{
+	public PaymentSessionFacade() throws RemoteException{
 		super();
-		payServ = pay;
 	}
 	
 	public double currentAmount(Member m) throws RemoteException{
-		return payServ.currentAmount(m);
+		return EPaymentMethod.currentAmount(m);
 	}
 	
 }
