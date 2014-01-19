@@ -138,6 +138,36 @@ public class DBItemDAO implements IDBItemDAO {
 		return member;
 	}
 	
+	public Song getSong(String name) {
+		PersistenceManager pm = pmf.getPersistenceManager();
+		Transaction tx = pm.currentTransaction();
+		Song song=null;
+		
+		try {
+			System.out.println("   * Retrieving an Extent for Member.");
+			
+			tx.begin();			
+			Extent<Song> extent = pm.getExtent(Song.class, true);
+			
+			for (Song songE : extent) {
+				if (songE.getTitle().equals(name)){
+					song=songE;
+				}
+			}
+			
+			tx.commit();
+		} catch (Exception ex) {
+	    	System.out.println("   $ Error retreiving an extent: " + ex.getMessage());
+	    } finally {
+	    	if (tx != null && tx.isActive()) {
+	    		tx.rollback();
+	    	}
+				
+    		pm.close();
+	    }
+		return song;
+	}
+	
 	public List<Song> getSongs() {
 		PersistenceManager pm = pmf.getPersistenceManager();
 		Transaction tx = pm.currentTransaction();

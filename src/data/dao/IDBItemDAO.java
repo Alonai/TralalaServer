@@ -16,4 +16,5 @@ public interface IDBItemDAO {
 	public void updateItem(Object product);
 	public void deleteItems();
 	public Member getMember(String nick);
+	public Song getSong(String name);
 }
