@@ -11,6 +11,7 @@ import javax.jdo.Query;
 import javax.jdo.Transaction;
 
 import data.Artist;
+import data.Member;
 import data.Song;
 
 public class DBItemDAO implements IDBItemDAO {
@@ -105,6 +106,36 @@ public class DBItemDAO implements IDBItemDAO {
 	    }
 	    
 		return artists;
+	}
+	
+	public Member getMember(String nick) {
+		PersistenceManager pm = pmf.getPersistenceManager();
+		Transaction tx = pm.currentTransaction();
+		Member member=null;
+		
+		try {
+			System.out.println("   * Retrieving an Extent for Member.");
+			
+			tx.begin();			
+			Extent<Member> extent = pm.getExtent(Member.class, true);
+			
+			for (Member memberE : extent) {
+				if (memberE.getNick().equals(nick)){
+					member=memberE;
+				}
+			}
+			
+			tx.commit();
+		} catch (Exception ex) {
+	    	System.out.println("   $ Error retreiving an extent: " + ex.getMessage());
+	    } finally {
+	    	if (tx != null && tx.isActive()) {
+	    		tx.rollback();
+	    	}
+				
+    		pm.close();
+	    }
+		return member;
 	}
 	
 	public List<Song> getSongs() {

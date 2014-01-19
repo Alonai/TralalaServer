@@ -3,6 +3,7 @@ package data.dao;
 import java.util.List;
 
 import data.Artist;
+import data.Member;
 import data.Song;
 
 public interface IDBItemDAO {
@@ -14,4 +15,5 @@ public interface IDBItemDAO {
 	public List<Object> getItems(String condition);
 	public void updateItem(Object product);
 	public void deleteItems();
+	public Member getMember(String nick);
 }

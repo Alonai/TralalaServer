@@ -10,11 +10,13 @@ public class Song {
 	private double ppp;
 	private Artist artist;
 	private Album album;
+	private String lyrics;
 	
-	public Song(String title, int duration) {
+	public Song(String title, int duration, String lyrics) {
 		songTitle=title;
 		this.duration=duration;
 		ppp=0;
+		this.lyrics=lyrics;
 	}
 	
 	public String getTitle() {
@@ -22,6 +24,12 @@ public class Song {
 	}
 	public void setTitle(String title) {
 		this.songTitle = title;
+	}
+	public String getLyrics(){
+		return lyrics;
+	}
+	public void setLyrics(String lyrics){
+		this.lyrics=lyrics;
 	}
 	public int getDuration() {
 		return duration;

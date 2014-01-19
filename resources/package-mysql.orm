@@ -39,6 +39,9 @@
             </field>
             <field name="album" default-fetch-group="true">               
             </field>
+            <field name="lyrics">
+                <column length="4000" jdbc-type="VARCHAR"/>
+            </field>
 		</class>
 		
 		<class name="Member">
