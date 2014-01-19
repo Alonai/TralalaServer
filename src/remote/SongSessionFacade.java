@@ -30,8 +30,8 @@ public class SongSessionFacade extends UnicastRemoteObject implements ISongSessi
 	}
 
 	@Override
-	public SongDTO downloadSong(String name) throws RemoteException{
-		return provider.giveSong(name);
+	public SongDTO downloadSong(String name, String nick) throws RemoteException{
+		return provider.giveSong(name, nick);
 	}
 
 }

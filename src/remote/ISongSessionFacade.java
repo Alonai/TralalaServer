@@ -10,6 +10,6 @@ public interface ISongSessionFacade extends Remote{
 	
 	public ArrayList<String> getListSongs() throws RemoteException;
 	
-	public SongDTO downloadSong(String name) throws RemoteException;
+	public SongDTO downloadSong(String name, String nick) throws RemoteException;
 
 }

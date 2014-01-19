@@ -12,8 +12,8 @@ public class PaymentSessionFacade extends UnicastRemoteObject{
 		super();
 	}
 	
-	public double currentAmount(Member m) throws RemoteException{
-		return EPaymentMethod.currentAmount(m);
+	public double currentAmount(String nick) throws RemoteException{
+		//TODO return EPaymentMethod.currentAmount(nick);
 	}
 	
 }

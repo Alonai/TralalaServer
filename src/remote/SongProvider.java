@@ -2,6 +2,8 @@ package remote;
 
 import java.util.List;
 
+import data.Member;
+import data.Play;
 import data.Song;
 import data.dao.DBItemDAO;
 import data.dto.SongAssembler;
@@ -18,10 +20,15 @@ public class SongProvider {
 		return controller.getSongs();
 	}
 	
-	public SongDTO giveSong(String name) {
+	public SongDTO giveSong(String name, String nick) {
 		List<Song> songs= getListSongs();
 		for(Song song:songs){
 			if(song.getTitle().equals(name)){
+				//TODO Sacar member de la bd, añadir el play y actualizar
+				String date = "1/1/11";
+				String time = "00:00";
+				Member member;
+				Play play = new Play(date, time, song, member);
 				return SongAssembler.createSongDTO(song);
 			}
 		}

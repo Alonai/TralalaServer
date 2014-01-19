@@ -16,4 +16,9 @@ public class ManagementSessionFacade extends UnicastRemoteObject implements IMan
 	public boolean signIn(String user, String pass) throws RemoteException{
 		return manager.signIn(user, pass);
 	}
+	
+	public boolean registerUser(String nick, String pass) throws RemoteException{
+		return manager.registerUser(nick, pass);
+	}
 }
+

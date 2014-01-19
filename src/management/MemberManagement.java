@@ -16,5 +16,11 @@ public class MemberManagement implements IMemberManagement{
 		
 		return false;
 	}
+	
+	public boolean registerUser(String user, String pass) {
+		//TODO
+		auth.createUser(user, pass);
+		return true;
+	}
 
 }
