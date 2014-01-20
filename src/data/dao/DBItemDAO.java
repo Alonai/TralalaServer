@@ -32,6 +32,7 @@ public class DBItemDAO implements IDBItemDAO {
 
 	private void storeObject(Object object) {
 		PersistenceManager pm = pmf.getPersistenceManager();
+		setFetchDepth(pm);
 	    Transaction tx = pm.currentTransaction();
 	   
 	    try {
@@ -52,6 +53,7 @@ public class DBItemDAO implements IDBItemDAO {
 	
 	public List<Object> getItems() {
 		PersistenceManager pm = pmf.getPersistenceManager();
+		setFetchDepth(pm);
 		Transaction tx = pm.currentTransaction();
 		List<Object> items = new ArrayList<Object>();
 		
@@ -81,6 +83,7 @@ public class DBItemDAO implements IDBItemDAO {
 
 	public List<Artist> getArtists() {
 		PersistenceManager pm = pmf.getPersistenceManager();
+		setFetchDepth(pm);
 		Transaction tx = pm.currentTransaction();
 		List<Artist> artists = new ArrayList<Artist>();
 		
@@ -110,6 +113,7 @@ public class DBItemDAO implements IDBItemDAO {
 	
 	public Member getMember(String nick) {
 		PersistenceManager pm = pmf.getPersistenceManager();
+		setFetchDepth(pm);
 		Transaction tx = pm.currentTransaction();
 		Member member=null;
 		
@@ -140,6 +144,7 @@ public class DBItemDAO implements IDBItemDAO {
 	
 	public Song getSong(String name) {
 		PersistenceManager pm = pmf.getPersistenceManager();
+		setFetchDepth(pm);
 		Transaction tx = pm.currentTransaction();
 		Song song=null;
 		
@@ -170,6 +175,7 @@ public class DBItemDAO implements IDBItemDAO {
 	
 	public List<Song> getSongs() {
 		PersistenceManager pm = pmf.getPersistenceManager();
+		setFetchDepth(pm);
 		Transaction tx = pm.currentTransaction();
 		List<Song> songs = new ArrayList<Song>();
 		
@@ -199,6 +205,7 @@ public class DBItemDAO implements IDBItemDAO {
 
 	public List<Object> getItems(String condition) {
 		PersistenceManager pm = pmf.getPersistenceManager();
+		setFetchDepth(pm);
 	    Transaction tx = pm.currentTransaction();
 	    List<Object> items = new ArrayList<Object>();
 	        
@@ -229,6 +236,7 @@ public class DBItemDAO implements IDBItemDAO {
 
 	public void updateItem(Object item) {
 		PersistenceManager pm = pmf.getPersistenceManager();
+		setFetchDepth(pm);
 	    Transaction tx = pm.currentTransaction();
 	    
 	    try {
@@ -248,6 +256,7 @@ public class DBItemDAO implements IDBItemDAO {
 
 	public void deleteItems() {
 		PersistenceManager pm = pmf.getPersistenceManager();
+		setFetchDepth(pm);
 	    Transaction tx = pm.currentTransaction();
 	    
 	    try {
@@ -269,6 +278,9 @@ public class DBItemDAO implements IDBItemDAO {
 				
 	   		pm.close();
 	     }	   
+	}
+	private void setFetchDepth(PersistenceManager pm){
+		pm.getFetchPlan().setMaxFetchDepth(2);
 	}
 
 }

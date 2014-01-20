@@ -57,7 +57,7 @@ public class DBDataCreator {
 		//dao.storeArtist(daftPunk);
 		System.out.println("Getting list of songs...");
 		List<Song> songs=dao.getSongs();
-		/*for(Song song:songs){
+		for(Song song:songs){
 			if(song!=null){
 				if(song.getAlbum()!=null){
 					System.out.println(song.getAlbum().getTitle()+" - "+song.getTitle());
@@ -67,7 +67,7 @@ public class DBDataCreator {
 			}else{
 				System.out.println("songs are null");
 			}
-		}*/
+		}
 		for(Song song:songs){
 			if(song!=null){
 				if(song.getArtist()!=null){
@@ -79,12 +79,12 @@ public class DBDataCreator {
 				System.out.println("songs are null");
 			}
 		}
-		/*List<Artist> artists=dao.getArtists();
+		List<Artist> artists=dao.getArtists();
 		for(Artist artist: artists){
 			System.out.println(artist.getName());
 			for(Song song: artist.getSongs()){
 				System.out.println(artist.getName()+" - "+song.getTitle());
 			}
-		}*/
+		}
 	}
 }
