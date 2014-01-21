@@ -12,11 +12,9 @@ import gateways.Gateway;
 
 public class AuthorizationGateway extends Gateway{
 
-	private String name;
 	private IAuthService server;
 	public AuthorizationGateway(String name) throws Exception{
 		super();
-		this.name= name;
 		server= lookup(name);
 	}
 
