@@ -1,5 +1,7 @@
 package remote;
 
+import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 import data.Member;
@@ -16,8 +18,15 @@ public class SongProvider {
 		controller = control;
 	}
 	
-	public List<Song> getListSongs() {
-		return controller.getSongs();
+	public ArrayList<String> getListSongs() {
+		//Convertir lista de songs a list de strings
+		ArrayList<String> ret = new ArrayList<String>();
+		List<Song> songs = controller.getSongs();
+		for (Iterator<Song> it = songs.iterator(); it.hasNext(); ) {
+			Song song = it.next();
+			ret.add(song.getTitle() + " - " + song.getArtist());
+		}
+		return ret;
 	}
 	
 	public SongDTO giveSong(String name, String nick) {

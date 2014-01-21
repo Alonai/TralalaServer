@@ -19,14 +19,7 @@ public class SongSessionFacade extends UnicastRemoteObject implements ISongSessi
 
 	@Override
 	public ArrayList<String> getListSongs() throws RemoteException{
-		//Convertir lista de songs a list de strings
-		ArrayList<String> ret = new ArrayList<String>();
-		List<Song> songs = provider.getListSongs();
-		for (Iterator<Song> it = songs.iterator(); it.hasNext(); ) {
-	        Song song = it.next();
-	        ret.add(song.getTitle() + " - " + song.getArtist());
-	    }
-		return ret;
+		return provider.getListSongs();
 	}
 
 	@Override
