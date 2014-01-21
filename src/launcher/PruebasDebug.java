@@ -4,7 +4,6 @@ import java.rmi.Naming;
 import java.rmi.RMISecurityManager;
 
 import service.interfaces.IAuthService;
-import gateways.authorization.AuthorizationGateway;
 
 public class PruebasDebug {
 
@@ -13,6 +12,7 @@ public class PruebasDebug {
 			System.out.println(s);
 		if(System.getSecurityManager()==null)
 			System.setSecurityManager(new RMISecurityManager());
+		
 		String auth=  "//" + argv[9] + ":" + argv[10] + "/" + argv[11];
 		
 		System.out.println("auth: " + auth);
