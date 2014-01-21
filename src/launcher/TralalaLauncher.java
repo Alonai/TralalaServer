@@ -62,5 +62,7 @@ public class TralalaLauncher {
 		Naming.rebind(nameSongFac, songSF);
 		Naming.rebind(namePayFac, paySF);
 		
+		System.out.println("Server active and waiting...");
+		
 	}
 }

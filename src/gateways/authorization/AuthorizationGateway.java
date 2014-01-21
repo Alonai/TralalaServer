@@ -7,7 +7,6 @@ import java.rmi.Remote;
 import java.rmi.RemoteException;
 
 import service.interfaces.IAuthService;
-import service.interfaces.sign.ISignInService;
 import gateways.Gateway;
 
 public class AuthorizationGateway extends Gateway{
@@ -17,11 +16,11 @@ public class AuthorizationGateway extends Gateway{
 	public AuthorizationGateway(String name) throws Exception{
 		super();
 		this.name= name;
-		server= (IAuthService) lookup(name);
+		server= lookup(name);
 	}
 
 	public IAuthService lookup(String name) throws RemoteException, MalformedURLException, NotBoundException {		
-		return (IAuthService) Naming.lookup(name);
+		return ((IAuthService) Naming.lookup(name));
 	}
 	public boolean doesUserExist(String user){
 		try {
@@ -33,7 +32,7 @@ public class AuthorizationGateway extends Gateway{
 	}
 	public boolean checkPass(String userName, String pass) {
 		try {
-			return server.checkPass(name, pass);
+			return server.checkPass(userName, pass);
 		} catch (RemoteException e) {
 			e.printStackTrace();
 			return false;
