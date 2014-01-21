@@ -78,7 +78,7 @@
     </target>
 
     <!-- TARGET : SchemaTool "create" -->
-    <target name="createschema"  depends="deleteschema">
+    <target name="createschema">
         <taskdef name="schematool" classpathref="classpath" classname="org.datanucleus.store.schema.SchemaToolTask"/>
 
         <schematool mode="create" classpathref="classpath" failonerror="true" persistenceUnit="TralalaJDO" props="META-INF/persistence.xml">
@@ -134,7 +134,7 @@
 		</jar>
     </target>	
     
-	<target name="server" depends="build, enhance" description="Runs the Server">
+	<target name="server" depends="build" description="Runs the Server">
 		<java classname="launcher.TralalaLauncher" classpath="${classpath}" fork="true">
 			<jvmarg value="-Djava.rmi.server.codebase=file:${build.dir}/"/>
 			<jvmarg value="-Djava.security.policy=${policy.file}"/>
