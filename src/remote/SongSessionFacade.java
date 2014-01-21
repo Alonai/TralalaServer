@@ -3,10 +3,7 @@ package remote;
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
 
-import data.Song;
 import data.dto.SongDTO;
 
 public class SongSessionFacade extends UnicastRemoteObject implements ISongSessionFacade{
