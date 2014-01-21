@@ -2,16 +2,16 @@ package gateways.payment;
 
 import java.rmi.Naming;
 
-import server.PPServer;
+import server.IPPServer;
 
 public class PayPalGW extends PaymentGateway{
 
-	private PPServer server;
+	private IPPServer server;
 	private String[] options= null;
 	
 	public PayPalGW(String name) throws Exception{
 		super();
-		server= (PPServer) Naming.lookup(name);
+		server= (IPPServer) Naming.lookup(name);
 	}
 
 	/** [0]: credit card number

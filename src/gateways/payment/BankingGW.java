@@ -1,16 +1,16 @@
 package gateways.payment;
 
-import server.BankingServer;
+import server.IBankingServer;
 
 public class BankingGW extends PaymentGateway{
 	
 	private String[] options=null;
-	private BankingServer server;
+	private IBankingServer server;
 	
 
 	public BankingGW(String name)throws Exception{
 		super();
-		server= (BankingServer) lookup(name);
+		server= (IBankingServer) lookup(name);
 	}
 	/** [0]: bank account
 	 *  [1]: amount to pay

@@ -155,7 +155,7 @@
 			<arg value="${auth-server.port}"/> 
 			<arg value="${auth-server.Name}"/>
 			<!-- PaypalGateway -->
-			<arg value="${paypal-server.IP}}"/> 
+			<arg value="${paypal-server.IP}"/> 
 			<arg value="${paypal-server.port}"/> 
 			<arg value="${paypal-server.Name}"/>
 			<!-- BankingGateway -->
