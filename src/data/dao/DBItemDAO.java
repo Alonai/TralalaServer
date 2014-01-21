@@ -17,6 +17,7 @@ import data.Song;
 public class DBItemDAO implements IDBItemDAO {
 
 	private PersistenceManagerFactory pmf;
+	private final int FETCHDEPTH=10;
 	
 	public DBItemDAO(){
 		pmf = JDOHelper.getPersistenceManagerFactory("TralalaJDO");
@@ -280,7 +281,7 @@ public class DBItemDAO implements IDBItemDAO {
 	     }	   
 	}
 	private void setFetchDepth(PersistenceManager pm){
-		pm.getFetchPlan().setMaxFetchDepth(2);
+		pm.getFetchPlan().setMaxFetchDepth(FETCHDEPTH);
 	}
 
 }
