@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project basedir="." default="server" name="TralalaServer">    
+<project basedir="." default="help" name="TralalaServer">    
 	<property environment="env"/>
 	<property name="resources.dir" location="resources"/>
 	<property name="source.dir" location="src"/>
@@ -155,7 +155,7 @@
 			<arg value="${auth-server.port}"/> 
 			<arg value="${auth-server.Name}"/>
 			<!-- PaypalGateway -->
-			<arg value="${paypal-server.IP}"/> 
+			<arg value="${paypal-server.IP}}"/> 
 			<arg value="${paypal-server.port}"/> 
 			<arg value="${paypal-server.Name}"/>
 			<!-- BankingGateway -->
