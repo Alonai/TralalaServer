@@ -8,6 +8,7 @@
 	<property name="lib.dir" location="lib"/>
 	<property name="classpath" location="bin"/>
 	<property name="version" value="2.0"/>
+	
 	<!-- PaymentSessionFacade -->
 	<property name="payment.port" value="1099"/> 
 	<property name="payment.IP" value="127.0.0.1"/>
