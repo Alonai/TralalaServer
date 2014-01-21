@@ -11,15 +11,15 @@
 	<!-- PaymentSessionFacade -->
 	<property name="payment.port" value="1099"/> 
 	<property name="payment.IP" value="127.0.0.1"/>
-	<property name="payment.Name" value="TS-Payment"/>
+	<property name="payment.Name" value="TSPayment"/>
 	<!-- SongSessionFacade -->
 	<property name="songs.port" value="1099"/> 
 	<property name="songs.IP" value="127.0.0.1"/>
-	<property name="songs.Name" value="TS-Songs"/>
+	<property name="songs.Name" value="TSSongs"/>
 	<!-- ManagementSessionFacade -->
 	<property name="manage.port" value="1099"/> 
 	<property name="manage.IP" value="127.0.0.1"/>
-	<property name="manage.Name" value="TS-Manage"/>
+	<property name="manage.Name" value="TSManage"/>
 	<!-- AuthGateway -->
 	<property name="auth-server.port" value="1099"/> 
 	<property name="auth-server.IP" value="127.0.0.1"/>
