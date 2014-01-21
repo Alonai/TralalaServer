@@ -55,7 +55,7 @@ public class TralalaLauncher {
 		//Facades setup
 		IManagementSessionFacade manSF = new ManagementSessionFacade(memMan);
 		ISongSessionFacade songSF = new SongSessionFacade(songP);
-		IPaymentSessionFacade paySF = (IPaymentSessionFacade) new PaymentSessionFacade(dbDAO);
+		IPaymentSessionFacade paySF = new PaymentSessionFacade(dbDAO);
 		
 		//Rebinds
 		Naming.rebind(nameManageFac, manSF);

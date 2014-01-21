@@ -7,7 +7,7 @@ import data.Member;
 import data.dao.DBItemDAO;
 import server.EPaymentMethod;
 
-public class PaymentSessionFacade extends UnicastRemoteObject{
+public class PaymentSessionFacade  extends UnicastRemoteObject implements IPaymentSessionFacade{
 	DBItemDAO dao;
 	
 	public PaymentSessionFacade(DBItemDAO dbDAO) throws RemoteException{
